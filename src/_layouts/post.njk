@@ -1,0 +1,38 @@
+---
+layout: base.njk
+---
+
+<header>
+    <div class="header-content">
+        {% if tags %}
+            {% set isPost = true %}
+            {% include "tagChips.njk" %}
+        {% endif %}
+        
+        <h1>{{ title }}</h1>
+        <p class="subtitle">Geschreven door <a href="/about/">Dennis Ulijn</a> in {{ page.date | dateToMonthYear }}</p>
+    </div>
+    {% if headerImage %}
+        <img class="header-img blur" src="{{ headerImage }}" alt="" {% if headerImagePosition %}style="object-position: {{ headerImagePosition }};"{% endif %}>
+    {% endif %}
+    <div class="header-gradient"></div>
+</header>
+
+<main>
+    <article>
+        {% if opening %}
+            <p class="opening">{{ opening }}</p>
+        {% endif %}
+        
+        {{ content | safe }}
+    </article>
+</main>
+
+<!-- <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const firstParagraph = document.querySelector("article p");
+        if (firstParagraph) {
+            firstParagraph.classList.add("opening");
+        }
+    });
+</script> -->

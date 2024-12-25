@@ -1,0 +1,30 @@
+<nav>
+    <div class="content">
+        <a href="/" class="logo">
+            {% include "logo.njk" %}
+        </a>
+        <div class="links">
+            <ul>
+                <li><a href="/tags/"><button class="ghost dark">Tags</button></a></li>
+                <li><a href="/blog/"><button class="ghost dark">blog</button></a></li>
+                <li><a href="/about/"><button class="secondary dark">about</button></a></li>
+            </ul>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </div>
+    </div>
+</nav>
+
+<script>
+function toggleMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const links = document.querySelector('.links');
+    const nav = document.querySelector('nav');
+    hamburger.classList.toggle('active');
+    links.classList.toggle('active');
+    nav.classList.toggle('active');
+}
+</script>

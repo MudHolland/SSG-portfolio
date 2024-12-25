@@ -1,0 +1,20 @@
+{
+  "name": "ssg-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "dotenv": "^16.4.7",
+    "markdown-it": "^14.1.0",
+    "markdown-it-attrs": "^4.3.1"
+  }
+}

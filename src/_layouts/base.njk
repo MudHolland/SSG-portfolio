@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="nl">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVX0SD01YQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WVX0SD01YQ');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="/images/ulijn-logo.svg">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style-2024-10.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <script type="text/javascript" src="/script/script-2024-10.js" defer></script>
+    <script type="text/javascript" src="/script/script.js" defer></script>
+    <title>{{ title }} | Dennis Ulijn</title>
+</head>
+<body>
+    {% include "nav.njk" %}
+    
+    {{ content | safe }}
+    
+    {% include "footer.njk" %}
+    
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+</body>
+</html>

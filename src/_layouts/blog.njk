@@ -1,0 +1,26 @@
+---
+layout: base.njk
+---
+
+<main class="blog-content">
+    <header>
+        <div class="header-content">
+            <h1>{{ title }}</h1>
+            {% if subtitle %}
+            <p class="subtitle">{{ subtitle }}</p>
+            {% endif %}
+        </div>
+    </header>
+
+    <article>
+        {{ content | safe }}
+    </article>
+
+    {% if tags %}
+    <div class="chips">
+        {% for tag in tags %}
+        <div class="chip {{ tag.color }}">{{ tag.name }}</div>
+        {% endfor %}
+    </div>
+    {% endif %}
+</main>
