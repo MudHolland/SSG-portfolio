@@ -18,19 +18,33 @@ tags:
 
 Vanuit de theorie van de module Service Design & Mobile Touchpoints herinnderde ik me de Co Creatie Design Game. Dit is een activiteit waarbij twee of meer participanten samen creatief denken, om meer te weten te komen over hun behoeften en blangen. Zij zijn de experts van hun ervaring, en door context mapping haal je middels zeggen, denken en doen hun diepere ervaringen, waarden en kennis naar boven. De path of expression geeft een basis voor de volgorde van de sessie:
 
+- Bied de participanten een kader van het onderwerp uit het verleden en heden laat ze hierover praten met elkaar,
+- Geef de participanten een bezigheid waarbij ze momenten uit het verleden ophalen door acties uit te voeren,
+- Laat de participanten iets maken over dit onderwerp, van hoe zij dit in de toekomst zouden voorstellen.
+
 Deze design game bestaat hiermee ook uit 3 onderdelen op basis van de path of expression:
+
+1. **Opwarmer:** een sfeer creëren waarin de participanten het gevoel hebben dat ze vrijuit kunnen praten over de scope van het onderwerp,
+2. **Design game:** de participanten een speelse manier bieden om onderwerpen aan het licht te brengen en zo te focussen op specifieke onderdelen waar je als ontwerper in geïnteresseerd bent,
+3. **Ideation:** de participanten de middelen en een kader bieden om hun eigen toekomst en ideeën over de focus te tonen.
 
 ## Observe
 
+#### Opwarmer
+
 Om de participanten los te maken, wilden we een gesprek starten over hoe zij gamen. Wat spelen zij nu? Weten zij waarom dit hun trekt (player types)? Welke onderdelen spreken ze hierin aan (aesthetics)?
+
+#### Design Game
 
 Om de spelers spelenderwijs over hun signatuur na te laten denken, gebruiken we de theorie van de kernkwadranten van Ofman, zoals we in concept 1 al hadden opgesteld: we wilden hiermee kijken welke kwaliteiten, valkuilen, allergieën en uitdagingen er zoal bij voltijdstudenten en binnen hun projectgroepen zijn. Bij het opstellen hiervan hadden we het over onze kaartjes van concept 1 en toen we deze kwadranten aan het omschrijven waren kwam bij mij de realisatie dat we hiermee simpel een kwartetspel konden maken. Als zij een kaart vragen van een andere speler, moeten zij hierbij vertellen of zij dat kwadrant herkennen in zichzelf, iemand anders in de groep, of misschien een andere anecdote hierover. Dit geeft ons bij elke beurt inzichten in de doelgroep.
 
-![Kaartjes van het kwartetspel over de kernkwadranten van Ofman - Kaartjes van het kwartetspel over de kernkwadranten van Ofman](/images/sag-op-loop2designgame.png)
+![Kaartjes van het kwartetspel over de kernkwadranten van Ofman](/images/sag-op-loop2designgame.png)
+
+#### Ideation
 
 Om de participanten los te maken, wilden we een gesprek starten over hoe zij gamen. Wat spelen zij nu? Weten zij waarom dit hun trekt (player types)? Welke onderdelen spreken ze hierin aan (aesthetics)?
 
-![Uitwerkingen van de ideation door de participanten - Uitwerkingen van de ideation door de participanten](/images/sag-op-loop2-ideation.png)
+![Uitwerkingen van de ideation door de participanten](/images/sag-op-loop2-ideation.png)
 
 We merkten dat deze doelgroep soortgelijke karakters hadden: speelden allemaal soortgelijke spellen (Call of Duty, FIFA), al was de een wat rustiger dan de ander, zowel in de groep als in de spellen. Ze hadden behoefte aan fellowship en competitie.
 

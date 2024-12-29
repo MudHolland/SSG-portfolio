@@ -2,6 +2,7 @@
 layout: post.njk
 title: Denk ik als een kunstenaar?
 description: Door te denken als kunstenaar leerde ik dat creativiteit gaat om actie, niet wachten. Mislukking is een essentieel leerproces, geen eindpunt. Echt creëren betekent risico nemen, falen om te leren, en een persoonlijke visie uit te drukken.
+opening: 'Bij een bezoek aan het plaatselijk museum - museum Jan Cunen te Oss - vond ik een boek in het afsluitende winkeltje: "Denk als een kunstenaar", van de euteur van "Dat kan mijn kleine zusje ook". Dit leek me een interessant boek, over Wat heb ik geleerd van dit boek?'
 date: '2021-10-15'
 headerImage: /images/denkalseenkunstenaar.png
 thumbnail: /images/denkalseenkunstenaar.png
@@ -11,6 +12,8 @@ tags:
 - Reflectie
 - Inspiratie
 ---
+
+[Denk als een kunstenaar van Will Gompertz](https://www.bol.com/nl/nl/f/denk-als-een-kunstenaar/9200000057332628/)
 
 ## Gewoon doen
 
@@ -22,7 +25,7 @@ Het probleem is dat sommige mensen zichzelf wijsmaken dat ze niet creatief zijn.
 
 Kunstenaars maken van niets iets. Iets dat nog niet gezien is, of iets dat nog niet op deze manier gezien is.
 
-> "Luister, als ik linnen beschilder, is het meer waard dan wanneer het onbeschilderd is"
+> [Vincent van Gogh] "Luister, als ik linnen beschilder, is het meer waard dan wanneer het onbeschilderd is"
 
 Dit maken kan een helende werking bewerkstelligen. Theaster Gaters, wonende in de vervallen South Side van Chicago, handelde vanuit zijn visie: "Scheppende handelingen moeten destructieve daden compenseren". Door deze morele gedachte kan creatie een Robin Hood-achtige werking hebben. De echte macht van een kunstenaar - het gebruik van zijn creativiteit - is hiermee niet om er geld te verdienen, maar de wereld te kunnen veranderen.
 

@@ -16,6 +16,38 @@ module.exports = function(eleventyConfig) {
     .use(markdownItAttrs)
     .use(blockquotePlugin);
 
+  // Extend markdown-it with site data
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true
+  });
+
+  eleventyConfig.on('beforeRender', function(data) {
+    data.site = require('./src/_data/site.js');
+  });
+
+  // Add custom link renderer that checks against allowed domains
+  md.renderer.rules.link_open = function(tokens, idx, options, env, self) {
+    const token = tokens[idx];
+    const href = token.attrs[token.attrIndex('href')][1];
+    
+    try {
+      const url = new URL(href);
+      const siteData = require('./src/_data/site.js');
+      const isInternalDomain = siteData.domains.some(domain => 
+        url.hostname === domain || url.hostname.endsWith('.' + domain)
+      );
+      
+      if (!isInternalDomain) {
+        token.attrPush(['target', '_blank']);
+        token.attrPush(['rel', 'noopener noreferrer']);
+      }
+    } catch (e) {
+      // If URL parsing fails, it's likely a relative link - treat as internal
+    }
+    
+    return self.renderToken(tokens, idx, options);
+  };
+
   // Add custom image renderer
   md.renderer.rules.image = function(tokens, idx, options, env, slf) {
     const token = tokens[idx];

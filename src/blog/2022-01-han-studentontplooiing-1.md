@@ -3,6 +3,7 @@ layout: post.njk
 title: Agile ontwerpen met constante gebruikersfeedback voor creatieve studenten van
   de HAN Arnhem
 description: Hoe ontwerp je een speels, leerzaam product dat persoonlijke groei uitdaagt en stimuleert? In dit artikel deel ik onze aanpak, inzichten en uitdagingen binnen een Agile ontwerpproces, waarbij we IBM’s The Loop gebruikten om een betekenisvol resultaat te creëren.
+opening: We ontvingen een klantvraag voor een ontwerp van een leerzaam product gebaseerd op spelelementen. In 20 weken en volgens IBM's the Loop-methode werkten wij op Agile wijze tot een product dat we hebben overhandigd aan de opdrachtgever.
 date: '2022-01-15'
 headerImage: /images/SAG-OP_GreenhouseGames.png
 thumbnail: /images/SAG-OP_GreenhouseGames.png
@@ -18,7 +19,7 @@ tags:
 
 Vanuit Guido Crolla's Power To Flower willen we propedeusestudenten van de opleiding Communicatie en Multimedia Design aangesporen, inspireren en motiveren om op ontdekking in en naar hun eigen innerlijke persoonlijke wereld te gaan met als doel om het eigen potentieel te gaan ontplooien. Het moet de studenten in staat stellen hun eigen, persoonlijke, creatieve signatuur te ontwikkelen.
 
-![Weergave van de casus, zoals opgesteld door Guido Crolla - Weergave van de casus zoals opgesteld door Guido Crolla](/images/SAG-OP_Casus.png)
+![Weergave van de casus zoals opgesteld door Guido Crolla](/images/SAG-OP_Casus.png)
 
 > "How to aim for your destiny?
 
@@ -28,21 +29,30 @@ In een groep van vijf CMD-studenten werd ons gevraagd een oplossing te ontwerpen
 
 Ik kwam hierbij op de naam Green House Games. Dit idee kwam uit de kruising van een greenhouse, een kas waar planten en bloemen groeien, the power to flower. Door er een groen huis bij te plaatsen werd het een tastbaar iets, met een diepere laag. De deur staat hierbij open voor het open karakter en welkome houding voor nieuwe informatie.
 
-![Greenhouse Games: een greenhouse is een kas waar planten groeien en een groen huis - GreenHouse Games: een logo van een groen huis met een open deur](/images/SAG-OP_GreenhouseGames.png)
-
 Door er "Games" achter te zetten, hebben we als groep sterker het gevoel dat we meer meer zijn dan enkel dit project.
+
+![GreenHouse Games: een logo van een groen huis met een open deur](/images/SAG-OP_GreenhouseGames.png)
 
 ## Ontwerpmethode
 
 Voor dit project werkten we op een Agile-wijze via IBM's the Loop ontwerpmethode:
 
 'Agile' is Engels voor 'wendbaarheid'. Het ontwerpen binnen deze filosofie vereist dus voor een wendbare opstelling van de teamleden en het team als geheel. Centraal staan dus flexibel omgaan met onzekerheden en inspelen op verandering. Dit leidt ertoe dat 4 belangrijke eigenschappen aan de kern staan van Agile werken:
+1. **Mensen en hun onderlinge interactie** boven processen en hulpmiddelen
+2. **Werkende prototypes** boven allesomvattende documentatie
+3. **Samenwerking met de klant** boven contractonderhandelingen
+4. **Inspelen op verandering** boven het volgen van een plan
 
 Eerst zien wat je wil maken, dan maken en dan vastleggen wat werkt of niet werkt. Dit lijkt niet zo anders te zijn dan Design Thinking, maar geeft juist twee voordelen:
+1. Eerst maken en dan zien wat kan,
+2. Observeren wat werkt, snel en wendbaar itereren,
+3. Achteraf documenteren wat werkt en niet werkt.
 
 Dit proces van maken, uitvoeren en reflecteren past perfect in IBM's the Loop.
 
-![Overzicht van de principes, onderdelen en keys van IBM's the Loop - Overzicht van de principes, onderdelen en keys van IBM's the Loop](/images/SAG-OP_TheLoop.webp)
+#### Enterprise Design Thinking - IBM's The Loop
+
+![Overzicht van de principes, onderdelen en keys van IBM's the Loop](/images/SAG-OP_TheLoop.webp)
 
 Basisprincipes die zorgen voor een goede uitkomst zijn licht gebaseerd op de Agile workflow: oog voor de gebruiker, gebruik van interactie in het ontwerpteam en blijven aanpassen als de situatie daarom vraagt. The loop bestaat uit 3 centrale punten: maken, observeren en reflecteren. Doordat het in een oneindige loop loopt, kom je altijd via een mogelijke reflectie weer terug bij het vorige punt. Centrale punten, keys, zijn goede ontwerpvragen (hills) op  stellen en resultaten vaak met de opdrachtgever (playback) en toekomstige eindgebruikers (sponsor users) bespreken.
 

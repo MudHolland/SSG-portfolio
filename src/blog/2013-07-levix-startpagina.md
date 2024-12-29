@@ -2,6 +2,7 @@
 layout: post.njk
 title: 'Levix Start: Een Verbeterde Browserstartpagina die de klantbinding versterkt'
 description: Voor Levix ontwikkelde ik een startpagina voor nieuw geïnstalleerde computers, met directe zoekfunctionaliteit en eenvoudige toegang tot support. In de huisstijl van Levix, met een strak en herkenbaar design, zorgde ik voor een naadloze gebruikerservaring die onderhoudscontracten en contactmogelijkheden centraal stelt.
+opening: In de tijd dat ik bij Levix Automatisering in Geffen werkte, heb ik het proces van verkoop, reparatie en onderhoud van computers op de TD gezien en overzien. Hierbij zag ik een kans voor Levix om de startpagina van de standaardbrowser van nieuw geïnstalleerde computers aan te passen naar een pagina die het makkelijker maakt voor gebruikers om direct te zoeken en direct contact met Levix op te nemen, mochten er problemen zijn.
 date: '2013-07-15'
 headerImage: /images/levix-start.png
 thumbnail: /images/levix-start.png
@@ -20,7 +21,7 @@ Deze startpagina had een aantal belangrijke doelstellingen:
 
 Dit alles moest in de huisstijl van Levix, met blauwe en gele accenten. Om hieraan te voldoen heb ik de vorm en het gedrag van standaardzoekbalken overgenomen, heb iconen getekend en een logo van Levix voor de herkenbaarheid toegevoegd. Door de levix-kleuren en -typografie te gebruiken en een rustige achtergrond toe te passen wordt het een harmonieus geheel.
 
-![Levix Start Webpagina - Levix Start Webpagina](/images/levix-start.png)
+![Levix Start Webpagina](/images/levix-start.png)
 
 Een kopie van deze webpagina is te zien op:
 

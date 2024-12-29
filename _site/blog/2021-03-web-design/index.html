@@ -257,10 +257,18 @@ function toggleMenu() {
 <main>
     <article>
         
+            <p class="opening">Bij het vak Web Design heb ik in de loop van een aantal weken een website geanalyseerd en op basis van deze analyse een redesign van deze website gemaakt.</p>
+        
         
         <h3>Conceptual model</h3>
 <p>Bij een ontwerpproces staat de gebruiker centraal. Om een gebruiksvriendelijke interface te maken, zijn er vier belangrijke aspecten: discoverability, affordance, signifiers en feedback. In dit hoofdstuk ga ik deze termen toelichten. Deze kennis is gebaseerd op bijlage I. Conceptual model.</p>
 <p>Je hebt de volgende vier eigenschappen nodig om een interactief element duidelijk en eenduidig te maken:</p>
+<ul>
+<li><strong>discoverability</strong> om aan te geven dat een actie mogelijk is,</li>
+<li><strong>affordance</strong> om aan te geven welke actie mogelijk is,</li>
+<li><strong>signifier</strong> om aan te geven wat het resultaat van de actie moet zijn, en</li>
+<li><strong>feedback</strong> om aan te geven dat het resultaat bereikt is (of niet bereikt kan worden).</li>
+</ul>
 <p>Een totaal van het conceptual model is dus uit te leggen als een uitwerking van hoe een gebruiker een actie herkent, voorspelt, activeert en feedback op deze actie ontvangt.</p>
 <h3>Information Architecture</h3>
 <p>Om tot een verbeterde IA te komen, voer ik een Card Sorting-sessie uit. Bij een Card Sorting-sessie plaats je de content van een website op kaartjes, waarna je deze fysiek gaat sorteren op een manier dat de kaartjes logisch bij elkaar passen.</p>
@@ -277,7 +285,9 @@ function toggleMenu() {
     </figure></p>
 <h3>Navigatie</h3>
 <p>Om de navigatie te testen voer ik een Trunk test en Navigation Stress test uit met een gebruiker:</p>
+<h4>Trunk test</h4>
 <p>De Trunk Test kijkt op een willekeurige pagina of de belangrijkste elementen (site ID, paginanaam, primaire en secundaire nagivatie, huigie locatie-indicatoren, zoekfunctie) snel en makkelijk te herkennen zijn. Als je dit vergelijkt met een warenhuis geeft een Trunk Test aan of het duidelijk is aan de eigenschappen van de rij welke rij het is en of het duidelijk is wat je er kunt vinden.</p>
+<h4>Navigation Stress test</h4>
 <p>De Navigation Stress Test kijkt op een willekeurige pagina of het duidelijk is waar de huidige pagina is in verhouding tot de andere pagina's en of het duidelijk is naar welke pagina's de links op de huidige pagina leiden. De Navigation Stress Test zou te vergelijken zijn met het feit dat je weet waar in de het warenhuis die rij zich bevindt en of het duidelijk is wat er gebeurt als je naar de rijen ernaast loopt.</p>
 <p>Uit deze tests kwamen een aantal problemen waar ik verbetervoorstellen voor heb gemaakt. Zo had een gebruiker 6 kliks nodig om bij een product te komen. door een Megamenu toe te passen, kon de gebruiker van elke pagina maar elk product.</p>
 <p><figure>
@@ -290,6 +300,7 @@ function toggleMenu() {
       <figcaption>Verbetervoorstel Lokale Navigatie</figcaption>
     </figure></p>
 <p>Een van de grootste onduidelijkheden was het feit dat elk product een product- en webshoppagina had, waarbij belangrijke informatie niet op beide pagina's stond. Om dit op te lossen waren deze pagina's in de card sorting samengevoegd.</p>
+<h4>Sitemap</h4>
 <p>Door de herinrichting van de Information Architecture en de Trunk en Navigation stress test kan ik de volledige navigatie uittekenen in een Sitemap:</p>
 <p><figure>
       <img src="/images/lwg3-sitemap.png" alt="Sitemap">
@@ -332,16 +343,180 @@ function toggleMenu() {
 <p>Op de navigatie na zijn er weinig grote gebruikersproblemen. Dit komt waarschijnlijk omdat de website is opgezet door een bedrijf dat hierin bedreven is en werkt met bewezen standaarden en standaardelementen. De problemen zitten daarom met name in de bedrijfsspecifieke toepassingen zoals knoppen en de navigatie.</p>
 
     </article>
-</main>
 
-<!-- <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const firstParagraph = document.querySelector("article p");
-        if (firstParagraph) {
-            firstParagraph.classList.add("opening");
-        }
-    });
-</script> -->
+    <!-- <nav class="post-navigation">
+        
+        
+        
+        <div class="cards">
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    
+                        
+                        <a href="/blog/2021-04-usability-testing/" class="card">
+                            
+                                <img loading="lazy" src="/images/lwg4-productpagina-small.png" alt="" >
+                            
+                            <div class="card-content">
+                                <p class="nav-label">Vorig artikel</p>
+                                <h3>Onderbouwd Herontwerpen van de Eurofarmtoys-webshop door middel van Usability Testing met de gebruikers</h3>
+                                <p class="subtitle">Geschreven in april 2021</p>
+                            </div>
+                        </a>
+                    
+                    
+                    
+                        
+                        <a href="/blog/2021-02-contextanalyse/" class="card">
+                            
+                                <img loading="lazy" src="/images/m2-lwg2-concept-small.png" alt="" >
+                            
+                            <div class="card-content">
+                                <p class="nav-label">Volgend artikel</p>
+                                <h3>Opzetten van een marketingcampagne voor Van Lent Systems die aansluit op haar waarden en de behoeften van de gebruikers</h3>
+                                <p class="subtitle">Geschreven in februari 2021</p>
+                            </div>
+                        </a>
+                    
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+    </nav> -->
+</main>
     
     <footer>
     <div class="content">
@@ -374,7 +549,39 @@ function toggleMenu() {
             </ul>
         </div>
     </div>
+    <div class="repo-bar">
+        <a href="https://github.com/Mudholland/SSG-portfolio" target="_blank" rel="noopener">
+            <svg height="24" width="24" viewBox="0 0 16 16" class="github-icon">
+                <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+            </svg>
+            View project on GitHub
+        </a>
+    </div>
 </footer>
+
+<style>
+    .repo-bar {
+        padding: 2rem;
+        text-align: center;
+        /* border-top: 1px solid var(--border-color); */
+    }
+    .repo-bar a {
+        font-size:0.75rem;
+        opacity:0.25;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: inherit;
+        text-decoration: none;
+        transition: opacity 200ms ease;
+    }
+    .repo-bar a:hover {
+        opacity:1;
+    }
+    .github-icon {
+        display: inline-block;
+    }
+</style>
 
     
     <div id="myModal" class="modal">

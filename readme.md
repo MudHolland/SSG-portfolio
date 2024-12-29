@@ -45,7 +45,7 @@ My portfolio reflects this mindset: clean, purposeful design meets systematic im
 This portfolio has grown alongside my professional journey:
 
 - Started as a simple HTML/CSS website
-- Evolved into a categorized collection of case studies and articles
+- Evolved into a categorized collection of personal projects, case studies and articles
 - Implemented a template-based system for consistent content management
 - Added dynamic features while maintaining static site benefits
 - Integrated modal image viewing and responsive design
@@ -76,30 +76,25 @@ The site is automatically deployed through GitHub Actions:
 ## Todo List
 
 ### Content
-- [ ] Add more case studies
-- [ ] Update project thumbnails
-- [ ] Write about recent projects
+- [ ] Check article pages for easier reading
+- [x] Update project thumbnails
 - [ ] Add dark mode support
+- [x] Write about current projects
 
 ### Technical
-- [ ] Implement search functionality
-- [ ] Add pagination for blog posts
-- [ ] Optimize images loading
-- [ ] Improve accessibility
-- [ ] Add reading time estimates
+- [ ] Implement lazy loading
+- [x] Add video player
+- [x] Add iframe player
+- [ ] Add previous / next article below article
+- [ ] Add related project articles for project articles
 
 ### Design
 - [ ] Refine responsive design
 - [ ] Update typography system
-- [ ] Create improved navigation for mobile
 - [ ] Add more interactive elements
-- [ ] Design system documentation
+- [ ] Publish 2025 design style
 
 ### Performance
-- [ ] Implement lazy loading
-- [ ] Optimize CSS delivery
-- [ ] Add service worker
-- [ ] Improve Core Web Vitals
 
 ## Local Development
 

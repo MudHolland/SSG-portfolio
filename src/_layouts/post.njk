@@ -26,13 +26,43 @@ layout: base.njk
         
         {{ content | safe }}
     </article>
-</main>
 
-<!-- <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const firstParagraph = document.querySelector("article p");
-        if (firstParagraph) {
-            firstParagraph.classList.add("opening");
-        }
-    });
-</script> -->
+    <!-- <nav class="post-navigation">
+        {% set posts = collections.blog | reverse %}
+        {% set currentPost = page %}
+        
+        <div class="cards">
+            {% for post in posts %}
+                {% if post.url == currentPost.url %}
+                    {% if not loop.first %}
+                        {% set prevPost = posts[loop.index0 - 1] %}
+                        <a href="{{ prevPost.url }}" class="card">
+                            {% if prevPost.data.thumbnail %}
+                                <img loading="lazy" src="{{ prevPost.data.thumbnail }}" alt="" {% if prevPost.data.thumbnailPosition %}style="object-position: {{ prevPost.data.thumbnailPosition }};"{% endif %}>
+                            {% endif %}
+                            <div class="card-content">
+                                <p class="nav-label">Vorig artikel</p>
+                                <h3>{{ prevPost.data.title }}</h3>
+                                <p class="subtitle">Geschreven in {{ prevPost.date | dateToMonthYear }}</p>
+                            </div>
+                        </a>
+                    {% endif %}
+                    
+                    {% if not loop.last %}
+                        {% set nextPost = posts[loop.index0 + 1] %}
+                        <a href="{{ nextPost.url }}" class="card">
+                            {% if nextPost.data.thumbnail %}
+                                <img loading="lazy" src="{{ nextPost.data.thumbnail }}" alt="" {% if nextPost.data.thumbnailPosition %}style="object-position: {{ nextPost.data.thumbnailPosition }};"{% endif %}>
+                            {% endif %}
+                            <div class="card-content">
+                                <p class="nav-label">Volgend artikel</p>
+                                <h3>{{ nextPost.data.title }}</h3>
+                                <p class="subtitle">Geschreven in {{ nextPost.date | dateToMonthYear }}</p>
+                            </div>
+                        </a>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </nav> -->
+</main>

@@ -2,6 +2,7 @@
 layout: post.njk
 title: Mijn kleurenblindheid geeft me letterlijk een andere blik op de wereld
 description: Met persoonlijke inzichten en praktische oplossingen toon ik hoe ik mijn beperking op een creatieve manier heb omgebogen. Door de juiste hulpmiddelen te vinden, laat ik kleurenblindheid geen beperking zijn, maar juist een kans bieden om anders en innovatiever te kijken naar de wereld.
+opening: Mijn kleurenblindheid is vaak een lastig te begrijpen onderwerp voor anderen. Wat zie ik dan, en voornamelijk "Welke kleur is dit dan?". Om wat duidelijkheid te scheppen in mijn vorm van kleurenblindheid, hoe ik de wereld zie en hoe ik ervoor zorg dat dit me zo min mogelijk beperkt, heb ik een pagina opgesteld waarin ik probeer antwoord te geven op die vragen.
 date: '2022-09-15'
 headerImage: /images/Deuteranopia-small.png
 thumbnail: /images/Deuteranopia-small.png
@@ -18,7 +19,7 @@ Er zijn verschillende vormen van kleurenblindheid, dit heeft te maken met de keg
 
 Bij mijn type kleurenblindheid, deuteranomalie, is de gevoeligheid van de groene kegeltjes verschoven richting rood, waardoor deze meer overlapt met de gevoelheid van de rode kegeltjes, en minder met de blauwe kegeltjes. Hierdoor neem ik kleuren in het rode en groene spectrum al snel waar als een mix van bruin, en is paars moeilijk te onderscheiden van blauw.
 
-![Verschil tussen volledig zicht en zicht van iemand met Deuteranomalie - Voorbeeld van volledig zicht naast zicht van iemand met Deuteranomalie. Hierop zie je een potlodenassortiment, waar duidelijk verschil in in kleuren tussen de beide zichten zichtbaar is](/images/Deuteranopia.png)
+![Voorbeeld van volledig zicht naast zicht van iemand met Deuteranomalie. Hierop zie je een potlodenassortiment, waar duidelijk verschil in in kleuren tussen de beide zichten zichtbaar is (zo is mij verteld)](/images/Deuteranopia.png)
 
 Het is een afwijking waar je weinig over hoort, al heeft 1 op de 12 mannen hier last van. Omdat deze afwijking gedragen wordt op het X-chromosoom en het recessief is, is de kans veel kleiner dat vrouwen dit hebben, namelijk 1 op de 200.
 
@@ -38,11 +39,15 @@ Met een beperking ga je ook minder vanuit dat zintuig beredeneren, en worden and
 
 Een aantal hulpmiddelen die ik nog vaak gebruik en die me helpen bewuster te zijn van mijn beperking zijn de volgende:
 
-![Enchroma-bril - Zwarte zonnebril van het merk Enchroma en type Ellis. De glazen zijn niet enkel donkerder getint, maar hebben een paarse tint](/images/Enchroma-Ellis.webp)
+#### Enchroma
+
+![Enchroma-bril - Zwarte zonnebril van het merk Enchroma, type Ellis. De glazen zijn niet enkel donkerder getint, maar hebben een paarse tint](/images/Enchroma-Ellis.webp)
 
 De Enchroma-bril heeft lenzen die specifieke golflengtes aan licht sterker en minder sterk filteren. Hierdoor zijn sommige kleuren (rood, groen, blauw) intenser en worden de probleemgebieden (tussen rood en groen) wat onderdrukt. Dit heeft wat training nodig gehad toen ik de bril voor het eerst opzette: ik zag kleuren op een manier die ik nog nooit had gezien, en het verschil tussen groene blaadjes en rode rozen was nog nooit zo duidelijk. In eerste instantie gaf dit een rare hoofdpijn, maar na een aantal weken leert je hoofd werken met deze informatie.
 
-![Windows 11 Kleurenfilter - Overzicht van de hulpmiddelen die Microsoft in Windows 11 biedt](/images/W11-colorFilter.png)
+#### Windows 11 Kleurenfilter
+
+![Overzicht van de hulpmiddelen die Microsoft in Windows 11 biedt](/images/W11-colorFilter.png)
 
 Windows biedt een van de beste kleurenfilters die ik in besturingssystemen ben tegengekomen: het overdrijft probleemkleuren, waardoor verschillen tussen kleuren duidelijker worden. Andere systemen bieden kleurfilters die een minder prettig plaatje tonen, waarbij rood (lichter) roze wordt en groen (donkerder) donkergroen wordt. Dit geeft echter een raar vertekend beeld.
 

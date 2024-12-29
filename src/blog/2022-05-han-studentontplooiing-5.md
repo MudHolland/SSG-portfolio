@@ -15,23 +15,35 @@ tags:
 
 ## Make
 
+#### User Flow-diagram
+
 Het reflecteren op de observaties heeft gezorgd dat we een gericht beeld hadden van onze onderdelen. Hierdoor konden we beginnen aan een User Flow-diagram van het platform. Hierbij heb ik de stift ter hand genomen en ben begonnen aan het tekenen van rechthoeken. Hierbij heb ik er een aantal namen gegeven (Challenge, Expo, Feedback) en gevraagd wat Klasina en Tessa hierbij voor ogen hadden door de feedback op de tests te lezen.
 
 Door dit verder uit te diepen en verbindingen naar andere schermen te creëren hadden we een User Flow Diagram die duidelijk maakte wat de scope van het concept ongeveer was en welke inhoud de schermen moesten hebben.
 
 ![Centrale schermen met onderlinge verbindingen: het User Flow-diagram - User Flow](/images/sag-op-loop4userflow.png)
 
+#### Low-Fidelity
+
 Om samen te kunnen werken dit diagram naar mid fidelity-wireframe om te zetten, hebben we een gedeeld Adobe XD-bestand aangemaakt. Hierin heb ik de assets (tekstgroottes, iconen, navigatiebalk) aangemaakt, zodat we een eerste dashboard konden opstellen.
 
-![Low Fidelity - assets en dashboard - Low Fidelity - assets en dashboard](/images/sag-op-loop4lowfi.png)
+![Low Fidelity - assets en dashboard](/images/sag-op-loop4lowfi.png)
+
+#### Mid-Fidelity
 
 Na het opzetten en bespreken van de benodigde pagina's, hebben we ingevuld welke informatie hier op komt en welke verbindingen hier onderling tussen worden gemaakt. Hierbij heb ik de interacties gemaakt, waardoor het prototype ook klikbaar is.
 
-![Mid Fidelity - pagina's en elementen - Mid Fidelity - pagina's en elementen](/images/sag-op-loop4midfi.png)
+![Mid Fidelity - pagina's en elementen](/images/sag-op-loop4midfi.png)
+
+#### High-Fidelity
 
 Voor de eindpresentatie wilden we ons concept nog in high fidelity opzetten, zodat het er uit ziet als een daadwerkelijk product. Tessa heeft een stijl gemaakt voor de presentatie die gebaseerd is op de groepsnaam en het logo, welke ik heb toegepast op het mid-fidelity prototype. Hierdoor komt alles samen. Het project hebben we "Wie ben ik?" genoemd, omdat het spelelement er in zit dat je leert herkennen wie er iets gemaakt heeft, en je zoekt wie je bent.
 
-![High Fidelity - Uitstraling en inhoud (klik op de afbeelding om het interactieve prototype te openen) - High Fidelity - Uitstraling en inhoud](/images/sag-op-loop4hifi.png)
+![High Fidelity - Uitstraling en inhoud](/images/sag-op-loop4hifi.png)
+
+Een kopie van deze webpagina is te zien op:
+
+<a target="_blank" href="https://xd.adobe.com/view/4e0c2ec8-570e-4d75-a1fe-a9368c87f202-1b5f/?fullscreen&hints=off"><button>High Fidelity-prototype 'Wie is het?'</button></a>
 
 ## Observe - playback
 

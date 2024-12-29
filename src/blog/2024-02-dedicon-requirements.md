@@ -3,6 +3,7 @@ layout: post.njk
 title: Ophalen van Requirements en omzetten tot Task Flow van Beeldbeschrijvingssoftware
   voor Dedicon
 description: In de Requirements-fase voor de Monet-interface heb ik gebruikersbehoeften en workflows inzichtelijk gemaakt door Contextual Inquiries, Affinity Mapping en Task Flows. Dit zorgt voor een interface die aansluit op de taken en uitdagingen van Dedicon-productieafdelingen.
+opening: Om te ontwerpen, moet je weten wat je ontwerpt. Om van een beeld van de taken tot ontwerp te komen, heb ik in deze fase van het project, de Requirements-fase, de gebruikers in beeld gebracht, door hun wensen en behoeften om te zetten tot een overzicht van acties, taken en doelen.
 date: '2024-02-15'
 headerImage: /images/TaskFlow_V3.png
 thumbnail: /images/TaskFlow_V3.png
@@ -21,7 +22,7 @@ tags:
 
 Om een gevoel en inzicht te krijgen in hoe de gebruiker de taken waar het onderzoek op focust uitvoert, ga ik de gebruikers observeren en bevragen terwijl zij de taken uitvoeren in de context van het centrale onderwerp. Dit is een zogeheten Contextual Inquiry. Deze methode kenmerkt zich door een brede context en diepgang, en daarmee een brede onderzoeksvraag, opgebouwd uit deelvragen:
 
-> “Wat hebben medewerkers van productieafdelingen van Dedicon die beeldbeschrijvingen bij afbeeldingen genereren nodig van een gebruikersinterface om beelden te vergelijken met beelden in de database en beeldbeschrijvingen over te nemen of nieuwe beeldbeschrijvingen op te stellen, zodat zij overzicht, kennis en begeleiding hebben bij het genereren, controleren en valideren van beeldbeschrijvingen voor nieuwe afbeeldingen?”
+>[onderzoeksvraag] “Wat hebben medewerkers van productieafdelingen van Dedicon die beeldbeschrijvingen bij afbeeldingen genereren nodig van een gebruikersinterface om beelden te vergelijken met beelden in de database en beeldbeschrijvingen over te nemen of nieuwe beeldbeschrijvingen op te stellen, zodat zij overzicht, kennis en begeleiding hebben bij het genereren, controleren en valideren van beeldbeschrijvingen voor nieuwe afbeeldingen?”
 
 ### Diversity Criteria
 
@@ -29,9 +30,14 @@ Deze vragen heb ik proberen te beantwoorden door medewerkers van Tekst & Beeld e
 
 Door de participanten eerst te vragen wat hun werkzaamheden inhouden en hierna te observeren wat zij doen, te bevragen wat ze denken en waarom ze doen wat ze doen. Dit geeft me een beeld van de verwachtingen van de gebruikers en hoe zij hun werkzaamheden uitvoeren.
 
-![Ik heb Tekst & Beeld-medewerkers geobserveerd aan hun bureau. Voor Contextual Inquiry bij Audioproductie moest ik qua aanpak wat afwijken: ik zat tegenover de opnamestudio, kon daarmee hun voorleeswerk horen en hun monitor mee inzien. Via microfoons kon ik inbreken in hun studio en vragen stellen. - Ik heb Tekst & Beeld-medewerkers geobserveerd aan hun bureau. Voor Contextual Inquiry bij Audioproductie moest ik qua aanpak wat afwijken: ik zat tegenover de opnamestudio, kon daarmee hun voorleeswerk horen en hun monitor mee inzien. Via microfoons kon ik inbreken in hun studio en vragen stellen.](/images/contextual-inquiry.png)
+![Ik heb Tekst & Beeld-medewerkers geobserveerd aan hun bureau. Voor Contextual Inquiry bij Audioproductie moest ik qua aanpak wat afwijken: ik zat tegenover de opnamestudio, kon daarmee hun voorleeswerk horen en hun monitor mee inzien. Via microfoons kon ik inbreken in hun studio en vragen stellen.](/images/contextual-inquiry.png)
 
 Uit de Contextual Inquiries haalde ik op dat medewerkers in hun huidige werkwijze verschillende behoeften hebben op basis van (werk-)ervaring en aard van hun werk:
+
+- de gebruikers sluiten graag aan op de belevingswereld van de eindgebruiker. Hiervoor willen ze zo veel mogelijk context,
+- de techniek van hun werkplek staat beide afdelingen in de weg om nu prettig beeldbeschrijvingen te maken,
+- de werkwijze van de twee afdelingen zijn erg divers, waardoor ik moet focussen op het verkrijgen van een gezamenlijk werkwijze voor de interface,
+- het werk is sterk onderhevig aan het hebben van duidelijke richtlijnen.
 
 Dit is echter nog geen antwoord op mijn deelvragen. Hiervoor moet ik tot diepere inzichten komen door onderlinge relaties en patronen te vinden, maar voordat ik dat doe wil ik nog wat uitgebreidere informatie over de richtlijnen. De richtlijnen geven namelijk veel richting aan taken rondom de beeldbeschrijvingen.
 
@@ -39,23 +45,31 @@ Dit is echter nog geen antwoord op mijn deelvragen. Hiervoor moet ik tot diepere
 
 Ik heb met de Contextual Inquiries informatie achterhaald over hoe de gebruikers de taken uitvoeren en welke problemen zij hierbij hebben. Hiermee heb ik kennis opgedaan over het domein, de doelen, taken en acties van de gebruikers. Deze gesprekken duurden allemaal meer dan een uur, en dat leverde heel veel data op.
 
-![Overzicht van opmerkingen en observaties van de gebruikers georganiseerd per gebruiker. - Overzicht van opmerkingen en observaties van de gebruikers georganiseerd per gebruiker.](/images/affinityMapping-1.png)
+![Overzicht van opmerkingen en observaties van de gebruikers georganiseerd per gebruiker.](/images/affinityMapping-1.png)
 
 Met deze data kan ik op zoek naar thema's, terugkerende opmerkingen die duiden op mogelijkheden en frustraties die door meerdere gebruikers worden gedeeld. Deze thema's deelde ik op in subgroepen, die me aangeven waar het thema uit bestaat en daardoor een behoefte van de gebruiker aangeven.
 
-![Overzicht van thema's. Een centraal thema leidt tot inzicht en begrip van het thema en biedt een opening voor een behoefte waarvoor ontworpen kan gaan worden. - Overzicht van thema's. Een centraal thema leidt tot inzicht en begrip van het thema en biedt een opening voor een behoefte waarvoor ontworpen kan gaan worden.](/images/affinityMapping-2.png)
+![Overzicht van thema's. Een centraal thema leidt tot inzicht en begrip van het thema en biedt een opening voor een behoefte waarvoor ontworpen kan gaan worden.](/images/affinityMapping-2.png)
 
 Deze behoefte, schreef ik uit op grijze post-its. De behoefte schreef ik weer uit tot een concrete behoefte waarin de interface moet helpen: User Need Statements.
 
 ### User Need Statements
 
+#### Rijswijk
+
 In Rijswijk vond ik dat beeldbeschrijvingen eerst digitaal in tekst vastleggen en later voorlezen deze taken minder tijdsafhankelijk maakt, omdat ze dan op te delen zijn in losse momenten. Het eerst digitaal vastleggen zou daarnaast voordelen voor Rijswijk opleveren, omdat medewerkers met expertise kunnen beeldbeschrijven en daarna enkel voorlezen van geschreven tekst zorgt voor hogere kwaliteit spreken, consistentere verwoording en diepgang van het materiaal en focus op enkel lezen, wat het tempo van lezen verhoogt.
 
 Voor alle gebruikers geldt, ze willen veel, maar het komt voort uit 5 centrale behoeften. Gebruikers vinden belangrijk en willen namelijk:
 
+1. Duidelijk **overzicht** van documenten en afbeeldingen,
+2. **Eigenaarschap** van afbeeldingen en uitgaven toewijzen aan medewerkers,
+3. (zo veel mogelijk) **context van hun taak** om beeldbeschrijvingen aan te laten sluiten op doelgroep en uitgave,
+4. Taakspecifieke **richtlijnen en feedback** wanneer zij hiervan afwijken,
+5. **Voorzetjes van hulpmiddelen** (AI-generatie) om beeldbeschrijvingen te maken.
+
 ## Task Flow
 
-Deze inzichten en onderliggende behoeften leg ik vast in een visuele representatie van de stappen die gebruikers nemen om taken uit te voeren, een Task Flow. Zo creëer ik een overzicht hoe gebruikers hun behoeften vervullen middels acties en zo hun taken uitvoeren. Ik plaats de taak visueel in een gekleurd kader om de scope van de taak duidelijk te maken.
+Deze inzichten en onderliggende behoeften leg ik vast in een visuele representatie van de stappen die gebruikers nemen om taken uit te voeren, een [Task Flow](https://uxportfolio.cc/ux-terms/task-flow/). Zo creëer ik een overzicht hoe gebruikers hun behoeften vervullen middels acties en zo hun taken uitvoeren. Ik plaats de taak visueel in een gekleurd kader om de scope van de taak duidelijk te maken.
 
 De User Need Statements leidden tot een onderverdeling van stappen: uitgavenoverzicht, afbeeldingenoverzicht, afbeelding, alternatieve representaties. Hierna kon ik de behoeften van toewijzen van medewerkers, context en hulpmiddelen zoals richtlijnen in zien en controleren toevoegen aan de stappen.
 
@@ -63,11 +77,11 @@ Ik plaats acties en keuzes van de kleinere taken (Taak 2, beeldvergelijken) en t
 
 De gebruikers gaven aan dat ze het lastig vonden de taak van beeldbeschrijving buiten hun totale takenpakket te zien. Ik heb hierom een aantal taken buiten de scope van de opdracht in de Task Flow getoond, buiten het gemarkeerde gebied van de taken. Hierdoor toon ik de gebruikers dat ik als ontwerper toon dat ik begrijp dat de interface geen oplossing gaat zijn voor alle taken van de gebruikers (zoals didactische aanpassingen).
 
-![Task Flow: een deelbaar beeld van hoe de gebruikers de taak moeten gaan uitvoeren door gebruikerstaken in de geobserveerde volgorde te plaatsen en op basis	van de User Need Statements acties toe te voegen - Task Flow: een deelbaar beeld van hoe de gebruikers de taak moeten gaan uitvoeren door gebruikerstaken in de geobserveerde volgorde te plaatsen en op basis	van de User Need Statements acties toe te voegen](/images/TaskFlow.png)
+![Task Flow: een deelbaar beeld van hoe de gebruikers de taak moeten gaan uitvoeren door gebruikerstaken in de geobserveerde volgorde te plaatsen en op basis	van de User Need Statements acties toe te voegen](/images/TaskFlow.png)
 
 ## Design Critique
 
-Om te testen of deze Task Flow aansluit op de wensen en werkwijzen van de gebruikers, gebruik Task Flow feedback ophalen bij gebruikers en andere stakeholders. De Design Critique-methode geeft daarbij de uitgenodigden participanten een aantal voorzetjes voor opmerkingen: "Ik wist niet dat...", "Vertel me meer over..." en "Heb je gedacht aan....". Deze vragen zorgen dat feedback constructief blijft en geven mij inzicht waar mijn Task Flow punten misschien niet duidelijk genoeg maakt.
+Om te testen of deze Task Flow aansluit op de wensen en werkwijzen van de gebruikers, gebruik Task Flow feedback ophalen bij gebruikers en andere stakeholders. De Design Critique-methode geeft daarbij de uitgenodigden participanten een aantal voorzetjes voor opmerkingen: *"Ik wist niet dat..."*, *"Vertel me meer over..."* en *"Heb je gedacht aan...."*. Deze vragen zorgen dat feedback constructief blijft en geven mij inzicht waar mijn Task Flow punten misschien niet duidelijk genoeg maakt.
 
 Ik heb deze Design Critique-panels meerdere keren gehouden met meerdere medewerkers. Door dit met meerdere stakeholders met wisselende belangen (gebruikers, technisch specialisten, projectmanagers en  software-specialisten) uit te voeren, vormt zich ook een gesprek waar deze participanten elkaars beweegredenen en behoeften beter leren te begrijpen. Deze opmerkingen en aanpassingen aan mijn Task Flow zorgen dat de oplossing robuuster wordt.
 

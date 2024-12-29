@@ -3,6 +3,7 @@ layout: post.njk
 title: Herontwerpen van de bedrijfswebsite van Van Lent Systems aan de hand van nieuwe
   technologieën en technieken
 description: Door analyse en herstructurering van de website, inclusief een conceptual model, Card Sorting, navigatietests en HTML/CSS-oefeningen, heb ik een gebruiksvriendelijke en visueel consistente redesign gerealiseerd met focus op navigatie en toegankelijkheid voor eindgebruikers.
+opening: Bij het vak Web Design heb ik in de loop van een aantal weken een website geanalyseerd en op basis van deze analyse een redesign van deze website gemaakt.
 date: '2021-03-15'
 headerImage: /images/lwg3-visueleanalyse.png
 thumbnail: /images/lwg3-visueleanalyse.png
@@ -18,6 +19,10 @@ tags:
 Bij een ontwerpproces staat de gebruiker centraal. Om een gebruiksvriendelijke interface te maken, zijn er vier belangrijke aspecten: discoverability, affordance, signifiers en feedback. In dit hoofdstuk ga ik deze termen toelichten. Deze kennis is gebaseerd op bijlage I. Conceptual model.
 
 Je hebt de volgende vier eigenschappen nodig om een interactief element duidelijk en eenduidig te maken:
+- **discoverability** om aan te geven dat een actie mogelijk is,
+- **affordance** om aan te geven welke actie mogelijk is,
+- **signifier** om aan te geven wat het resultaat van de actie moet zijn, en
+- **feedback** om aan te geven dat het resultaat bereikt is (of niet bereikt kan worden).
 
 Een totaal van het conceptual model is dus uit te leggen als een uitwerking van hoe een gebruiker een actie herkent, voorspelt, activeert en feedback op deze actie ontvangt.
 
@@ -39,7 +44,11 @@ Door deze Card Sorting-sessies ben ik tot een verbeterde Information Architectur
 
 Om de navigatie te testen voer ik een Trunk test en Navigation Stress test uit met een gebruiker:
 
+#### Trunk test
+
 De Trunk Test kijkt op een willekeurige pagina of de belangrijkste elementen (site ID, paginanaam, primaire en secundaire nagivatie, huigie locatie-indicatoren, zoekfunctie) snel en makkelijk te herkennen zijn. Als je dit vergelijkt met een warenhuis geeft een Trunk Test aan of het duidelijk is aan de eigenschappen van de rij welke rij het is en of het duidelijk is wat je er kunt vinden.
+
+#### Navigation Stress test
 
 De Navigation Stress Test kijkt op een willekeurige pagina of het duidelijk is waar de huidige pagina is in verhouding tot de andere pagina's en of het duidelijk is naar welke pagina's de links op de huidige pagina leiden. De Navigation Stress Test zou te vergelijken zijn met het feit dat je weet waar in de het warenhuis die rij zich bevindt en of het duidelijk is wat er gebeurt als je naar de rijen ernaast loopt.
 
@@ -52,6 +61,8 @@ Op de pagina's zelf was de informatie links van het product geen informatie die 
 ![Verbetervoorstel Lokale Navigatie](/images/lwg3-lokalenavigatie.png)
 
 Een van de grootste onduidelijkheden was het feit dat elk product een product- en webshoppagina had, waarbij belangrijke informatie niet op beide pagina's stond. Om dit op te lossen waren deze pagina's in de card sorting samengevoegd.
+
+#### Sitemap
 
 Door de herinrichting van de Information Architecture en de Trunk en Navigation stress test kan ik de volledige navigatie uittekenen in een Sitemap:
 

@@ -3,6 +3,7 @@ layout: post.njk
 title: Opzetten van een marketingcampagne voor Van Lent Systems die aansluit op haar
   waarden en de behoeften van de gebruikers
 description: Door een communicatiecanvas op basis van Golden Circle, SWOT-analyse en persona's op te stellen, heb ik een marketingstrategie ontwikkeld met een sterke focus op gebruikersbehoeften, een heldere propositie en een consistente branding.
+opening: Bij het vak Contextanalyse heb ik een marketingcampagne opgezet via een Communicatiecanvas. Het communicatiecanvas ziet er als volgt uit.
 date: '2021-02-15'
 headerImage: /images/m2-lwg2-concept-small.png
 thumbnail: /images/m2-lwg2-concept-small.png
@@ -13,7 +14,7 @@ tags:
 - Communicatie
 ---
 
-![LWG2 - Communicatiecanvas](/images/lwg2-communicatiecanvas.png)
+![Communicatiecanvas](/images/lwg2-communicatiecanvas.png)
 
 Dit communicatiecanvas bestaat uit 12 vlakken die uit mijn onderzoek naar voren zijn gekomen. Hieronder bespreek ik de meest opmerkelijke punten:
 
@@ -26,24 +27,30 @@ Van Lent Systems is van oudsher een familiebedrijf, waar met een platte hiërarc
 Om een sterkere boodschap uit te dragen, moet een sterkere visie worden vastgesteld. De beschrijving van het Youtube-kanaal van Van Lent Systems stelt het volgende:
 
 > "Door creativiteit en gedrevenheid heeft Van Lent Systems een prachtig assortiment aan producten. Van Lent Systems beschikt over decennialange ervaring, productkennis en een goede samenwerking met voorschrijvers, zorgverzekeraars en gebruikers van onze hulpmiddelen waardoor we voortdurend nieuwe en innoverende producten kunnen introduceren op de wereldwijde markt."
-
 > "Onder leiding van ons Ierse Zusterbedrijf Rehan Electronics Ltd. wordt – in nauwe samenwerking met Van Lent Systems – met voorschrijvers, zorgverzekeraars en gebruikers van onze hulpmiddelen onderzocht, ontwikkeld en geïnnoveerd om zo tot revolutionaire, nieuwe producten te komen."
 
 ~ https://www.youtube.com/user/VanLentSystems/about
 
 Vanuit deze lap tekst valt een veel duidelijke Golden Circle op te stellen, waarmee een heldere visie, missie en strategie van af te leiden zijn die veel beter bij het gedrag van het bedrijf passen:
 
-![LWG2 - Golden Circle](/images/lwg2-goldencircle.png)
+![Golden Circle](/images/lwg2-goldencircle.png)
 
+#### Why
 Het leven van zorgbehoevenden beter en draaglijker maken.
 
+#### How
 Met voorschrijvers, zorgverzekeraars en gebruikers onderzoeken en ontwikkelen om zo tot revolutionaire, nieuwe producten te komen.
 
+#### What
 Ontwikkelen en produceren van innovatieve, medische elektronische hulpmiddelen.
 
 ### SWOT-analyse
 
 Vanuit een interne en externe analyse zijn sterktes, zwaktes, kansen en bedreigingen gekomen. Door deze tegen elkaar op te zetten, blijkt dat Van Lent Systems via zorgverzekeraars een kleine markt bedient, waarbij het risico bestaat dat zorgverzekeraars elk jaar weg kunnen vallen. Dit houdt in dat Van Lent Systems zich in het problemenveld bevindt. Met deze conclusie kan ik prioriteiten stellen om deze bedreigingen om te zetten in kansen:
+
+- (meer) contactmogelijkheden met (mogelijke) eindgebruikers cre&euml;ren
+- (toekomstige) eindgebruikers informeren over voor hen onbekende mogelijkheden
+- (neven)producten cre&euml;ren die aansluiten op de krachten van Van Lent Systems en de wensen  de (toekomstige) gebruikers
 
 ### Gebruikers en doelgroepen
 
@@ -51,7 +58,7 @@ Om de doelgroepen in kaart te brengen heb ik veel interviews gehouden met medewe
 
 Om een duidelijker beeld te hebben bij de gebruikers heb ik persona's aangemaakt die de gebruikers die ik heb gesproken uitbeelden.
 
-![LWG2 - Persona](/images/lwg2-persona.png)
+![Persona](/images/lwg2-persona.png)
 
 ### Propositie
 
@@ -63,15 +70,19 @@ De propositie moet dus een combinatie zijn van een emotionele band, een persoonl
 
 Voor het concept wil ik focussen op het zorgen, ontzorgen en de persoonlijke aanpak. De klant moet zich voelen als iemand waar we graag tijd in stoppen. Het logo heeft een eigen vorm, dus deze kan worden gebruikt om herkenbaarheid te creëren.
 
-![LWG2 - Concept](/images/lwg2-concept.png)
+![Concept](/images/lwg2-concept.png)
 
 ### Direct mail
 
 Het gesprek tussen een bedrijf en de (toekomstige) klant kan op meerdere manieren worden gevoerd. Een mogelijkheid van digitale communicatiemiddelen is direct e-mail. Om een actiegerichte e-mail succesvol te maken moet de inhoud in een vaste structuur toewerken naar de call-to-action. Dit proces is vastgelegd in het AIDA-model:
+- **Attention:** speel jezelf in het oog (onderwerpregel, juiste moment),
+- **Interest:** interesseer je ontvanger (juiste boodschap op het juiste moment),
+- **Desire:** zet de gebruiker aan om te willen wat je probeert te bewerkstelligen,
+- **Action:** geef de gebruiker een handeling om de desire om te zetten in de actie.
 
 Ik heb hier een concept van gemaakt, waarbij de gebruiker wordt gewezen op de producten die bijvoorbeeld in een vakantieperiode goed van pas komen. Hierbij wordt het idee van het product op vakantie bijhebben gewekt, wat de Desire aanroept, om de gebruiker vervolgens in een Call-To-Action-knop naar de webshop te leiden.
 
-![LWG2 - Direct Mail](/images/lwg2-directmail.png)
+![Direct Mail](/images/lwg2-directmail.png)
 
 ### Conclusie
 
