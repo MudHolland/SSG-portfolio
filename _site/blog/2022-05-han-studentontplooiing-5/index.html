@@ -59,17 +59,6 @@
     </div>
 </nav>
 
-<script>
-function toggleMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const links = document.querySelector('.links');
-    const nav = document.querySelector('nav');
-    hamburger.classList.toggle('active');
-    links.classList.toggle('active');
-    nav.classList.toggle('active');
-}
-</script>
-
     
     
 <header>
@@ -303,25 +292,25 @@ function toggleMenu() {
 <p>Het reflecteren op de observaties heeft gezorgd dat we een gericht beeld hadden van onze onderdelen. Hierdoor konden we beginnen aan een User Flow-diagram van het platform. Hierbij heb ik de stift ter hand genomen en ben begonnen aan het tekenen van rechthoeken. Hierbij heb ik er een aantal namen gegeven (Challenge, Expo, Feedback) en gevraagd wat Klasina en Tessa hierbij voor ogen hadden door de feedback op de tests te lezen.</p>
 <p>Door dit verder uit te diepen en verbindingen naar andere schermen te creëren hadden we een User Flow Diagram die duidelijk maakte wat de scope van het concept ongeveer was en welke inhoud de schermen moesten hebben.</p>
 <p><figure>
-      <img src="/images/sag-op-loop4userflow.png" alt="Centrale schermen met onderlinge verbindingen: het User Flow-diagram - User Flow">
+      <img src="/images/sag-op-loop4userflow.png" alt="Centrale schermen met onderlinge verbindingen: het User Flow-diagram - User Flow" loading="lazy">
       <figcaption>Centrale schermen met onderlinge verbindingen: het User Flow-diagram - User Flow</figcaption>
     </figure></p>
 <h4>Low-Fidelity</h4>
 <p>Om samen te kunnen werken dit diagram naar mid fidelity-wireframe om te zetten, hebben we een gedeeld Adobe XD-bestand aangemaakt. Hierin heb ik de assets (tekstgroottes, iconen, navigatiebalk) aangemaakt, zodat we een eerste dashboard konden opstellen.</p>
 <p><figure>
-      <img src="/images/sag-op-loop4lowfi.png" alt="Low Fidelity - assets en dashboard">
+      <img src="/images/sag-op-loop4lowfi.png" alt="Low Fidelity - assets en dashboard" loading="lazy">
       <figcaption>Low Fidelity - assets en dashboard</figcaption>
     </figure></p>
 <h4>Mid-Fidelity</h4>
 <p>Na het opzetten en bespreken van de benodigde pagina's, hebben we ingevuld welke informatie hier op komt en welke verbindingen hier onderling tussen worden gemaakt. Hierbij heb ik de interacties gemaakt, waardoor het prototype ook klikbaar is.</p>
 <p><figure>
-      <img src="/images/sag-op-loop4midfi.png" alt="Mid Fidelity - pagina's en elementen">
+      <img src="/images/sag-op-loop4midfi.png" alt="Mid Fidelity - pagina's en elementen" loading="lazy">
       <figcaption>Mid Fidelity - pagina's en elementen</figcaption>
     </figure></p>
 <h4>High-Fidelity</h4>
 <p>Voor de eindpresentatie wilden we ons concept nog in high fidelity opzetten, zodat het er uit ziet als een daadwerkelijk product. Tessa heeft een stijl gemaakt voor de presentatie die gebaseerd is op de groepsnaam en het logo, welke ik heb toegepast op het mid-fidelity prototype. Hierdoor komt alles samen. Het project hebben we &quot;Wie ben ik?&quot; genoemd, omdat het spelelement er in zit dat je leert herkennen wie er iets gemaakt heeft, en je zoekt wie je bent.</p>
 <p><figure>
-      <img src="/images/sag-op-loop4hifi.png" alt="High Fidelity - Uitstraling en inhoud">
+      <img src="/images/sag-op-loop4hifi.png" alt="High Fidelity - Uitstraling en inhoud" loading="lazy">
       <figcaption>High Fidelity - Uitstraling en inhoud</figcaption>
     </figure></p>
 <p>Een kopie van deze webpagina is te zien op:</p>
@@ -331,7 +320,9 @@ function toggleMenu() {
 
     </article>
 
-    <!-- <nav class="post-navigation">
+    <h2 style="margin-block:2rem;">Aanverwante Artikelen</h2>
+
+    <div class="post-navigation">
         
         
         
@@ -409,21 +400,7 @@ function toggleMenu() {
             
                 
             
-                
-                    
-                        
-                        <a href="/blog/2022-06-onboarding/" class="card">
-                            
-                                <img loading="lazy" src="/images/onboarding-mario3d.jpeg" alt="" >
-                            
-                            <div class="card-content">
-                                <p class="nav-label">Vorig artikel</p>
-                                <h3>Hoe onboarding in video games ons handvatten geeft om gebruikers mee te nemen in allerhande nieuwe ervaringen</h3>
-                                <p class="subtitle">Geschreven in juni 2022</p>
-                            </div>
-                        </a>
-                    
-                    
+                                    
                     
                         
                         <a href="/blog/2022-05-diegetische-interfaces/" class="card">
@@ -431,9 +408,22 @@ function toggleMenu() {
                                 <img loading="lazy" src="/images/seaofthieveskompas.webp" alt="" >
                             
                             <div class="card-content">
-                                <p class="nav-label">Volgend artikel</p>
+                                <p class="nav-label subtitle">Vorig artikel</p>
                                 <h3>Gebruikers hun weg laten vinden met diegetische (game-)interfaces</h3>
                                 <p class="subtitle">Geschreven in mei 2022</p>
+                            </div>
+                        </a>
+                    
+                    
+                        
+                        <a href="/blog/2022-06-onboarding/" class="card">
+                            
+                                <img loading="lazy" src="/images/onboarding-mario3d.jpeg" alt="" >
+                            
+                            <div class="card-content">
+                                <p class="nav-label subtitle">Volgend artikel</p>
+                                <h3>Hoe onboarding in video games ons handvatten geeft om gebruikers mee te nemen in allerhande nieuwe ervaringen</h3>
+                                <p class="subtitle">Geschreven in juni 2022</p>
                             </div>
                         </a>
                     
@@ -502,7 +492,7 @@ function toggleMenu() {
                 
             
         </div>
-    </nav> -->
+    </div>
 </main>
     
     <footer>
@@ -545,30 +535,6 @@ function toggleMenu() {
         </a>
     </div>
 </footer>
-
-<style>
-    .repo-bar {
-        padding: 2rem;
-        text-align: center;
-        /* border-top: 1px solid var(--border-color); */
-    }
-    .repo-bar a {
-        font-size:0.75rem;
-        opacity:0.25;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        color: inherit;
-        text-decoration: none;
-        transition: opacity 200ms ease;
-    }
-    .repo-bar a:hover {
-        opacity:1;
-    }
-    .github-icon {
-        display: inline-block;
-    }
-</style>
 
     
     <div id="myModal" class="modal">

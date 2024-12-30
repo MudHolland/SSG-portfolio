@@ -59,17 +59,6 @@
     </div>
 </nav>
 
-<script>
-function toggleMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const links = document.querySelector('.links');
-    const nav = document.querySelector('nav');
-    hamburger.classList.toggle('active');
-    links.classList.toggle('active');
-    nav.classList.toggle('active');
-}
-</script>
-
     
     
 <header>
@@ -269,7 +258,7 @@ Direct contact opnemen met Levix. Levix verkocht onderhoudscontracten - Levix Zo
 </blockquote>
 <p>Dit alles moest in de huisstijl van Levix, met blauwe en gele accenten. Om hieraan te voldoen heb ik de vorm en het gedrag van standaardzoekbalken overgenomen, heb iconen getekend en een logo van Levix voor de herkenbaarheid toegevoegd. Door de levix-kleuren en -typografie te gebruiken en een rustige achtergrond toe te passen wordt het een harmonieus geheel.</p>
 <p><figure>
-      <img src="/images/levix-start.png" alt="Levix Start Webpagina">
+      <img src="/images/levix-start.png" alt="Levix Start Webpagina" loading="lazy">
       <figcaption>Levix Start Webpagina</figcaption>
     </figure></p>
 <p>Een kopie van deze webpagina is te zien op:</p>
@@ -277,7 +266,9 @@ Direct contact opnemen met Levix. Levix verkocht onderhoudscontracten - Levix Zo
 
     </article>
 
-    <!-- <nav class="post-navigation">
+    <h2 style="margin-block:2rem;">Aanverwante Artikelen</h2>
+
+    <div class="post-navigation">
         
         
         
@@ -417,7 +408,8 @@ Direct contact opnemen met Levix. Levix verkocht onderhoudscontracten - Levix Zo
             
                 
             
-                
+                                    
+                    
                     
                         
                         <a href="/blog/2014-05-van-lent-holding-branding/" class="card">
@@ -425,18 +417,16 @@ Direct contact opnemen met Levix. Levix verkocht onderhoudscontracten - Levix Zo
                                 <img loading="lazy" src="/images/VLH-logos-small.png" alt="" >
                             
                             <div class="card-content">
-                                <p class="nav-label">Vorig artikel</p>
+                                <p class="nav-label subtitle">Volgend artikel</p>
                                 <h3>Een inclusief herontwerp van een merk: Van Lent Holding</h3>
                                 <p class="subtitle">Geschreven in mei 2014</p>
                             </div>
                         </a>
                     
-                    
-                    
                 
             
         </div>
-    </nav> -->
+    </div>
 </main>
     
     <footer>
@@ -479,30 +469,6 @@ Direct contact opnemen met Levix. Levix verkocht onderhoudscontracten - Levix Zo
         </a>
     </div>
 </footer>
-
-<style>
-    .repo-bar {
-        padding: 2rem;
-        text-align: center;
-        /* border-top: 1px solid var(--border-color); */
-    }
-    .repo-bar a {
-        font-size:0.75rem;
-        opacity:0.25;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        color: inherit;
-        text-decoration: none;
-        transition: opacity 200ms ease;
-    }
-    .repo-bar a:hover {
-        opacity:1;
-    }
-    .github-icon {
-        display: inline-block;
-    }
-</style>
 
     
     <div id="myModal" class="modal">

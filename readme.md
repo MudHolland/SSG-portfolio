@@ -16,6 +16,7 @@ A modern portfolio website built with 11ty (Eleventy) static site generator, sho
 
 ```
 SSG-portfolio/
+├── _site/             # Site files ready for production
 ├── src/
 │   ├── _data/         # Site data files
 │   ├── _includes/     # Template partials
@@ -68,25 +69,45 @@ Each article includes:
 ## Deployment
 
 The site is automatically deployed through GitHub Actions:
-1. Push changes to main branch
-2. GitHub Actions builds the site
-3. Deploys directly to hosting party
-4. Live site updates within seconds
+1. Push changes to the `dev` branch.
+2. GitHub Actions builds the site and pushes the built site to the `main` branch.
+3. Hosting party is configured to deploy files in the `main` branch directly to public_html.
+4. Live site updates within seconds.
+
+## GitHub Setup
+
+### Branches
+- **dev**: Development branch where changes are initially pushed.
+- **main**: Production branch where the built site is pushed by GitHub Actions.
+
+### Workflow
+1. **Code**: Make changes and commit to the `dev` branch.
+2. **Push to Dev**: Push changes to the `dev` branch.
+3. **Auto Workflow to Main**: GitHub Actions automatically builds the site and pushes the built site to the `main` branch.
+4. **Deploy to Hosting**: Hosting party is configured to deploy files in the `main` branch directly to public_html.
+
+### GitHub Actions Configuration
+The GitHub Actions workflow is defined in `.github/workflows/deploy.yml`
 
 ## Todo List
 
-### Content
-- [ ] Check article pages for easier reading
-- [x] Update project thumbnails
-- [ ] Add dark mode support
-- [x] Write about current projects
-
 ### Technical
-- [ ] Implement lazy loading
 - [x] Add video player
 - [x] Add iframe player
-- [ ] Add previous / next article below article
-- [ ] Add related project articles for project articles
+- [x] Create dev and main channel
+- [x] Create workflow to push _site from dev to main
+- [x] Configure hosting party to push main channel to public_html
+- [x] Implement lazy loading
+- [x] Add previous / next article below article
+- [-] Add related project articles for project articles
+
+### Content
+- [x] Check article pages for data and layout
+- [ ] Check article pages for easier reading
+- [x] Update project thumbnails
+- [x] Write about current projects
+- [ ] Add dark mode support
+
 
 ### Design
 - [ ] Refine responsive design

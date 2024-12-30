@@ -59,17 +59,6 @@
     </div>
 </nav>
 
-<script>
-function toggleMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const links = document.querySelector('.links');
-    const nav = document.querySelector('nav');
-    hamburger.classList.toggle('active');
-    links.classList.toggle('active');
-    nav.classList.toggle('active');
-}
-</script>
-
     
     
 <header>
@@ -222,7 +211,7 @@ function toggleMenu() {
         
         <p>Ik werk graag met digitale tools. Dit is gedreven door mijn gevoel dat ik niet goed kan schetsen. Om dit uit te dagen heb ik me op meerdere punten geforceerd om op papier te schetsen met verschillende gereedschappen: potlood, stiften, verf, e.d. in plaats van met digitale tools te beginnen. Je ziet mijn analyserende werkwijze in de aantekeningen.</p>
 <p><figure>
-      <img src="/images/m1-lwg1-schetsen.png" alt="Schetsen van tandenborstels en bruggen">
+      <img src="/images/m1-lwg1-schetsen.png" alt="Schetsen van tandenborstels en bruggen" loading="lazy">
       <figcaption>Schetsen van tandenborstels en bruggen</figcaption>
     </figure></p>
 <h3>Creatieve Sessie</h3>
@@ -232,17 +221,19 @@ function toggleMenu() {
 </blockquote>
 <p>Hierin zijn vele ideeën naar boven gekomen waarin Tom, de mechanisch ontwikkelaar, heeft aangegeven tot vernieuwende inzichten te zijn gekomen. Hij kan vooruit met de gevonden oplossingen. Om haalbaarheid te toetsen heb ik zelf geprototypet door wigvormige remblokjes te snijden en deze op een manier in de geleiders te laten vallen dat deze naast hun remmende functie, ook direct een stabiliserende functie krijgen.</p>
 <p><figure>
-      <img src="/images/m1-lwg1-acuity-onderkant-oplossing.png" alt="Acuity onderkant en schets van mijn voorgestelde oplossing">
+      <img src="/images/m1-lwg1-acuity-onderkant-oplossing.png" alt="Acuity onderkant en schets van mijn voorgestelde oplossing" loading="lazy">
       <figcaption>Acuity onderkant en schets van mijn voorgestelde oplossing</figcaption>
     </figure></p>
 <p><figure>
-      <img src="/images/m1-lwg1-acuity-prototype.png" alt="Acuity oplossing prototype">
+      <img src="/images/m1-lwg1-acuity-prototype.png" alt="Acuity oplossing prototype" loading="lazy">
       <figcaption>Acuity oplossing prototype</figcaption>
     </figure></p>
 
     </article>
 
-    <!-- <nav class="post-navigation">
+    <h2 style="margin-block:2rem;">Aanverwante Artikelen</h2>
+
+    <div class="post-navigation">
         
         
         
@@ -376,21 +367,7 @@ function toggleMenu() {
             
                 
             
-                
-                    
-                        
-                        <a href="/blog/2020-09-business-design/" class="card">
-                            
-                                <img loading="lazy" src="/images/m1-lwg3-small.png" alt="" >
-                            
-                            <div class="card-content">
-                                <p class="nav-label">Vorig artikel</p>
-                                <h3>Het vertellen van interactieve verhalen middels animatietechnieken</h3>
-                                <p class="subtitle">Geschreven in september 2020</p>
-                            </div>
-                        </a>
-                    
-                    
+                                    
                     
                         
                         <a href="/blog/2020-07-personal-brand-design/" class="card">
@@ -398,9 +375,22 @@ function toggleMenu() {
                                 <img loading="lazy" src="/images/m1-lwg2-small.png" alt="" >
                             
                             <div class="card-content">
-                                <p class="nav-label">Volgend artikel</p>
+                                <p class="nav-label subtitle">Vorig artikel</p>
                                 <h3>In Personal Brand Design meet ik mezelf een nieuw ontwerp aan gebaseerd op wat ik wil uitdragen</h3>
                                 <p class="subtitle">Geschreven in juli 2020</p>
+                            </div>
+                        </a>
+                    
+                    
+                        
+                        <a href="/blog/2020-09-business-design/" class="card">
+                            
+                                <img loading="lazy" src="/images/m1-lwg3-small.png" alt="" >
+                            
+                            <div class="card-content">
+                                <p class="nav-label subtitle">Volgend artikel</p>
+                                <h3>Het vertellen van interactieve verhalen middels animatietechnieken</h3>
+                                <p class="subtitle">Geschreven in september 2020</p>
                             </div>
                         </a>
                     
@@ -413,7 +403,7 @@ function toggleMenu() {
                 
             
         </div>
-    </nav> -->
+    </div>
 </main>
     
     <footer>
@@ -456,30 +446,6 @@ function toggleMenu() {
         </a>
     </div>
 </footer>
-
-<style>
-    .repo-bar {
-        padding: 2rem;
-        text-align: center;
-        /* border-top: 1px solid var(--border-color); */
-    }
-    .repo-bar a {
-        font-size:0.75rem;
-        opacity:0.25;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        color: inherit;
-        text-decoration: none;
-        transition: opacity 200ms ease;
-    }
-    .repo-bar a:hover {
-        opacity:1;
-    }
-    .github-icon {
-        display: inline-block;
-    }
-</style>
 
     
     <div id="myModal" class="modal">

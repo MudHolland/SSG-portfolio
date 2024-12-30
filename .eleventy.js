@@ -55,7 +55,7 @@ module.exports = function(eleventyConfig) {
     const alt = token.content;
     
     return `<figure>
-      <img src="${src}" alt="${alt}">
+      <img src="${src}" alt="${alt}" loading="lazy">
       <figcaption>${alt}</figcaption>
     </figure>`;
   };

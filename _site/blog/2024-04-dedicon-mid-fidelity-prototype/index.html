@@ -59,17 +59,6 @@
     </div>
 </nav>
 
-<script>
-function toggleMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const links = document.querySelector('.links');
-    const nav = document.querySelector('nav');
-    hamburger.classList.toggle('active');
-    links.classList.toggle('active');
-    nav.classList.toggle('active');
-}
-</script>
-
     
     
 <header>
@@ -343,7 +332,7 @@ function toggleMenu() {
         <h2>Digital wireframe</h2>
 <p>Ik heb de schetsen van het papieren gebruikerselementen in Figma digitaal gemaakt. De insteek van wireframe laat kleur en typografie grotendeels buiten het ontwerp. Dit gaf me een eerste beeld van afmetingen, verhoudingen en welke rol visuele en bedieningselementen (covers en afbeeldingen) in het geheel zouden hebben.</p>
 <p><figure>
-      <img src="/images/midFiWireframe.png" alt="Digital Wireframe - elementen van de interface met zo min mogelijk opmaak">
+      <img src="/images/midFiWireframe.png" alt="Digital Wireframe - elementen van de interface met zo min mogelijk opmaak" loading="lazy">
       <figcaption>Digital Wireframe - elementen van de interface met zo min mogelijk opmaak</figcaption>
     </figure></p>
 <p>Ik realiseerde me hiermee dat veel informatie vaak terugkomt, zoals de weergave-opties. Door deze elementen uit de weg (rechts onderin) te plaatsen, onderbreken ze de flow van de gebruiker niet.</p>
@@ -354,7 +343,7 @@ function toggleMenu() {
 </ol>
 <p>Dit leidt tot de volgende schermen:</p>
 <p><figure>
-      <img src="/images/MidFi1.png" alt="Afbeeldingenoverzicht - versimpeling van de interface met de verschillende niveaus van informatie">
+      <img src="/images/MidFi1.png" alt="Afbeeldingenoverzicht - versimpeling van de interface met de verschillende niveaus van informatie" loading="lazy">
       <figcaption>Afbeeldingenoverzicht - versimpeling van de interface met de verschillende niveaus van informatie</figcaption>
     </figure></p>
 <h4>Afbeeldingenoverzicht</h4>
@@ -366,7 +355,7 @@ function toggleMenu() {
 <li>Weergave-opties staan rechts onderin, uit de flow.</li>
 </ol>
 <p><figure>
-      <img src="/images/MidFi0.png" alt="Publicatie-overzicht: publicatie-informatie, gebruiker en status per publicatie. Weergave-opties rechts onderin">
+      <img src="/images/MidFi0.png" alt="Publicatie-overzicht: publicatie-informatie, gebruiker en status per publicatie. Weergave-opties rechts onderin" loading="lazy">
       <figcaption>Publicatie-overzicht: publicatie-informatie, gebruiker en status per publicatie. Weergave-opties rechts onderin</figcaption>
     </figure></p>
 <h4>Publicatie-overzicht</h4>
@@ -378,7 +367,7 @@ function toggleMenu() {
 <h3>Interactiviteit</h3>
 <p>Het herontwerp van de schermen maakt een duidelijk pad in de interface duidelijk. Om deze interactiviteit duidelijk en testbaar te maken, heb ik interacties toegevoegd aan het ontwerp.</p>
 <p><figure>
-      <img src="/images/MidFiInteractie.png" alt="Midfidelity-interactiviteit - Interacties in schermen verwijzen veel naar volgende elementen, en niet naar volgende schermweergaven">
+      <img src="/images/MidFiInteractie.png" alt="Midfidelity-interactiviteit - Interacties in schermen verwijzen veel naar volgende elementen, en niet naar volgende schermweergaven" loading="lazy">
       <figcaption>Midfidelity-interactiviteit - Interacties in schermen verwijzen veel naar volgende elementen, en niet naar volgende schermweergaven</figcaption>
     </figure></p>
 <h2>Usability Testing</h2>
@@ -386,7 +375,9 @@ function toggleMenu() {
 
     </article>
 
-    <!-- <nav class="post-navigation">
+    <h2 style="margin-block:2rem;">Aanverwante Artikelen</h2>
+
+    <div class="post-navigation">
         
         
         
@@ -404,21 +395,7 @@ function toggleMenu() {
             
                 
             
-                
-                    
-                        
-                        <a href="/blog/2024-05-dedicon-high-fidelity-prototype/" class="card">
-                            
-                                <img loading="lazy" src="/images/HiFidelityResultaat.png" alt="" >
-                            
-                            <div class="card-content">
-                                <p class="nav-label">Vorig artikel</p>
-                                <h3>Functioneel Prototype van Beeldbeschrijvingssoftware voor Dedicon</h3>
-                                <p class="subtitle">Geschreven in mei 2024</p>
-                            </div>
-                        </a>
-                    
-                    
+                                    
                     
                         
                         <a href="/blog/2024-03-dedicon-low-fidelity-prototype/" class="card">
@@ -426,9 +403,22 @@ function toggleMenu() {
                                 <img loading="lazy" src="/images/paper-proto.png" alt="" >
                             
                             <div class="card-content">
-                                <p class="nav-label">Volgend artikel</p>
+                                <p class="nav-label subtitle">Vorig artikel</p>
                                 <h3>Paper Prototype en Design Validation met gebruikers van beeldbeschrijving voor Dedicon</h3>
                                 <p class="subtitle">Geschreven in maart 2024</p>
+                            </div>
+                        </a>
+                    
+                    
+                        
+                        <a href="/blog/2024-05-dedicon-high-fidelity-prototype/" class="card">
+                            
+                                <img loading="lazy" src="/images/HiFidelityResultaat.png" alt="" >
+                            
+                            <div class="card-content">
+                                <p class="nav-label subtitle">Volgend artikel</p>
+                                <h3>Functioneel Prototype van Beeldbeschrijvingssoftware voor Dedicon</h3>
+                                <p class="subtitle">Geschreven in mei 2024</p>
                             </div>
                         </a>
                     
@@ -557,7 +547,7 @@ function toggleMenu() {
                 
             
         </div>
-    </nav> -->
+    </div>
 </main>
     
     <footer>
@@ -600,30 +590,6 @@ function toggleMenu() {
         </a>
     </div>
 </footer>
-
-<style>
-    .repo-bar {
-        padding: 2rem;
-        text-align: center;
-        /* border-top: 1px solid var(--border-color); */
-    }
-    .repo-bar a {
-        font-size:0.75rem;
-        opacity:0.25;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        color: inherit;
-        text-decoration: none;
-        transition: opacity 200ms ease;
-    }
-    .repo-bar a:hover {
-        opacity:1;
-    }
-    .github-icon {
-        display: inline-block;
-    }
-</style>
 
     
     <div id="myModal" class="modal">

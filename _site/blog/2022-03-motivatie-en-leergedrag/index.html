@@ -59,17 +59,6 @@
     </div>
 </nav>
 
-<script>
-function toggleMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const links = document.querySelector('.links');
-    const nav = document.querySelector('nav');
-    hamburger.classList.toggle('active');
-    links.classList.toggle('active');
-    nav.classList.toggle('active');
-}
-</script>
-
     
     
 <header>
@@ -261,7 +250,7 @@ function toggleMenu() {
         
         
         <p><figure>
-      <img src="/images/SAG-LWG3_OnePageDesign_V1.0.png" alt="Enkel-pagina's weergave en uitleg van het 'stoppen met nagelbijten'-spelconcept">
+      <img src="/images/SAG-LWG3_OnePageDesign_V1.0.png" alt="Enkel-pagina's weergave en uitleg van het 'stoppen met nagelbijten'-spelconcept" loading="lazy">
       <figcaption>Enkel-pagina's weergave en uitleg van het 'stoppen met nagelbijten'-spelconcept</figcaption>
     </figure></p>
 <p>Een kopie van deze 'One Pager' is te zien op:</p>
@@ -286,7 +275,7 @@ function toggleMenu() {
 <li>Pijn, wondjes of ontstekinkjes bij m'n nagels en nagelriemen (negatief).</li>
 </ul>
 <p><figure>
-      <img src="/images/sag-lwg3-bewustwording.png" alt="Bewustwording door bepalen van cues, beïnvloeding van routine en vastleggen van feedback">
+      <img src="/images/sag-lwg3-bewustwording.png" alt="Bewustwording door bepalen van cues, beïnvloeding van routine en vastleggen van feedback" loading="lazy">
       <figcaption>Bewustwording door bepalen van cues, beïnvloeding van routine en vastleggen van feedback</figcaption>
     </figure></p>
 <h3>Flow</h3>
@@ -319,7 +308,7 @@ function toggleMenu() {
 <li><strong>Feedback:</strong> de armbanden trillen, knipperen en zoemen bij uitvoeren van goed of slecht gedrag.</li>
 </ul>
 <p><figure>
-      <img src="/images/sag-lwg3-paper-prototype.png" alt="Low Fidelity Prototype van het spel, zoals getest met participant">
+      <img src="/images/sag-lwg3-paper-prototype.png" alt="Low Fidelity Prototype van het spel, zoals getest met participant" loading="lazy">
       <figcaption>Low Fidelity Prototype van het spel, zoals getest met participant</figcaption>
     </figure></p>
 <h3>Testconclusie</h3>
@@ -327,7 +316,9 @@ function toggleMenu() {
 
     </article>
 
-    <!-- <nav class="post-navigation">
+    <h2 style="margin-block:2rem;">Aanverwante Artikelen</h2>
+
+    <div class="post-navigation">
         
         
         
@@ -413,21 +404,7 @@ function toggleMenu() {
             
                 
             
-                
-                    
-                        
-                        <a href="/blog/2022-04-han-studentontplooiing-4/" class="card">
-                            
-                                <img loading="lazy" src="/images/sag-op-loop2designgame.png" alt="" >
-                            
-                            <div class="card-content">
-                                <p class="nav-label">Vorig artikel</p>
-                                <h3>Met co-creatie op zoek naar jouw eigenschappen</h3>
-                                <p class="subtitle">Geschreven in april 2022</p>
-                            </div>
-                        </a>
-                    
-                    
+                                    
                     
                         
                         <a href="/blog/2022-03-han-studentontplooiing-3/" class="card">
@@ -435,9 +412,22 @@ function toggleMenu() {
                                 <img loading="lazy" src="/images/sag-op-loop2concept.png" alt="" >
                             
                             <div class="card-content">
-                                <p class="nav-label">Volgend artikel</p>
+                                <p class="nav-label subtitle">Vorig artikel</p>
                                 <h3>Ontwerpen door Game-Theorie te Testen met de gebruikers</h3>
                                 <p class="subtitle">Geschreven in maart 2022</p>
+                            </div>
+                        </a>
+                    
+                    
+                        
+                        <a href="/blog/2022-04-han-studentontplooiing-4/" class="card">
+                            
+                                <img loading="lazy" src="/images/sag-op-loop2designgame.png" alt="" >
+                            
+                            <div class="card-content">
+                                <p class="nav-label subtitle">Volgend artikel</p>
+                                <h3>Met co-creatie op zoek naar jouw eigenschappen</h3>
+                                <p class="subtitle">Geschreven in april 2022</p>
                             </div>
                         </a>
                     
@@ -498,7 +488,7 @@ function toggleMenu() {
                 
             
         </div>
-    </nav> -->
+    </div>
 </main>
     
     <footer>
@@ -541,30 +531,6 @@ function toggleMenu() {
         </a>
     </div>
 </footer>
-
-<style>
-    .repo-bar {
-        padding: 2rem;
-        text-align: center;
-        /* border-top: 1px solid var(--border-color); */
-    }
-    .repo-bar a {
-        font-size:0.75rem;
-        opacity:0.25;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        color: inherit;
-        text-decoration: none;
-        transition: opacity 200ms ease;
-    }
-    .repo-bar a:hover {
-        opacity:1;
-    }
-    .github-icon {
-        display: inline-block;
-    }
-</style>
 
     
     <div id="myModal" class="modal">

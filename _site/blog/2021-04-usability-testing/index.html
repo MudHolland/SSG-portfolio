@@ -59,17 +59,6 @@
     </div>
 </nav>
 
-<script>
-function toggleMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const links = document.querySelector('.links');
-    const nav = document.querySelector('nav');
-    hamburger.classList.toggle('active');
-    links.classList.toggle('active');
-    nav.classList.toggle('active');
-}
-</script>
-
     
     
 <header>
@@ -263,7 +252,7 @@ function toggleMenu() {
 <p>Om dit te onderzoeken ga ik een formatieve Usability Test doen; deze test is het beste om toe te passen in een ontwerpproces. Ik heb deze test gedaan met 3 gebruikers, omdat uit onderzoek blijkt dat bij meer dan 3-5 tests de bruikbare resultaten afnemen. Het is beter om met 3 gebruikers te testen, deze bevindingen toe te passen en dan opnieuw met 3-5 gebruikers te testen.</p>
 <p>De participanten waarmee ik test vallen binnen de doelgroep. Zij zijn in de leeftijd waarin zij op zoek zijn naar trampolines voor kinderen.</p>
 <p><figure>
-      <img src="/images/lwg4-participanten.png" alt="Participanten">
+      <img src="/images/lwg4-participanten.png" alt="Participanten" loading="lazy">
       <figcaption>Participanten</figcaption>
     </figure></p>
 <p>Voor deze participanten had ik 3 scenario's opgesteld:</p>
@@ -299,25 +288,25 @@ function toggleMenu() {
 <h4>Productpagina - Informatie en specificaties</h4>
 <p>Het is voor een onbekende, aanstaande trampolinekoper lastig een trampoline te kopen met de aanwezige data. Dit kan worden opgelost door meer informatie toe te voegen en informatie die van toepassing zijn op die trampoline ook bij die trampoline weer te geven.</p>
 <p><figure>
-      <img src="/images/lwg4-productpagina.png" alt="Productpagina situatie nu - verbetervoorstel">
+      <img src="/images/lwg4-productpagina.png" alt="Productpagina situatie nu - verbetervoorstel" loading="lazy">
       <figcaption>Productpagina situatie nu - verbetervoorstel</figcaption>
     </figure></p>
 <h4>Trampolineoverzicht - Informatie</h4>
 <p>Er is weinig informatie aanwezig bij trampolines, maar er is ook weinig algemene informatie over trampolines. Kopers zijn vaak niet bekend met alle eigenschappen, dus willen een duidelijk overzicht zodat ze weten wat ze kopen.</p>
 <p><figure>
-      <img src="/images/lwg4-trampolineoverzicht.png" alt="Trampolineoverzicht situatie nu - verbetervoorstel">
+      <img src="/images/lwg4-trampolineoverzicht.png" alt="Trampolineoverzicht situatie nu - verbetervoorstel" loading="lazy">
       <figcaption>Trampolineoverzicht situatie nu - verbetervoorstel</figcaption>
     </figure></p>
 <h4>Professionaliteit - niet-werkende functionaliteit</h4>
 <p>Er is redelijk wat functionaliteit op de website die niet (meer) werkt. Links in de footer werken niet, waaronder Verzenden en Retourneren. Dit geeft geen vertrouwen bij kopen op de webshop, en al helemaal niet dure producten zoals een trampoline.</p>
 <p><figure>
-      <img src="/images/lwg4-footer.png" alt="Footer - niet werkende links">
+      <img src="/images/lwg4-footer.png" alt="Footer - niet werkende links" loading="lazy">
       <figcaption>Footer - niet werkende links</figcaption>
     </figure></p>
 <h4>Agenda - rommelig en onvolledig</h4>
 <p>De agendapagina is erg druk met verschillende kleuren. De afsprakenkalender werkt niet, en er is geen duidelijke uitleg van de punten die op de agenda staan. De agenda kan worden ingedeeld als een soort kalender, waarbij de gebruiker informatie ziet over wat er bijvoorbeeld op een open dag te doen is.</p>
 <p><figure>
-      <img src="/images/lwg4-agenda.png" alt="Agenda situatie nu - verbetervoorstel">
+      <img src="/images/lwg4-agenda.png" alt="Agenda situatie nu - verbetervoorstel" loading="lazy">
       <figcaption>Agenda situatie nu - verbetervoorstel</figcaption>
     </figure></p>
 <h3>Conclusie</h3>
@@ -325,7 +314,9 @@ function toggleMenu() {
 
     </article>
 
-    <!-- <nav class="post-navigation">
+    <h2 style="margin-block:2rem;">Aanverwante Artikelen</h2>
+
+    <div class="post-navigation">
         
         
         
@@ -443,21 +434,7 @@ function toggleMenu() {
             
                 
             
-                
-                    
-                        
-                        <a href="/blog/2021-05-elst-communityplatform/" class="card">
-                            
-                                <img loading="lazy" src="/images/op-hcd-kerk-small.png" alt="" >
-                            
-                            <div class="card-content">
-                                <p class="nav-label">Vorig artikel</p>
-                                <h3>Hoe laat je de jeugd van Elst haar geschiedenis ervaren en hier betekenisvol aan toevoegen?</h3>
-                                <p class="subtitle">Geschreven in mei 2021</p>
-                            </div>
-                        </a>
-                    
-                    
+                                    
                     
                         
                         <a href="/blog/2021-03-web-design/" class="card">
@@ -465,9 +442,22 @@ function toggleMenu() {
                                 <img loading="lazy" src="/images/lwg3-visueleanalyse.png" alt="" >
                             
                             <div class="card-content">
-                                <p class="nav-label">Volgend artikel</p>
+                                <p class="nav-label subtitle">Vorig artikel</p>
                                 <h3>Herontwerpen van de bedrijfswebsite van Van Lent Systems aan de hand van nieuwe technologieën en technieken</h3>
                                 <p class="subtitle">Geschreven in maart 2021</p>
+                            </div>
+                        </a>
+                    
+                    
+                        
+                        <a href="/blog/2021-05-elst-communityplatform/" class="card">
+                            
+                                <img loading="lazy" src="/images/op-hcd-kerk-small.png" alt="" >
+                            
+                            <div class="card-content">
+                                <p class="nav-label subtitle">Volgend artikel</p>
+                                <h3>Hoe laat je de jeugd van Elst haar geschiedenis ervaren en hier betekenisvol aan toevoegen?</h3>
+                                <p class="subtitle">Geschreven in mei 2021</p>
                             </div>
                         </a>
                     
@@ -496,7 +486,7 @@ function toggleMenu() {
                 
             
         </div>
-    </nav> -->
+    </div>
 </main>
     
     <footer>
@@ -539,30 +529,6 @@ function toggleMenu() {
         </a>
     </div>
 </footer>
-
-<style>
-    .repo-bar {
-        padding: 2rem;
-        text-align: center;
-        /* border-top: 1px solid var(--border-color); */
-    }
-    .repo-bar a {
-        font-size:0.75rem;
-        opacity:0.25;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        color: inherit;
-        text-decoration: none;
-        transition: opacity 200ms ease;
-    }
-    .repo-bar a:hover {
-        opacity:1;
-    }
-    .github-icon {
-        display: inline-block;
-    }
-</style>
 
     
     <div id="myModal" class="modal">

@@ -169,8 +169,8 @@ footer{
 	z-index:100;
 	background-color: transparent;
 	transition:
-		background-color 1000ms ease,
-		height 1000ms ease;
+		background-color 200ms ease,
+		height 200ms ease;
 
 	.content{
 		display:flex;
@@ -213,6 +213,71 @@ footer ul{
 
 nav .hamburger{
 	display: none;
+}
+
+.post-navigation {
+    height:auto;
+	margin-top: 4rem;
+}
+
+.post-navigation .cards {
+    display: flex;
+	flex-direction: row;
+    gap: 1rem;
+}
+
+.post-navigation .card {
+    flex-direction: column;
+}
+
+.post-navigation .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-navigation .card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+}
+
+.post-navigation h3 {
+	margin-top: 0;
+}
+
+.post-navigation .nav-label {
+	margin-top:1rem;
+	margin-bottom: 0;
+}
+
+.nav-label {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.repo-bar {
+	padding: 2rem;
+	text-align: center;
+	/* border-top: 1px solid var(--border-color); */
+}
+.repo-bar a {
+	font-size:0.75rem;
+	opacity:0.25;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: inherit;
+	text-decoration: none;
+	transition: opacity 200ms ease;
+}
+.repo-bar a:hover {
+	opacity:1;
+}
+.github-icon {
+	display: inline-block;
 }
 
 header {
@@ -1081,9 +1146,9 @@ td:first-child {
 		width:0;
         transition: 
             visibility 0ms, 
-            opacity 250ms ease, 
-            background-color 250ms ease,
-			height 250ms ease;
+            opacity 200ms ease, 
+            background-color 200ms ease,
+			height 200ms ease;
 	}
 
     nav .hamburger {
@@ -1141,4 +1206,8 @@ td:first-child {
     nav.active {
         background-color: var(--page-bg-color);
     }
+
+	.post-navigation .cards {
+		flex-direction: column;
+	}
 }

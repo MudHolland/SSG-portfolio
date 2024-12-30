@@ -59,17 +59,6 @@
     </div>
 </nav>
 
-<script>
-function toggleMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const links = document.querySelector('.links');
-    const nav = document.querySelector('nav');
-    hamburger.classList.toggle('active');
-    links.classList.toggle('active');
-    nav.classList.toggle('active');
-}
-</script>
-
     
     
 <header>
@@ -357,13 +346,13 @@ function toggleMenu() {
 <h4>Design Game</h4>
 <p>Om de spelers spelenderwijs over hun signatuur na te laten denken, gebruiken we de theorie van de kernkwadranten van Ofman, zoals we in concept 1 al hadden opgesteld: we wilden hiermee kijken welke kwaliteiten, valkuilen, allergieën en uitdagingen er zoal bij voltijdstudenten en binnen hun projectgroepen zijn. Bij het opstellen hiervan hadden we het over onze kaartjes van concept 1 en toen we deze kwadranten aan het omschrijven waren kwam bij mij de realisatie dat we hiermee simpel een kwartetspel konden maken. Als zij een kaart vragen van een andere speler, moeten zij hierbij vertellen of zij dat kwadrant herkennen in zichzelf, iemand anders in de groep, of misschien een andere anecdote hierover. Dit geeft ons bij elke beurt inzichten in de doelgroep.</p>
 <p><figure>
-      <img src="/images/sag-op-loop2designgame.png" alt="Kaartjes van het kwartetspel over de kernkwadranten van Ofman">
+      <img src="/images/sag-op-loop2designgame.png" alt="Kaartjes van het kwartetspel over de kernkwadranten van Ofman" loading="lazy">
       <figcaption>Kaartjes van het kwartetspel over de kernkwadranten van Ofman</figcaption>
     </figure></p>
 <h4>Ideation</h4>
 <p>Om de participanten los te maken, wilden we een gesprek starten over hoe zij gamen. Wat spelen zij nu? Weten zij waarom dit hun trekt (player types)? Welke onderdelen spreken ze hierin aan (aesthetics)?</p>
 <p><figure>
-      <img src="/images/sag-op-loop2-ideation.png" alt="Uitwerkingen van de ideation door de participanten">
+      <img src="/images/sag-op-loop2-ideation.png" alt="Uitwerkingen van de ideation door de participanten" loading="lazy">
       <figcaption>Uitwerkingen van de ideation door de participanten</figcaption>
     </figure></p>
 <p>We merkten dat deze doelgroep soortgelijke karakters hadden: speelden allemaal soortgelijke spellen (Call of Duty, FIFA), al was de een wat rustiger dan de ander, zowel in de groep als in de spellen. Ze hadden behoefte aan fellowship en competitie.</p>
@@ -375,7 +364,9 @@ function toggleMenu() {
 
     </article>
 
-    <!-- <nav class="post-navigation">
+    <h2 style="margin-block:2rem;">Aanverwante Artikelen</h2>
+
+    <div class="post-navigation">
         
         
         
@@ -459,21 +450,7 @@ function toggleMenu() {
             
                 
             
-                
-                    
-                        
-                        <a href="/blog/2022-04-onboarding-en-interfacing/" class="card">
-                            
-                                <img loading="lazy" src="/images/sag-lwg4-highfidelity.png" alt="" >
-                            
-                            <div class="card-content">
-                                <p class="nav-label">Vorig artikel</p>
-                                <h3>Onboarding en Interfaces ontwerpen om depressie te leren zien en begrijpen</h3>
-                                <p class="subtitle">Geschreven in april 2022</p>
-                            </div>
-                        </a>
-                    
-                    
+                                    
                     
                         
                         <a href="/blog/2022-03-motivatie-en-leergedrag/" class="card">
@@ -481,9 +458,22 @@ function toggleMenu() {
                                 <img loading="lazy" src="/images/sag-3.webp" alt="" >
                             
                             <div class="card-content">
-                                <p class="nav-label">Volgend artikel</p>
+                                <p class="nav-label subtitle">Vorig artikel</p>
                                 <h3>Gebruikers motiveren en aanzetten hun gewoontes te doorbreken</h3>
                                 <p class="subtitle">Geschreven in maart 2022</p>
+                            </div>
+                        </a>
+                    
+                    
+                        
+                        <a href="/blog/2022-04-onboarding-en-interfacing/" class="card">
+                            
+                                <img loading="lazy" src="/images/sag-lwg4-highfidelity.png" alt="" >
+                            
+                            <div class="card-content">
+                                <p class="nav-label subtitle">Volgend artikel</p>
+                                <h3>Onboarding en Interfaces ontwerpen om depressie te leren zien en begrijpen</h3>
+                                <p class="subtitle">Geschreven in april 2022</p>
                             </div>
                         </a>
                     
@@ -546,7 +536,7 @@ function toggleMenu() {
                 
             
         </div>
-    </nav> -->
+    </div>
 </main>
     
     <footer>
@@ -589,30 +579,6 @@ function toggleMenu() {
         </a>
     </div>
 </footer>
-
-<style>
-    .repo-bar {
-        padding: 2rem;
-        text-align: center;
-        /* border-top: 1px solid var(--border-color); */
-    }
-    .repo-bar a {
-        font-size:0.75rem;
-        opacity:0.25;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        color: inherit;
-        text-decoration: none;
-        transition: opacity 200ms ease;
-    }
-    .repo-bar a:hover {
-        opacity:1;
-    }
-    .github-icon {
-        display: inline-block;
-    }
-</style>
 
     
     <div id="myModal" class="modal">
