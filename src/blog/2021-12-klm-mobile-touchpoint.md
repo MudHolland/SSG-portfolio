@@ -2,10 +2,10 @@
 layout: post.njk
 title: Uitbreiding voor de klantervaring van de KLM-dienstverlening middels uitbreiding van de KLM-app
 description: KLM heeft haar klantreis van voor tot achter ontworpen om de reiziger zich bij KLM thuis en gewaardeerd te laten voelen. In dit project heb ik voor KLM onderzocht middels Cultural Probes wat deze gebruiker denkt en voelt tijdens de voorbereiding van een (vlieg-)reis. Door de onderdelen van de dienstverlening van KLM en de klantervaring samen te laten komen, vond ik de grootste pijnpunten en stressoren van de klantreis voor zowel reizigers als KLM-personeel, 'wachttijden en onduidelijkheden op het vliegveld'. Om de reiziger hierin te ondersteunen, bouwde ik een prototype van gesproken begeleiding in de KLM-app en testte deze met gebruikers en medewerkers van KLM.
-opening: In dit project ik als onderdeel van een ontwerpteam een opdracht gekregen van KLM. We hebben deze casus aangepakt met de Double Diamond-ontwikkelmethode.
+opening: In dit project heb ik als onderdeel van een ontwerpteam een opdracht gekregen van KLM. We hebben deze casus aangepakt met de Double Diamond-ontwikkelmethode.
 date: '2021-12-15'
 headerImage: /images/proto-2.png
-thumbnail: /images/klm-mockup.png
+thumbnail: /images/KLM-mockup.png
 featured: true
 tags:
 - Service Design
