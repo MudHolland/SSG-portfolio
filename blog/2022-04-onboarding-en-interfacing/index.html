@@ -59,17 +59,6 @@
     </div>
 </nav>
 
-<script>
-function toggleMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const links = document.querySelector('.links');
-    const nav = document.querySelector('nav');
-    hamburger.classList.toggle('active');
-    links.classList.toggle('active');
-    nav.classList.toggle('active');
-}
-</script>
-
     
     
 <header>
@@ -320,7 +309,7 @@ function toggleMenu() {
 <li>Het systeem informeert de gebruiker middels outputs in de user interface hoe de spelwereld (perspectief) is veranderd.</li>
 </ul>
 <p><figure>
-      <img src="/images/sag-lwg4-interactiemodel.png" alt="Schematische weergave van (spel-)interactie tussen de speler en het spelsysteem - Weergave van (spel-)interactie tussen de speler en het spelsysteem">
+      <img src="/images/sag-lwg4-interactiemodel.png" alt="Schematische weergave van (spel-)interactie tussen de speler en het spelsysteem - Weergave van (spel-)interactie tussen de speler en het spelsysteem" loading="lazy">
       <figcaption>Schematische weergave van (spel-)interactie tussen de speler en het spelsysteem - Weergave van (spel-)interactie tussen de speler en het spelsysteem</figcaption>
     </figure></p>
 <h3>User Interface</h3>
@@ -361,7 +350,7 @@ function toggleMenu() {
 </ul>
 <p>Tweede en derde level octalysis analyse bieden mij als ontwerper van het spel en zijn mechanics een handvat om player types in (onder andere) de onboardingsfase te bepalen. Ik focus hierbij op de Explorer en Achiever, omdat dat de spelertypes zijn waar het spel op focust. De bijbehoren Octalysis-analyse die hier bij hoort is hieronder afgebeeld.</p>
 <p><figure>
-      <img src="/images/sag-lwg4-octalysis-Level3.png" alt="Level 3 Octalysis Analyse: verloop van epic meaning en accomplishment naar unpredictability en avoidance">
+      <img src="/images/sag-lwg4-octalysis-Level3.png" alt="Level 3 Octalysis Analyse: verloop van epic meaning en accomplishment naar unpredictability en avoidance" loading="lazy">
       <figcaption>Level 3 Octalysis Analyse: verloop van epic meaning en accomplishment naar unpredictability en avoidance</figcaption>
     </figure></p>
 <h3>Player Types</h3>
@@ -381,7 +370,7 @@ function toggleMenu() {
 <h2>Interacties</h2>
 <p>Bij het ontvangen van het concept-document werd ingegaan op verschillende onderdelen van depressie. Onderdelen hiervan waren negatieve reacties, communicatie met vrienden en familie, bediening als 'walking simulator' en verminderde interactie. Middels schetsen ben ik verschillende interfaces en interacties gaan onderzoeken.</p>
 <p><figure>
-      <img src="/images/sag-lwg4-schetsen.png" alt="Schetsen: low-fidelity schetsen om te divergeren in oplossingen en ideeën">
+      <img src="/images/sag-lwg4-schetsen.png" alt="Schetsen: low-fidelity schetsen om te divergeren in oplossingen en ideeën" loading="lazy">
       <figcaption>Schetsen: low-fidelity schetsen om te divergeren in oplossingen en ideeën</figcaption>
     </figure></p>
 <p>Middels deze schetsen ben ik tot een betekenisvolle interactie gekomen die de beschreven aesthetics met de metafoor van water via de accomplishment naar unpredictability en avoidance laat lopen. Dit moet een algeheel gevoel geven voor hoe bij verdere ontwikkeling het spel ervaren dient te worden door de gebruiker.</p>
@@ -422,7 +411,9 @@ function toggleMenu() {
 
     </article>
 
-    <!-- <nav class="post-navigation">
+    <h2 style="margin-block:2rem;">Aanverwante Artikelen</h2>
+
+    <div class="post-navigation">
         
         
         
@@ -504,21 +495,7 @@ function toggleMenu() {
             
                 
             
-                
-                    
-                        
-                        <a href="/blog/2022-05-diegetische-interfaces/" class="card">
-                            
-                                <img loading="lazy" src="/images/seaofthieveskompas.webp" alt="" >
-                            
-                            <div class="card-content">
-                                <p class="nav-label">Vorig artikel</p>
-                                <h3>Gebruikers hun weg laten vinden met diegetische (game-)interfaces</h3>
-                                <p class="subtitle">Geschreven in mei 2022</p>
-                            </div>
-                        </a>
-                    
-                    
+                                    
                     
                         
                         <a href="/blog/2022-04-han-studentontplooiing-4/" class="card">
@@ -526,9 +503,22 @@ function toggleMenu() {
                                 <img loading="lazy" src="/images/sag-op-loop2designgame.png" alt="" >
                             
                             <div class="card-content">
-                                <p class="nav-label">Volgend artikel</p>
+                                <p class="nav-label subtitle">Vorig artikel</p>
                                 <h3>Met co-creatie op zoek naar jouw eigenschappen</h3>
                                 <p class="subtitle">Geschreven in april 2022</p>
+                            </div>
+                        </a>
+                    
+                    
+                        
+                        <a href="/blog/2022-05-diegetische-interfaces/" class="card">
+                            
+                                <img loading="lazy" src="/images/seaofthieveskompas.webp" alt="" >
+                            
+                            <div class="card-content">
+                                <p class="nav-label subtitle">Volgend artikel</p>
+                                <h3>Gebruikers hun weg laten vinden met diegetische (game-)interfaces</h3>
+                                <p class="subtitle">Geschreven in mei 2022</p>
                             </div>
                         </a>
                     
@@ -593,7 +583,7 @@ function toggleMenu() {
                 
             
         </div>
-    </nav> -->
+    </div>
 </main>
     
     <footer>
@@ -636,30 +626,6 @@ function toggleMenu() {
         </a>
     </div>
 </footer>
-
-<style>
-    .repo-bar {
-        padding: 2rem;
-        text-align: center;
-        /* border-top: 1px solid var(--border-color); */
-    }
-    .repo-bar a {
-        font-size:0.75rem;
-        opacity:0.25;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        color: inherit;
-        text-decoration: none;
-        transition: opacity 200ms ease;
-    }
-    .repo-bar a:hover {
-        opacity:1;
-    }
-    .github-icon {
-        display: inline-block;
-    }
-</style>
 
     
     <div id="myModal" class="modal">

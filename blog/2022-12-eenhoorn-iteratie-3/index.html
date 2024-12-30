@@ -59,17 +59,6 @@
     </div>
 </nav>
 
-<script>
-function toggleMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const links = document.querySelector('.links');
-    const nav = document.querySelector('nav');
-    hamburger.classList.toggle('active');
-    links.classList.toggle('active');
-    nav.classList.toggle('active');
-}
-</script>
-
     
     
 <header>
@@ -263,12 +252,12 @@ function toggleMenu() {
         <h2>Afwerking van prototype</h2>
 <p>Het was voor gebruikers onduidelijk welke schermen ze al hadden gezien en wat de juist volgorde was. Om dit op te lossen heb ik meerdere oplossingen onderzocht: het tonen van de gevonden scenes links in beeld of boven in beeld. Ik heb meerdere manieren van weergave van de scenes getekend en geëvalueerd met de andere projectleden.</p>
 <p><figure>
-      <img src="/images/oplossingsrepertoire.png" alt="Opgestelde oplossingen voor het weergeven van reeds gevonden scenes">
+      <img src="/images/oplossingsrepertoire.png" alt="Opgestelde oplossingen voor het weergeven van reeds gevonden scenes" loading="lazy">
       <figcaption>Opgestelde oplossingen voor het weergeven van reeds gevonden scenes</figcaption>
     </figure></p>
 <p>Van deze oplossingen is het onderstaande ontwerp gekozen. Schermen worden bovenin geplaatst omdat de scenes van de zijkant worden getoond. Een doorzichtige achtergrond en vlakken hierin toont de bezoekers hoeveel scenes ze nog moeten vinden en de plaatst van de scene in het proces.</p>
 <p><figure>
-      <img src="/images/Voortgangsbalk.png" alt="Uiteindelijke toepassing van de voortgangsbalk in het uiteindelijke prototype dat aan de opdrachtgever wordt overgedragen">
+      <img src="/images/Voortgangsbalk.png" alt="Uiteindelijke toepassing van de voortgangsbalk in het uiteindelijke prototype dat aan de opdrachtgever wordt overgedragen" loading="lazy">
       <figcaption>Uiteindelijke toepassing van de voortgangsbalk in het uiteindelijke prototype dat aan de opdrachtgever wordt overgedragen</figcaption>
     </figure></p>
 <h3>Interactief prototype</h3>
@@ -280,7 +269,7 @@ function toggleMenu() {
 <h3>Uitbreiding</h3>
 <p>Om De Eenhoorn te helpen na de keuze om dit te implementeren, heb ik een lijst gemaakt van onderdelen die aanwezig moeten zijn om een nieuw theeverhaal uit te kunnen werken, belevingen verder uit te breiden of toe te passen. Zo heb ik een lijst opgesteld van informatie die zij nodig hebben voor ze een nieuw verhaal aan de beleving kunnen toevoegen en ideeë voor hen hoe zij verschillende theeën kunnen toepassen.</p>
 <p><figure>
-      <img src="/images/thee-toevoegen.png" alt="Weergave van hoe meerdere theeën kunnen worden getoond op de interactieve tafel: hierbij heb ik de Feng Fu Xi, geproduceerd in China, toegevoegd aan het hoofdscherm, om te tonen hoe de gebruiker deze keuze kan worden gegeven">
+      <img src="/images/thee-toevoegen.png" alt="Weergave van hoe meerdere theeën kunnen worden getoond op de interactieve tafel: hierbij heb ik de Feng Fu Xi, geproduceerd in China, toegevoegd aan het hoofdscherm, om te tonen hoe de gebruiker deze keuze kan worden gegeven" loading="lazy">
       <figcaption>Weergave van hoe meerdere theeën kunnen worden getoond op de interactieve tafel: hierbij heb ik de Feng Fu Xi, geproduceerd in China, toegevoegd aan het hoofdscherm, om te tonen hoe de gebruiker deze keuze kan worden gegeven</figcaption>
     </figure></p>
 <h4>Vernieuwende technologieën</h4>
@@ -300,7 +289,9 @@ function toggleMenu() {
 
     </article>
 
-    <!-- <nav class="post-navigation">
+    <h2 style="margin-block:2rem;">Aanverwante Artikelen</h2>
+
+    <div class="post-navigation">
         
         
         
@@ -354,21 +345,7 @@ function toggleMenu() {
             
                 
             
-                
-                    
-                        
-                        <a href="/blog/2023-01-arnhem-multidisciplinair-1-10-100/" class="card">
-                            
-                                <img loading="lazy" src="/images/1-10-100.png" alt="" >
-                            
-                            <div class="card-content">
-                                <p class="nav-label">Vorig artikel</p>
-                                <h3>Creatief werken met ICT in de 1-10-100-methode</h3>
-                                <p class="subtitle">Geschreven in januari 2023</p>
-                            </div>
-                        </a>
-                    
-                    
+                                    
                     
                         
                         <a href="/blog/2022-11-projectmanagement-in-de-creatieve-industrie/" class="card">
@@ -376,9 +353,22 @@ function toggleMenu() {
                                 <img loading="lazy" src="/images/ProjectsEleven-crop.png" alt="" >
                             
                             <div class="card-content">
-                                <p class="nav-label">Volgend artikel</p>
+                                <p class="nav-label subtitle">Vorig artikel</p>
                                 <h3>Projectmanagement in de Creatieve industrie, kan dat eigenlijk wel in een creatief project?</h3>
                                 <p class="subtitle">Geschreven in november 2022</p>
+                            </div>
+                        </a>
+                    
+                    
+                        
+                        <a href="/blog/2023-01-arnhem-multidisciplinair-1-10-100/" class="card">
+                            
+                                <img loading="lazy" src="/images/1-10-100.png" alt="" >
+                            
+                            <div class="card-content">
+                                <p class="nav-label subtitle">Volgend artikel</p>
+                                <h3>Creatief werken met ICT in de 1-10-100-methode</h3>
+                                <p class="subtitle">Geschreven in januari 2023</p>
                             </div>
                         </a>
                     
@@ -471,7 +461,7 @@ function toggleMenu() {
                 
             
         </div>
-    </nav> -->
+    </div>
 </main>
     
     <footer>
@@ -514,30 +504,6 @@ function toggleMenu() {
         </a>
     </div>
 </footer>
-
-<style>
-    .repo-bar {
-        padding: 2rem;
-        text-align: center;
-        /* border-top: 1px solid var(--border-color); */
-    }
-    .repo-bar a {
-        font-size:0.75rem;
-        opacity:0.25;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        color: inherit;
-        text-decoration: none;
-        transition: opacity 200ms ease;
-    }
-    .repo-bar a:hover {
-        opacity:1;
-    }
-    .github-icon {
-        display: inline-block;
-    }
-</style>
 
     
     <div id="myModal" class="modal">

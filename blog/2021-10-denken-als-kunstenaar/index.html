@@ -59,17 +59,6 @@
     </div>
 </nav>
 
-<script>
-function toggleMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const links = document.querySelector('.links');
-    const nav = document.querySelector('nav');
-    hamburger.classList.toggle('active');
-    links.classList.toggle('active');
-    nav.classList.toggle('active');
-}
-</script>
-
     
     
 <header>
@@ -282,7 +271,9 @@ function toggleMenu() {
 
     </article>
 
-    <!-- <nav class="post-navigation">
+    <h2 style="margin-block:2rem;">Aanverwante Artikelen</h2>
+
+    <div class="post-navigation">
         
         
         
@@ -388,21 +379,7 @@ function toggleMenu() {
             
                 
             
-                
-                    
-                        
-                        <a href="/blog/2021-11-mobile-interfaces/" class="card">
-                            
-                                <img loading="lazy" src="/images/exp-proto.png" alt="" >
-                            
-                            <div class="card-content">
-                                <p class="nav-label">Vorig artikel</p>
-                                <h3>Ontwerpen van &#39;KLM Inspire&#39;, een mobiele interface en interacties voor een verbeterde vliegreiservaring in het vliegtuig</h3>
-                                <p class="subtitle">Geschreven in november 2021</p>
-                            </div>
-                        </a>
-                    
-                    
+                                    
                     
                         
                         <a href="/blog/2021-10-concepting/" class="card">
@@ -410,9 +387,22 @@ function toggleMenu() {
                                 <img loading="lazy" src="/images/Concept3.png" alt="" >
                             
                             <div class="card-content">
-                                <p class="nav-label">Volgend artikel</p>
+                                <p class="nav-label subtitle">Vorig artikel</p>
                                 <h3>Versterken van KLM&#39;s dienstverlening door concepten te prototypen met de Hasso Plattner Prototyping Kit</h3>
                                 <p class="subtitle">Geschreven in oktober 2021</p>
+                            </div>
+                        </a>
+                    
+                    
+                        
+                        <a href="/blog/2021-11-mobile-interfaces/" class="card">
+                            
+                                <img loading="lazy" src="/images/exp-proto.png" alt="" >
+                            
+                            <div class="card-content">
+                                <p class="nav-label subtitle">Volgend artikel</p>
+                                <h3>Ontwerpen van &#39;KLM Inspire&#39;, een mobiele interface en interacties voor een verbeterde vliegreiservaring in het vliegtuig</h3>
+                                <p class="subtitle">Geschreven in november 2021</p>
                             </div>
                         </a>
                     
@@ -453,7 +443,7 @@ function toggleMenu() {
                 
             
         </div>
-    </nav> -->
+    </div>
 </main>
     
     <footer>
@@ -496,30 +486,6 @@ function toggleMenu() {
         </a>
     </div>
 </footer>
-
-<style>
-    .repo-bar {
-        padding: 2rem;
-        text-align: center;
-        /* border-top: 1px solid var(--border-color); */
-    }
-    .repo-bar a {
-        font-size:0.75rem;
-        opacity:0.25;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        color: inherit;
-        text-decoration: none;
-        transition: opacity 200ms ease;
-    }
-    .repo-bar a:hover {
-        opacity:1;
-    }
-    .github-icon {
-        display: inline-block;
-    }
-</style>
 
     
     <div id="myModal" class="modal">

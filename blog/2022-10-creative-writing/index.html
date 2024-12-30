@@ -59,17 +59,6 @@
     </div>
 </nav>
 
-<script>
-function toggleMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const links = document.querySelector('.links');
-    const nav = document.querySelector('nav');
-    hamburger.classList.toggle('active');
-    links.classList.toggle('active');
-    nav.classList.toggle('active');
-}
-</script>
-
     
     
 <header>
@@ -248,14 +237,14 @@ function toggleMenu() {
 <p><a href="https://en.wikipedia.org/wiki/Paro_(robot)" target="_blank" rel="noopener noreferrer">Paro</a> is een therapeutische robot, lijkend op een babyzeehond. De ontwikkeling is terug te voeren tot de jaren 90 en is gebaseerd op vele onderzoeken die 1990-2000 zijn uitgevoerd. Het wordt veel toegepast in verzorgingstehuizen, omdat onderzoeken uitwijzen dat mensen met dementie of autisme baat hebben bij dit soort oplossingen.</p>
 <p>Een nadeel van de Paro is dat deze erg duur is, €5.000,-. Dit zorgt ervoor dat de aankoop lastig is, omdat ook niet duidelijk is wat het verbeterde gedrag met de zorgbehoevende doet. Daarnaast is de techniek van de Paro door de leeftijd flink verouderd. In de laatste 20 jaar is er op technologisch vlak veel veranderd, waardoor elektronica kleiner en goedkoper is geworden. Dit biedt mogelijkheden met rekenkracht, daardoor ook (kunstmatige) intelligentie, sensoren, connectiviteit en laadtechnieken.</p>
 <p><figure>
-      <img src="/images/paro.png" alt="Uiterlijk van Paro: een zeehond-achtige zorgrobot">
+      <img src="/images/paro.png" alt="Uiterlijk van Paro: een zeehond-achtige zorgrobot" loading="lazy">
       <figcaption>Uiterlijk van Paro: een zeehond-achtige zorgrobot</figcaption>
     </figure></p>
 <h3>Joy for All - Companion Pet Cat</h3>
 <p>De <a href="https://joyforall.com/products/companion-cats" target="_blank" rel="noopener noreferrer">Companion Pet Cat</a> is de andere kant van het spectrum: een goedkope oplossing, die aansluit bij wat mensen al kennen, katten. De kat is meer ontwikkeld als gezelschapsdier dat overal kan worden toegepast. Met de prijs van €124,- en verkoop bij bijvoorbeeld <a href="http://Bol.com" target="_blank" rel="noopener noreferrer">Bol.com</a> is dit een heel andere insteek van (verzorgers van) gebruikers bereiken. De interactie en bewegende onderdelen geven het beestje meer interactiemogelijkheden.</p>
 <p>Nadeel van dit product is dat het niet op onderzoek gebaseerd is, maar op de werkelijkheid van katten. Hiermee wordt niet direct op de problemen van mensen met dementie of autisme ingespeeld. De kat lust 4 AA-batterijen en heeft geen manier van opladen. Hierdoor kunnen batterijen leeg raken, wat paniek en verwarring kan veroorzaken bij de gebruiker.</p>
 <p><figure>
-      <img src="/images/companionPetCat.png" alt="Uiterlijk van Companion Pet Cat: een katachtige zorgrobot">
+      <img src="/images/companionPetCat.png" alt="Uiterlijk van Companion Pet Cat: een katachtige zorgrobot" loading="lazy">
       <figcaption>Uiterlijk van Companion Pet Cat: een katachtige zorgrobot</figcaption>
     </figure></p>
 <h3>Conclusie</h3>
@@ -313,7 +302,9 @@ function toggleMenu() {
 
     </article>
 
-    <!-- <nav class="post-navigation">
+    <h2 style="margin-block:2rem;">Aanverwante Artikelen</h2>
+
+    <div class="post-navigation">
         
         
         
@@ -375,21 +366,7 @@ function toggleMenu() {
             
                 
             
-                
-                    
-                        
-                        <a href="/blog/2022-10-eenhoorn-iteratie-2/" class="card">
-                            
-                                <img loading="lazy" src="/images/pss-op-4.png" alt="" >
-                            
-                            <div class="card-content">
-                                <p class="nav-label">Vorig artikel</p>
-                                <h3>Hoe zorgt de Eenhoorn in Marken dat hun beleving en producten centraal staan tijdens de rondleiding?</h3>
-                                <p class="subtitle">Geschreven in oktober 2022</p>
-                            </div>
-                        </a>
-                    
-                    
+                                    
                     
                         
                         <a href="/blog/2022-09-mijn-kleurenblindheid/" class="card">
@@ -397,9 +374,22 @@ function toggleMenu() {
                                 <img loading="lazy" src="/images/Deuteranopia-small.png" alt="" >
                             
                             <div class="card-content">
-                                <p class="nav-label">Volgend artikel</p>
+                                <p class="nav-label subtitle">Vorig artikel</p>
                                 <h3>Mijn kleurenblindheid geeft me letterlijk een andere blik op de wereld</h3>
                                 <p class="subtitle">Geschreven in september 2022</p>
+                            </div>
+                        </a>
+                    
+                    
+                        
+                        <a href="/blog/2022-10-eenhoorn-iteratie-2/" class="card">
+                            
+                                <img loading="lazy" src="/images/pss-op-4.png" alt="" >
+                            
+                            <div class="card-content">
+                                <p class="nav-label subtitle">Volgend artikel</p>
+                                <h3>Hoe zorgt de Eenhoorn in Marken dat hun beleving en producten centraal staan tijdens de rondleiding?</h3>
+                                <p class="subtitle">Geschreven in oktober 2022</p>
                             </div>
                         </a>
                     
@@ -484,7 +474,7 @@ function toggleMenu() {
                 
             
         </div>
-    </nav> -->
+    </div>
 </main>
     
     <footer>
@@ -527,30 +517,6 @@ function toggleMenu() {
         </a>
     </div>
 </footer>
-
-<style>
-    .repo-bar {
-        padding: 2rem;
-        text-align: center;
-        /* border-top: 1px solid var(--border-color); */
-    }
-    .repo-bar a {
-        font-size:0.75rem;
-        opacity:0.25;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        color: inherit;
-        text-decoration: none;
-        transition: opacity 200ms ease;
-    }
-    .repo-bar a:hover {
-        opacity:1;
-    }
-    .github-icon {
-        display: inline-block;
-    }
-</style>
 
     
     <div id="myModal" class="modal">

@@ -34,7 +34,7 @@ function switchStylesheet() {
     const stylesheet = document.querySelector('link[rel="stylesheet"][href*="style"]');
     if (stylesheet) {
         const currentHref = stylesheet.getAttribute('href');
-        const newHref = currentHref === '/css/style-2024-10.css' ? '/css/style-2024-12.css' : '/css/style-2024-10.css';
+        const newHref = currentHref === '/css/style-2024-10.css' ? '/css/style-2025-01.css' : '/css/style-2024-10.css';
         stylesheet.setAttribute('href', newHref);
     }
 }
@@ -57,6 +57,16 @@ h1Element.addEventListener('click', () => {
         tapCount = 0; // Reset the tap count after switching
     }
 });
+
+
+function toggleMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const links = document.querySelector('.links');
+    const nav = document.querySelector('nav');
+    hamburger.classList.toggle('active');
+    links.classList.toggle('active');
+    nav.classList.toggle('active');
+}
 
 
 

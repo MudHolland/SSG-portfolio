@@ -59,17 +59,6 @@
     </div>
 </nav>
 
-<script>
-function toggleMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const links = document.querySelector('.links');
-    const nav = document.querySelector('nav');
-    hamburger.classList.toggle('active');
-    links.classList.toggle('active');
-    nav.classList.toggle('active');
-}
-</script>
-
     
     
 <header>
@@ -226,23 +215,23 @@ function toggleMenu() {
 <h4>Roguelikes en Roguelites</h4>
 <p>In roguelike en roguelite games zoals <em>Hades</em> en <em>Returnal</em> wordt PGC gebruikt om willekeurige dungeons en levels te creëren. Dit zorgt ervoor dat spelers elke keer dat ze spelen een nieuwe uitdaging tegenkomen, wat de replayability aanzienlijk verhoogt. De willekeurige elementen zorgen voor verrassingen en houden de gameplay fris en boeiend.</p>
 <p><figure>
-      <img src="/images/Returnal.webp" alt="Returnal: Willekeurige levels, wapens en beloningen - Elke speelsessie biedt een nieuwe uitdaging">
+      <img src="/images/Returnal.webp" alt="Returnal: Willekeurige levels, wapens en beloningen - Elke speelsessie biedt een nieuwe uitdaging" loading="lazy">
       <figcaption>Returnal: Willekeurige levels, wapens en beloningen - Elke speelsessie biedt een nieuwe uitdaging</figcaption>
     </figure></p>
 <h4>Open-World Games</h4>
 <p>In open-world games zoals <em>Minecraft</em> en <em>No Man's Sky</em> wordt PGC gebruikt om enorme, uitgestrekte werelden te creëren die spelers kunnen verkennen. In <em>Minecraft</em> worden de landschappen, grotten en biomen willekeurig gegenereerd, waardoor elke wereld uniek is. In <em>No Man's Sky</em> worden hele planeten en sterrenstelsels gegenereerd, wat spelers de mogelijkheid geeft om eindeloos te verkennen.</p>
 <p><figure>
-      <img src="/images/nms-pgc-creatures.webp" alt="No Man's Sky: Willekeurig gegenereerde planeten en sterrenstelsels met onontdekte levensvormen - Eindeloze verkenning en ontdekking">
+      <img src="/images/nms-pgc-creatures.webp" alt="No Man's Sky: Willekeurig gegenereerde planeten en sterrenstelsels met onontdekte levensvormen - Eindeloze verkenning en ontdekking" loading="lazy">
       <figcaption>No Man's Sky: Willekeurig gegenereerde planeten en sterrenstelsels met onontdekte levensvormen - Eindeloze verkenning en ontdekking</figcaption>
     </figure></p>
 <p><figure>
-      <img src="/images/minecraft-pgc.png" alt="Minecraft: Willekeurig gegenereerde landschappen en biomen - Elke wereld is uniek en biedt eindeloze mogelijkheden voor verkenning en creatie">
+      <img src="/images/minecraft-pgc.png" alt="Minecraft: Willekeurig gegenereerde landschappen en biomen - Elke wereld is uniek en biedt eindeloze mogelijkheden voor verkenning en creatie" loading="lazy">
       <figcaption>Minecraft: Willekeurig gegenereerde landschappen en biomen - Elke wereld is uniek en biedt eindeloze mogelijkheden voor verkenning en creatie</figcaption>
     </figure></p>
 <h4>RPG's en Adventure Games</h4>
 <p>In RPG's en adventure games zoals <em>Diablo</em> en <em>Torchlight</em> wordt PGC gebruikt om willekeurige quests, loot en vijanden te genereren. Dit zorgt ervoor dat spelers altijd nieuwe uitdagingen en beloningen tegenkomen, wat de levensduur van het spel verlengt. De willekeurige elementen voegen een laag van onvoorspelbaarheid toe die de gameplay spannend houdt.</p>
 <p><figure>
-      <img src="/images/diablo-pgc.jpg" alt="Diablo: Willekeurige quests, loot en vijanden - Altijd nieuwe uitdagingen en beloningen">
+      <img src="/images/diablo-pgc.jpg" alt="Diablo: Willekeurige quests, loot en vijanden - Altijd nieuwe uitdagingen en beloningen" loading="lazy">
       <figcaption>Diablo: Willekeurige quests, loot en vijanden - Altijd nieuwe uitdagingen en beloningen</figcaption>
     </figure></p>
 <h3>Voordelen van Procedurally Generated Content</h3>
@@ -262,7 +251,9 @@ function toggleMenu() {
 
     </article>
 
-    <!-- <nav class="post-navigation">
+    <h2 style="margin-block:2rem;">Aanverwante Artikelen</h2>
+
+    <div class="post-navigation">
         
         
         
@@ -270,21 +261,7 @@ function toggleMenu() {
             
                 
             
-                
-                    
-                        
-                        <a href="/blog/2024-12-haptic-feedback/" class="card">
-                            
-                                <img loading="lazy" src="/images/haptic-feedback.webp" alt="" >
-                            
-                            <div class="card-content">
-                                <p class="nav-label">Vorig artikel</p>
-                                <h3>Haptische Feedback in Game Design: De Kracht van Tastbare Ervaringen</h3>
-                                <p class="subtitle">Geschreven in december 2024</p>
-                            </div>
-                        </a>
-                    
-                    
+                                    
                     
                         
                         <a href="/blog/2024-10-new-style/" class="card">
@@ -292,9 +269,22 @@ function toggleMenu() {
                                 <img loading="lazy" src="/images/2024-10-new-style-proto.png" alt="" >
                             
                             <div class="card-content">
-                                <p class="nav-label">Volgend artikel</p>
+                                <p class="nav-label subtitle">Vorig artikel</p>
                                 <h3>De nieuwe huisstijl van dennisulijn.com</h3>
                                 <p class="subtitle">Geschreven in oktober 2024</p>
+                            </div>
+                        </a>
+                    
+                    
+                        
+                        <a href="/blog/2024-12-haptic-feedback/" class="card">
+                            
+                                <img loading="lazy" src="/images/haptic-feedback.webp" alt="" >
+                            
+                            <div class="card-content">
+                                <p class="nav-label subtitle">Volgend artikel</p>
+                                <h3>Haptische Feedback in Game Design: De Kracht van Tastbare Ervaringen</h3>
+                                <p class="subtitle">Geschreven in december 2024</p>
                             </div>
                         </a>
                     
@@ -433,7 +423,7 @@ function toggleMenu() {
                 
             
         </div>
-    </nav> -->
+    </div>
 </main>
     
     <footer>
@@ -476,30 +466,6 @@ function toggleMenu() {
         </a>
     </div>
 </footer>
-
-<style>
-    .repo-bar {
-        padding: 2rem;
-        text-align: center;
-        /* border-top: 1px solid var(--border-color); */
-    }
-    .repo-bar a {
-        font-size:0.75rem;
-        opacity:0.25;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        color: inherit;
-        text-decoration: none;
-        transition: opacity 200ms ease;
-    }
-    .repo-bar a:hover {
-        opacity:1;
-    }
-    .github-icon {
-        display: inline-block;
-    }
-</style>
 
     
     <div id="myModal" class="modal">

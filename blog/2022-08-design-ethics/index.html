@@ -59,17 +59,6 @@
     </div>
 </nav>
 
-<script>
-function toggleMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const links = document.querySelector('.links');
-    const nav = document.querySelector('nav');
-    hamburger.classList.toggle('active');
-    links.classList.toggle('active');
-    nav.classList.toggle('active');
-}
-</script>
-
     
     
 <header>
@@ -283,7 +272,7 @@ function toggleMenu() {
 <h2>Stakeholders</h2>
 <p>Vanuit de verbeeldingsmethoden kwam ik tot belangrijke stakeholders. Door deze stakeholders overzichtelijk in kaart te brengen in een Stakeholdermap kan ik bepalen welke belanghebbenden ingrijpende eisen of invloed hebben op het product.</p>
 <p><figure>
-      <img src="/images/Stakeholdermap.png" alt="Stakeholdermap: een overzicht van directe en indirecte belanghebbenden">
+      <img src="/images/Stakeholdermap.png" alt="Stakeholdermap: een overzicht van directe en indirecte belanghebbenden" loading="lazy">
       <figcaption>Stakeholdermap: een overzicht van directe en indirecte belanghebbenden</figcaption>
     </figure></p>
 <h2>Provotype</h2>
@@ -319,7 +308,7 @@ function toggleMenu() {
 <h2>Ontwerpoplossingen</h2>
 <h3>Uiterlijk</h3>
 <p><figure>
-      <img src="/images/ethisch-uiterlijk.png" alt="Mogelijkheden voor toepassing van ethiek op het uiterlijk">
+      <img src="/images/ethisch-uiterlijk.png" alt="Mogelijkheden voor toepassing van ethiek op het uiterlijk" loading="lazy">
       <figcaption>Mogelijkheden voor toepassing van ethiek op het uiterlijk</figcaption>
     </figure></p>
 <p>Verschillende onderdelen van dieren kunnen worden gemixt en gekozen om de meeste impact te maken, maar onmiskenbaar een onbestaand dier:</p>
@@ -333,7 +322,7 @@ function toggleMenu() {
 </ul>
 <h3>Interactie</h3>
 <p><figure>
-      <img src="/images/ethisch-interactie.png" alt="Mogelijkheden voor toepassing van ethiek op het interacties">
+      <img src="/images/ethisch-interactie.png" alt="Mogelijkheden voor toepassing van ethiek op het interacties" loading="lazy">
       <figcaption>Mogelijkheden voor toepassing van ethiek op het interacties</figcaption>
     </figure></p>
 <h4>Opladen</h4>
@@ -371,7 +360,9 @@ function toggleMenu() {
 
     </article>
 
-    <!-- <nav class="post-navigation">
+    <h2 style="margin-block:2rem;">Aanverwante Artikelen</h2>
+
+    <div class="post-navigation">
         
         
         
@@ -441,21 +432,7 @@ function toggleMenu() {
             
                 
             
-                
-                    
-                        
-                        <a href="/blog/2022-08-eenhoorn-iteratie-1/" class="card">
-                            
-                                <img loading="lazy" src="/images/pss-eenhoorn.jpg" alt="" >
-                            
-                            <div class="card-content">
-                                <p class="nav-label">Vorig artikel</p>
-                                <h3>Hoe kan de Eenhoorn in Marken bezoekers van hun rondleiding een ware beleving maken?</h3>
-                                <p class="subtitle">Geschreven in augustus 2022</p>
-                            </div>
-                        </a>
-                    
-                    
+                                    
                     
                         
                         <a href="/blog/2022-07-eenhoorn-voorbereiding/" class="card">
@@ -463,9 +440,22 @@ function toggleMenu() {
                                 <img loading="lazy" src="/images/pss-eenhoorn.jpg" alt="" >
                             
                             <div class="card-content">
-                                <p class="nav-label">Volgend artikel</p>
+                                <p class="nav-label subtitle">Vorig artikel</p>
                                 <h3>Iteratief Van thee-opslag naar thee-beleving bij de Eenhoorn in Marken</h3>
                                 <p class="subtitle">Geschreven in juli 2022</p>
+                            </div>
+                        </a>
+                    
+                    
+                        
+                        <a href="/blog/2022-08-eenhoorn-iteratie-1/" class="card">
+                            
+                                <img loading="lazy" src="/images/pss-eenhoorn.jpg" alt="" >
+                            
+                            <div class="card-content">
+                                <p class="nav-label subtitle">Volgend artikel</p>
+                                <h3>Hoe kan de Eenhoorn in Marken bezoekers van hun rondleiding een ware beleving maken?</h3>
+                                <p class="subtitle">Geschreven in augustus 2022</p>
                             </div>
                         </a>
                     
@@ -542,7 +532,7 @@ function toggleMenu() {
                 
             
         </div>
-    </nav> -->
+    </div>
 </main>
     
     <footer>
@@ -585,30 +575,6 @@ function toggleMenu() {
         </a>
     </div>
 </footer>
-
-<style>
-    .repo-bar {
-        padding: 2rem;
-        text-align: center;
-        /* border-top: 1px solid var(--border-color); */
-    }
-    .repo-bar a {
-        font-size:0.75rem;
-        opacity:0.25;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        color: inherit;
-        text-decoration: none;
-        transition: opacity 200ms ease;
-    }
-    .repo-bar a:hover {
-        opacity:1;
-    }
-    .github-icon {
-        display: inline-block;
-    }
-</style>
 
     
     <div id="myModal" class="modal">

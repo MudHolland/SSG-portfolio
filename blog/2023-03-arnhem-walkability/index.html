@@ -59,17 +59,6 @@
     </div>
 </nav>
 
-<script>
-function toggleMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const links = document.querySelector('.links');
-    const nav = document.querySelector('nav');
-    hamburger.classList.toggle('active');
-    links.classList.toggle('active');
-    nav.classList.toggle('active');
-}
-</script>
-
     
     
 <header>
@@ -312,7 +301,7 @@ function toggleMenu() {
 <h3>Boek: Loop!</h3>
 <p>Het boek <a href="https://molster.city/projects/loop-het-boek-over-loopvriendelijke-stedenbouw" target="_blank" rel="noopener noreferrer">&quot;Loop!&quot;</a>, geschreven door Annemieke Molster, biedt handvatten en principes die het lopen in steden en omgevingen bevordert en verbeterd. Hierbij zijn 10 principes leidend. Deze heb ik omgezet tot een Stepping Stone, om deze informatie samen te vatten, hier zichtbare betekenis aan te koppelen en dit makkelijk te kunnen delen. Dit hielp me tijdens het project om de omgevingsvariabelen van voetgangers in beeld te houden.</p>
 <p><figure>
-      <img src="/images/DennisUlijn_BTH_100-2_SteppingStoneLoop_V1.0.png" alt="Stepping Stone: belangrijke eigenschappen van omgevingsvariabelen die invloed hebben op de ervaring van de voetganger">
+      <img src="/images/DennisUlijn_BTH_100-2_SteppingStoneLoop_V1.0.png" alt="Stepping Stone: belangrijke eigenschappen van omgevingsvariabelen die invloed hebben op de ervaring van de voetganger" loading="lazy">
       <figcaption>Stepping Stone: belangrijke eigenschappen van omgevingsvariabelen die invloed hebben op de ervaring van de voetganger</figcaption>
     </figure></p>
 <h3>Focus</h3>
@@ -395,14 +384,16 @@ function toggleMenu() {
 <h2>Stepping stone</h2>
 <p>Ook deze informatie heb ik omgezet tot een Stepping Stone, om deze informatie samen te vatten, betekenis zichtbaar of zelfs meetbaar te maken en dit makkelijk te kunnen delen.</p>
 <p><figure>
-      <img src="/images/CustomerSatisfaction.png" alt="Customer Satisfaction toont in een grafiek dat gebrek aan kwaliteit de klanttevredenheid negatief maken, comfort zorgt dat een wandeling prettig is en delighters er een leuke ervaring van maken. Afstand is niet aan te passen, maar bepaald wel of mensen lopen of niet">
+      <img src="/images/CustomerSatisfaction.png" alt="Customer Satisfaction toont in een grafiek dat gebrek aan kwaliteit de klanttevredenheid negatief maken, comfort zorgt dat een wandeling prettig is en delighters er een leuke ervaring van maken. Afstand is niet aan te passen, maar bepaald wel of mensen lopen of niet" loading="lazy">
       <figcaption>Customer Satisfaction toont in een grafiek dat gebrek aan kwaliteit de klanttevredenheid negatief maken, comfort zorgt dat een wandeling prettig is en delighters er een leuke ervaring van maken. Afstand is niet aan te passen, maar bepaald wel of mensen lopen of niet</figcaption>
     </figure></p>
 <p>Deze Stepping stone maakte het mogelijk om inzicht te krijgen in de behoeften, beweegredenen en problemen die inwoners van Arnhem ervaren voor en tijdens het lopen. Om deze punten in beeld te krijgen, heb ik een co-creatiesessie ontworpen om te achterhalen wat gebruikers denken en voelen bij lopen in Arnhem. De theorie, opzet en uitkomsten van deze co-creatiesessie zijn te lezen in het volgende artikel.</p>
 
     </article>
 
-    <!-- <nav class="post-navigation">
+    <h2 style="margin-block:2rem;">Aanverwante Artikelen</h2>
+
+    <div class="post-navigation">
         
         
         
@@ -450,21 +441,7 @@ function toggleMenu() {
             
                 
             
-                
-                    
-                        
-                        <a href="/blog/2023-04-arnhem-co-creatie-met-inwoners/" class="card">
-                            
-                                <img loading="lazy" src="/images/BTH-Co-creatie-Make.png" alt="" >
-                            
-                            <div class="card-content">
-                                <p class="nav-label">Vorig artikel</p>
-                                <h3>In Co-creatie met inwoners van Arnhem op zoek naar de ideale straat waar mensen willen zijn</h3>
-                                <p class="subtitle">Geschreven in april 2023</p>
-                            </div>
-                        </a>
-                    
-                    
+                                    
                     
                         
                         <a href="/blog/2023-02-arnhem-gedragsverandering/" class="card">
@@ -472,9 +449,22 @@ function toggleMenu() {
                                 <img loading="lazy" src="/images/gedragslenzen.jpg" alt="" >
                             
                             <div class="card-content">
-                                <p class="nav-label">Volgend artikel</p>
+                                <p class="nav-label subtitle">Vorig artikel</p>
                                 <h3>Ontwerpen voor Gedragsverandering: Hoe krijgen wij Arnhem uit die auto en op de fiets?</h3>
                                 <p class="subtitle">Geschreven in februari 2023</p>
+                            </div>
+                        </a>
+                    
+                    
+                        
+                        <a href="/blog/2023-04-arnhem-co-creatie-met-inwoners/" class="card">
+                            
+                                <img loading="lazy" src="/images/BTH-Co-creatie-Make.png" alt="" >
+                            
+                            <div class="card-content">
+                                <p class="nav-label subtitle">Volgend artikel</p>
+                                <h3>In Co-creatie met inwoners van Arnhem op zoek naar de ideale straat waar mensen willen zijn</h3>
+                                <p class="subtitle">Geschreven in april 2023</p>
                             </div>
                         </a>
                     
@@ -573,7 +563,7 @@ function toggleMenu() {
                 
             
         </div>
-    </nav> -->
+    </div>
 </main>
     
     <footer>
@@ -616,30 +606,6 @@ function toggleMenu() {
         </a>
     </div>
 </footer>
-
-<style>
-    .repo-bar {
-        padding: 2rem;
-        text-align: center;
-        /* border-top: 1px solid var(--border-color); */
-    }
-    .repo-bar a {
-        font-size:0.75rem;
-        opacity:0.25;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        color: inherit;
-        text-decoration: none;
-        transition: opacity 200ms ease;
-    }
-    .repo-bar a:hover {
-        opacity:1;
-    }
-    .github-icon {
-        display: inline-block;
-    }
-</style>
 
     
     <div id="myModal" class="modal">

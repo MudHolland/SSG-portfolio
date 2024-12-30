@@ -59,17 +59,6 @@
     </div>
 </nav>
 
-<script>
-function toggleMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const links = document.querySelector('.links');
-    const nav = document.querySelector('nav');
-    hamburger.classList.toggle('active');
-    links.classList.toggle('active');
-    nav.classList.toggle('active');
-}
-</script>
-
     
     
 <header>
@@ -269,7 +258,7 @@ function toggleMenu() {
 <h2>Methodenkaart Praktijkonderzoek</h2>
 <p>Om van een vraagstuk naar een oplossing te komen, moet je onderzoek doen. Als je gedegen onderzoek wil doen, is het goed om bewust te zijn van de twee innovatie-contexten en de verschillende onderzoeksruimten van de methodenkaart. Hiermee is het mogelijk een focus te leggen op de richting van het onderzoek.</p>
 <p><figure>
-      <img src="/images/Methodenkaart-praktijkonderzoek.png" alt="Onderzoek als proces tussen vraagstuk/kans en oplossing en de vijf onderzoeksruimten binnen dit proces">
+      <img src="/images/Methodenkaart-praktijkonderzoek.png" alt="Onderzoek als proces tussen vraagstuk/kans en oplossing en de vijf onderzoeksruimten binnen dit proces" loading="lazy">
       <figcaption>Onderzoek als proces tussen vraagstuk/kans en oplossing en de vijf onderzoeksruimten binnen dit proces</figcaption>
     </figure></p>
 <h3>Triangulatie</h3>
@@ -323,7 +312,7 @@ function toggleMenu() {
 <p>Erika Hall biedt een ware schat aan informatie over de waarde en noodzaak van onderzoek. Met zoveel informatie in één hoofdstuk is het haast onmogelijke om overzichtelijk aantekeningen te maken. Hoe kan dit krachtiger en overzichtelijker?</p>
 <p>Met de methode Sketch Noting uit het boek Design. Think. Make. Break. Repeat. legde ik belangrijke informatie vast, met logische verbanden en hieraan gekoppelde symbolen. Dit zorgt dat de informatie beter  bijblijft, een volgbaar verhaal wordt en later makkelijk terug in te zien is. Dit resultaat is hieronder te zien.</p>
 <p><figure>
-      <img src="/images/SketchNoting.png" alt="Hoofdstuk 2 van Just Enough Research omgezet in een overzichtelijke samenvatting door visuele aantekeningen">
+      <img src="/images/SketchNoting.png" alt="Hoofdstuk 2 van Just Enough Research omgezet in een overzichtelijke samenvatting door visuele aantekeningen" loading="lazy">
       <figcaption>Hoofdstuk 2 van Just Enough Research omgezet in een overzichtelijke samenvatting door visuele aantekeningen</figcaption>
     </figure></p>
 <h4>Stakeholder Analysis</h4>
@@ -382,7 +371,7 @@ function toggleMenu() {
 </ol>
 <p>Binnen haar proces kiest zij evaluerende of analytische methoden bij welke belanghebbende zij gaat onderzoeken. Dit is een benadering van het bepalen van de juiste methode voor het verkrijgen van informatie, welke handig kan zijn als je specifieke belanghebbenden wil onderzoeken.</p>
 <p><figure>
-      <img src="/images/Select-the-Approach.png" alt="Een schematische weergave van methodenoverzicht zoals Erica Hall deze hanteert">
+      <img src="/images/Select-the-Approach.png" alt="Een schematische weergave van methodenoverzicht zoals Erica Hall deze hanteert" loading="lazy">
       <figcaption>Een schematische weergave van methodenoverzicht zoals Erica Hall deze hanteert</figcaption>
     </figure></p>
 <p>Het rapporteren leidt tot overdraagbare informatie, die de mogelijkheid tot feedback en inzichten oplevert:</p>
@@ -405,7 +394,9 @@ function toggleMenu() {
 
     </article>
 
-    <!-- <nav class="post-navigation">
+    <h2 style="margin-block:2rem;">Aanverwante Artikelen</h2>
+
+    <div class="post-navigation">
         
         
         
@@ -479,21 +470,7 @@ function toggleMenu() {
             
                 
             
-                
-                    
-                        
-                        <a href="/blog/2022-07-eenhoorn-voorbereiding/" class="card">
-                            
-                                <img loading="lazy" src="/images/pss-eenhoorn.jpg" alt="" >
-                            
-                            <div class="card-content">
-                                <p class="nav-label">Vorig artikel</p>
-                                <h3>Iteratief Van thee-opslag naar thee-beleving bij de Eenhoorn in Marken</h3>
-                                <p class="subtitle">Geschreven in juli 2022</p>
-                            </div>
-                        </a>
-                    
-                    
+                                    
                     
                         
                         <a href="/blog/2022-06-onboarding/" class="card">
@@ -501,9 +478,22 @@ function toggleMenu() {
                                 <img loading="lazy" src="/images/onboarding-mario3d.jpeg" alt="" >
                             
                             <div class="card-content">
-                                <p class="nav-label">Volgend artikel</p>
+                                <p class="nav-label subtitle">Vorig artikel</p>
                                 <h3>Hoe onboarding in video games ons handvatten geeft om gebruikers mee te nemen in allerhande nieuwe ervaringen</h3>
                                 <p class="subtitle">Geschreven in juni 2022</p>
+                            </div>
+                        </a>
+                    
+                    
+                        
+                        <a href="/blog/2022-07-eenhoorn-voorbereiding/" class="card">
+                            
+                                <img loading="lazy" src="/images/pss-eenhoorn.jpg" alt="" >
+                            
+                            <div class="card-content">
+                                <p class="nav-label subtitle">Volgend artikel</p>
+                                <h3>Iteratief Van thee-opslag naar thee-beleving bij de Eenhoorn in Marken</h3>
+                                <p class="subtitle">Geschreven in juli 2022</p>
                             </div>
                         </a>
                     
@@ -576,7 +566,7 @@ function toggleMenu() {
                 
             
         </div>
-    </nav> -->
+    </div>
 </main>
     
     <footer>
@@ -619,30 +609,6 @@ function toggleMenu() {
         </a>
     </div>
 </footer>
-
-<style>
-    .repo-bar {
-        padding: 2rem;
-        text-align: center;
-        /* border-top: 1px solid var(--border-color); */
-    }
-    .repo-bar a {
-        font-size:0.75rem;
-        opacity:0.25;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        color: inherit;
-        text-decoration: none;
-        transition: opacity 200ms ease;
-    }
-    .repo-bar a:hover {
-        opacity:1;
-    }
-    .github-icon {
-        display: inline-block;
-    }
-</style>
 
     
     <div id="myModal" class="modal">

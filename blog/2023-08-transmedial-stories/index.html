@@ -59,17 +59,6 @@
     </div>
 </nav>
 
-<script>
-function toggleMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const links = document.querySelector('.links');
-    const nav = document.querySelector('nav');
-    hamburger.classList.toggle('active');
-    links.classList.toggle('active');
-    nav.classList.toggle('active');
-}
-</script>
-
     
     
 <header>
@@ -435,7 +424,9 @@ Op Facebook worden posts gemaakt, maar vaak met een alinea tekst: hier zit namel
 
     </article>
 
-    <!-- <nav class="post-navigation">
+    <h2 style="margin-block:2rem;">Aanverwante Artikelen</h2>
+
+    <div class="post-navigation">
         
         
         
@@ -469,21 +460,7 @@ Op Facebook worden posts gemaakt, maar vaak met een alinea tekst: hier zit namel
             
                 
             
-                
-                    
-                        
-                        <a href="/blog/2023-09-ontwerpen-voor-de-smaakpapillen/" class="card">
-                            
-                                <img loading="lazy" src="/images/receptenboek.webp" alt="" >
-                            
-                            <div class="card-content">
-                                <p class="nav-label">Vorig artikel</p>
-                                <h3>Mijn kookexperimenten: Ontwerpen voor de smaakpapillen</h3>
-                                <p class="subtitle">Geschreven in augustus 2023</p>
-                            </div>
-                        </a>
-                    
-                    
+                                    
                     
                         
                         <a href="/blog/2023-08-transmedia-storytelling-checklist/" class="card">
@@ -491,8 +468,21 @@ Op Facebook worden posts gemaakt, maar vaak met een alinea tekst: hier zit namel
                                 <img loading="lazy" src="/images/TMS-5.png" alt="" >
                             
                             <div class="card-content">
-                                <p class="nav-label">Volgend artikel</p>
+                                <p class="nav-label subtitle">Vorig artikel</p>
                                 <h3>Hoe Creëer jij een held in een transmediaal verhaal? - een checklist</h3>
+                                <p class="subtitle">Geschreven in augustus 2023</p>
+                            </div>
+                        </a>
+                    
+                    
+                        
+                        <a href="/blog/2023-09-ontwerpen-voor-de-smaakpapillen/" class="card">
+                            
+                                <img loading="lazy" src="/images/receptenboek.webp" alt="" >
+                            
+                            <div class="card-content">
+                                <p class="nav-label subtitle">Volgend artikel</p>
+                                <h3>Mijn kookexperimenten: Ontwerpen voor de smaakpapillen</h3>
                                 <p class="subtitle">Geschreven in augustus 2023</p>
                             </div>
                         </a>
@@ -606,7 +596,7 @@ Op Facebook worden posts gemaakt, maar vaak met een alinea tekst: hier zit namel
                 
             
         </div>
-    </nav> -->
+    </div>
 </main>
     
     <footer>
@@ -649,30 +639,6 @@ Op Facebook worden posts gemaakt, maar vaak met een alinea tekst: hier zit namel
         </a>
     </div>
 </footer>
-
-<style>
-    .repo-bar {
-        padding: 2rem;
-        text-align: center;
-        /* border-top: 1px solid var(--border-color); */
-    }
-    .repo-bar a {
-        font-size:0.75rem;
-        opacity:0.25;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        color: inherit;
-        text-decoration: none;
-        transition: opacity 200ms ease;
-    }
-    .repo-bar a:hover {
-        opacity:1;
-    }
-    .github-icon {
-        display: inline-block;
-    }
-</style>
 
     
     <div id="myModal" class="modal">
