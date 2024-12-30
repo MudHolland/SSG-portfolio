@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main  # Change this to your default branch if it's not 'main'
+      - dev  # Trigger the workflow on pushes to the dev branch
 
 jobs:
   build:
@@ -23,3 +23,10 @@ jobs:
 
       - name: Build site
         run: npm run build
+
+        - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: main
