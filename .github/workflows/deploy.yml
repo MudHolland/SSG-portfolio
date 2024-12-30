@@ -5,6 +5,9 @@ on:
     branches:
       - dev  # Trigger the workflow on pushes to the dev branch
 
+permissions:
+  contents: write  # Grant write permissions to the GITHUB_TOKEN
+
 jobs:
   build:
     runs-on: ubuntu-latest
