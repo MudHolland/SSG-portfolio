@@ -8,10 +8,10 @@
 	--light-grey: 	hsl(0,   0%,   90%);
 
 	--red: 			hsl(0,   90%,  50%);
-	--orange: hsl(30,   90%,  50%);
+	--orange: 		hsl(30,   90%,  50%);
 	--yellow: 		hsl(50,  90%,  50%);
-	--green: 		hsl(150, 80%,  50%);
-	--blue: 		hsl(200, 80%,  50%);
+	--green: 		hsl(150, 76%, 38%);
+	--blue: 		hsl(200, 76%, 46%);
 
 	--light-blue: 	hsl(200, 94%,  94%);
 	--dark-blue:	hsl(200, 100%, 13%);
@@ -40,6 +40,14 @@
 		--border-color:		var(--white);
 		--shadow-color:		var(--white);
 		--hover-color:		var(--light-blue);
+
+		.dark{
+			--element-bg-color: inherit;
+			--element-text-color: inherit;
+			--element-border-color: inherit;
+			--element-shadow-color: inherit;
+			--element-hover-border-color: inherit;
+		}
 	} */
 }
 
@@ -138,7 +146,7 @@ footer{
 	z-index:100;
 	background-color: transparent;
 	transition: 
-		background-color 1000ms ease,
+		/* background-color 250ms ease, */
 		height 1000ms ease;
 
 	.content{
@@ -657,7 +665,7 @@ button,
 
     padding: 0.5rem 1rem;
 	font-size:1rem;
-	font-weight:700;
+	font-weight:800;
 	text-transform: uppercase;
     
     transition:
@@ -673,10 +681,13 @@ button{
     color: var(--text-color);
     border: 0.125rem solid var(--border-color);
     box-shadow: var(--shadow-size-m) var(--shadow-size-m) 0 var(--shadow-color);
+	transition: all 200ms ease;
 
 	&:hover{
-		color:var(--element-text-color);
-		background-color: var(--page-bg-color);
+		/* color:var(--element-text-color); */
+		/* background-color: var(--page-bg-color); */
+		box-shadow: var(--shadow-size-s) var(--shadow-size-s) 0 var(--shadow-color);
+		transform: translateY(var(--shadow-size-s));
 	}
 	
 	&:active{
@@ -694,7 +705,8 @@ button{
 			color:var(--text-color);
 			border-color: var(--border-color);
 			background-color: var(--element-bg-color);
-			box-shadow: var(--shadow-size-m) var(--shadow-size-m) 0 var(--shadow-color);
+			box-shadow: var(--shadow-size-s) var(--shadow-size-s) 0 var(--shadow-color);
+			transform: translateY(var(--shadow-size-s));
 		}
 	
 		&:active{
@@ -714,7 +726,8 @@ button{
 			color:var(--text-color);
 			border-color: var(--border-color);
 			background-color: var(--element-bg-color);
-			box-shadow: var(--shadow-size-m) var(--shadow-size-m) 0 var(--shadow-color);
+			box-shadow: var(--shadow-size-s) var(--shadow-size-s) 0 var(--shadow-color);
+			transform: translateY(var(--shadow-size-s));
 		}
 	
 		&:active{
@@ -722,6 +735,20 @@ button{
 			transform: translateY(var(--shadow-size-m));
 		}
 
+	}
+}
+
+button.dark,
+.chip.dark{
+	color:var(--white);
+
+	&.secondary,
+	&.ghost{
+		color:var(--element-text-color);
+
+		&:hover{
+			color:var(--white);
+		}
 	}
 }
 
@@ -760,12 +787,118 @@ button:disabled{
 	padding:0.25rem 0.75rem;
 	width:inherit;
 	height:inherit;
+	transition: all 200ms ease;
+
+	&:hover{
+		box-shadow: var(--shadow-size-s) var(--shadow-size-s) 0 var(--shadow-color);
+		transform: translateY(var(--shadow-size-s));
+	}
 
 	&:active{
 		box-shadow: 0 0;
 		transform: translateY(var(--shadow-size-m));
 	}
 }
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+    .checkbox input[type=checkbox] {
+      --active: var(--dark-blue);
+      --active-inner: var(--white);
+      --focus: 2px var(--dark-blue);
+      --border: var(--dark-blue);
+      --border-hover: var(--dark-blue);
+      --background: var(--white);
+      --disabled: var(--bg-color);
+      --disabled-inner: var(--bg-color);
+	  appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      height: 21px;
+      outline: none;
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      margin: 0;
+      cursor: pointer;
+      border: 2px solid var(--bc, var(--border));
+      background: var(--b, var(--background));
+      transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+    }
+    .checkbox input[type=checkbox]:after {
+      content: "";
+      display: block;
+      left: 0;
+      top: 0;
+      position: absolute;
+      transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+    }
+    .checkbox input[type=checkbox]:checked {
+      --b: var(--active);
+      --bc: var(--active);
+      --d-o: .3s;
+      --d-t: .6s;
+      --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+    }
+    .checkbox input[type=checkbox]:disabled {
+      --b: var(--disabled);
+      cursor: not-allowed;
+      opacity: 0.9;
+    }
+    .checkbox input[type=checkbox]:disabled:checked {
+      --b: var(--disabled-inner);
+      --bc: var(--border);
+    }
+    .checkbox input[type=checkbox]:disabled + label {
+      cursor: not-allowed;
+    }
+    .checkbox input[type=checkbox]:hover:not(:checked):not(:disabled) {
+      --bc: var(--border-hover);
+    }
+    .checkbox input[type=checkbox]:focus {
+      box-shadow: 0 0 0 var(--focus);
+    }
+    .checkbox input[type=checkbox]:not(.switch) {
+      width: 21px;
+    }
+    .checkbox input[type=checkbox]:not(.switch):after {
+      opacity: var(--o, 0);
+    }
+    .checkbox input[type=checkbox]:not(.switch):checked {
+      --o: 1;
+    }
+    .checkbox input[type=checkbox] + label {
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+      margin-left: 4px;
+    }
+
+    .checkbox input[type=checkbox]:not(.switch) {
+      border-radius: 7px;
+    }
+    .checkbox input[type=checkbox]:not(.switch):after {
+      width: 5px;
+      height: 9px;
+      border: 2px solid var(--active-inner);
+      border-top: 0;
+      border-left: 0;
+      left: 7px;
+      top: 4px;
+      transform: rotate(var(--r, 20deg));
+    }
+    .checkbox input[type=checkbox]:not(.switch):checked {
+      --r: 43deg;
+    }
+  }
+
+  .checkbox * {
+    box-sizing: inherit;
+  }
+  .checkbox *:before,
+  .checkbox *:after {
+    box-sizing: inherit;
+  }
+
+
 
 @-webkit-keyframes zoom {
 	from {-webkit-transform:scale(0)}
@@ -930,11 +1063,6 @@ button:disabled{
 	gap:0.75rem 1rem;
 }
 
-.card .chip:hover{
-	color: var(--element-text-color);
-	border-color: var(--element-bg-color);
-}
-
 .reverse{
 	flex-direction: row-reverse;
 }
@@ -957,8 +1085,9 @@ button:disabled{
     color: var(--text-color);
 	background-color: var(--blue);
 	font-size:0.75rem;
+	font-weight:800;
+	text-transform: uppercase;
 	padding:0.25rem 0.75rem;
-	font-weight:400;
     border: 0.125rem solid var(--border-color);
     box-shadow: var(--shadow-size-m) var(--shadow-size-m) 0 var(--shadow-color);
 }
