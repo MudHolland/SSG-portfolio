@@ -19,7 +19,7 @@
 	--dark-blue:	hsl(200, 100%, 13%);
 	
 	--shadow-size-m:		0.25rem;	
-	--shadow-size-s:		calc(var(--shadow-size-m) / 2);
+	--shadow-size-s:		calc(var(--shadow-size-m) * 0.5);
 	--shadow-size-l:		calc(var(--shadow-size-m) * 2);
 
 	--page-bg-color:		var(--light-grey);
@@ -399,7 +399,7 @@ article ul > li::before {
 	color:var(--text-color);
 	font-weight: 700;
 	padding-inline: 0.5rem;
-	transition: all 200ms ease;
+	/* transition: all 200ms ease; */
 }  
 
 article ol {
@@ -711,13 +711,18 @@ button{
     color: var(--text-color);
     border: 0.125rem solid var(--border-color);
     box-shadow: var(--shadow-size-m) var(--shadow-size-m) 0 var(--shadow-color);
-	transition: all 200ms ease;
+	transition: 
+		background-color 200ms ease,
+		color 200ms ease,
+		border 200ms ease,
+		box-shadow 200ms ease,
+		transform 200ms ease;
 
 	&:hover{
 		/* color:var(--element-text-color); */
 		/* background-color: var(--page-bg-color); */
 		box-shadow: var(--shadow-size-s) var(--shadow-size-s) 0 var(--shadow-color);
-		transform: translateY(var(--shadow-size-s));
+		transform: translateY(calc( var(--shadow-size-m) - var(--shadow-size-s)));
 	}
 	
 	&:active{
@@ -736,7 +741,7 @@ button{
 			border-color: var(--border-color);
 			background-color: var(--element-bg-color);
 			box-shadow: var(--shadow-size-s) var(--shadow-size-s) 0 var(--shadow-color);
-			transform: translateY(var(--shadow-size-s));
+			transform: translateY(calc( var(--shadow-size-m) - var(--shadow-size-s)));
 		}
 	
 		&:active{
@@ -757,7 +762,7 @@ button{
 			border-color: var(--border-color);
 			background-color: var(--element-bg-color);
 			box-shadow: var(--shadow-size-s) var(--shadow-size-s) 0 var(--shadow-color);
-			transform: translateY(var(--shadow-size-s));
+			transform: translateY(calc( var(--shadow-size-m) - var(--shadow-size-s)));
 		}
 	
 		&:active{
@@ -817,11 +822,16 @@ button:disabled{
 	padding:0.25rem 0.75rem;
 	width:inherit;
 	height:inherit;
-	transition: all 200ms ease;
+	transition: 
+		background-color 200ms ease,
+		color 200ms ease,
+		border 200ms ease,
+		box-shadow 200ms ease,
+		transform 200ms ease;
 
 	&:hover{
 		box-shadow: var(--shadow-size-s) var(--shadow-size-s) 0 var(--shadow-color);
-		transform: translateY(var(--shadow-size-s));
+		transform: translateY(calc( var(--shadow-size-m) - var(--shadow-size-s)));
 		color:var(--text-color);
 	}
 
@@ -1027,13 +1037,13 @@ button:disabled{
 
     transition:
 		background-color 200ms ease,
-		box-shadow 100ms ease,
-		transform 100ms ease;
+		box-shadow 200ms ease,
+		transform 200ms ease;
 	}
 	
 .card:hover{
 	box-shadow: var(--shadow-size-s) var(--shadow-size-s) 0 var(--shadow-color);
-	transform: translateY(var(--shadow-size-s));
+	transform: translateY(calc( var(--shadow-size-m) - var(--shadow-size-s)));
 	color:initial;
 }
 	
