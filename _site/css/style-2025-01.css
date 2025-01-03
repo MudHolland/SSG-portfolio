@@ -1280,7 +1280,7 @@ table{
 @media screen and (max-width:767px){
 	article{
 		padding:1rem;
-		width: calc(100% - 2rem);
+		width: calc(100% - 2.5rem);
 	}
 
 	.card{
