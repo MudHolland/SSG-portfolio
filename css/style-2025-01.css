@@ -1116,6 +1116,11 @@ button:disabled{
 	gap:0.75rem 1rem;
 }
 
+.card .chip:hover{
+	box-shadow: initial;
+	transform: initial;
+}
+
 .reverse{
 	flex-direction: row-reverse;
 }
