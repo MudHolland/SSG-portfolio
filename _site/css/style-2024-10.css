@@ -1,7 +1,8 @@
+/* update 3-1-2025 15:44 */
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root{
-
 	--white: #FFFFFF;
 	--black:#000000;
 
@@ -1195,7 +1196,7 @@ td:first-child {
     .checkbox input[type=checkbox]:not(.switch):checked {
       --r: 43deg;
     }
-  }
+}
 
   .checkbox * {
     box-sizing: inherit;
