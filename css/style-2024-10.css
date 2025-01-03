@@ -203,7 +203,7 @@ footer ul{
 	display:flex;
 	flex-direction: row;
 	align-items: center;
-	gap:1rem;
+	gap:2rem;
 
 	a{
 		text-decoration: none;
@@ -228,6 +228,35 @@ nav .hamburger{
 
 .post-navigation .card {
     flex-direction: column;
+	position:relative;
+}
+
+.vorig::after{
+	position:absolute;
+	top:1rem;
+	left:1rem;
+	content:'vorig artikel';
+	color:var(--yellow-150);
+	background-color:var(--orange-025);
+	font-size:0.75rem;
+	padding:0.25rem 0.75rem;
+	font-weight:400;
+	border-radius:1rem;
+	box-shadow:0 var(--shadow-size-m) 0 var(--orange-050);
+}
+
+.volgend::after{
+	position:absolute;
+	top:1rem;
+	left:1rem;
+	content:'volgend artikel';
+	color:var(--yellow-150);
+	background-color:var(--orange-025);
+	font-size:0.75rem;
+	padding:0.25rem 0.75rem;
+	font-weight:400;
+	border-radius:1rem;
+	box-shadow:0 var(--shadow-size-m) 0 var(--orange-050);
 }
 
 .post-navigation .card img {
@@ -256,12 +285,9 @@ nav .hamburger{
     margin-bottom: 0.5rem;
 }
 
-
-
 .repo-bar {
 	padding: 2rem;
 	text-align: center;
-	/* border-top: 1px solid var(--border-color); */
 }
 .repo-bar a {
 	font-size:0.75rem;
