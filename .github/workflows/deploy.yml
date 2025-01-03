@@ -30,16 +30,12 @@ jobs:
       - name: Copy readme.md to _site
         run: cp readme.md _site/
 
+      - name: Create CNAME file
+        run: echo 'www.dennisulijn.com' > _site/CNAME
+
       - name: Deploy to main branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
           publish_branch: main
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          publish_branch: gh-pages
