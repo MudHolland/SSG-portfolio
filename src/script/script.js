@@ -1,3 +1,4 @@
+//Function to show modal when image is clicked
 (function () {
   function openModal(img) {
     if (modal) {
@@ -45,46 +46,99 @@
     });
   }
 
-  document.querySelectorAll(".quote").forEach((quote) => {
-    const bigText = quote.getAttribute("big-text");
-    if (!bigText) {
-      quote.setAttribute("big-text", "“"); // Fallback to quotation marks
+// Function to switch stylesheets
+    const h1Element = document.querySelector('h1');
+    let tapCount = 0;
+    let lastTapTime = 0;
+
+    function switchStylesheet() {
+        const stylesheet = document.querySelector('link[rel="stylesheet"][href*="style"]');
+        if (stylesheet) {
+            const currentHref = stylesheet.getAttribute('href');
+            const newHref = currentHref === '/css/style-2024-10.css' ? '/css/style-2025-01.css' : '/css/style-2024-10.css';
+            stylesheet.setAttribute('href', newHref);
+            
+            // Store the new stylesheet in localStorage
+            localStorage.setItem('preferredStylesheet', newHref);
+        }
     }
-  });
 
-  async function handleImageAspectRatio(figureElement) {
-    const imgElement = figureElement.querySelector('img');
-    await loadImage(imgElement);
-
-    const image = new Image();
-    image.src = imgElement.src;
-
-    if (image.height * 1.1 >= image.width) {
-      figureElement.classList.add('half-width');
+    function loadPreferredStylesheet() {
+        const preferredStylesheet = localStorage.getItem('preferredStylesheet');
+        if (preferredStylesheet) {
+            const stylesheet = document.querySelector('link[rel="stylesheet"][href*="style"]');
+            if (stylesheet) {
+                stylesheet.setAttribute('href', preferredStylesheet);
+            }
+        }
     }
-  }
+
+    h1Element.addEventListener('click', () => {
+        const currentTime = new Date().getTime();
+
+        if (currentTime - lastTapTime > 500) {
+            tapCount = 0;
+        }
+
+        tapCount++;
+        lastTapTime = currentTime;
+
+        if (tapCount === 3) {
+            switchStylesheet();
+            tapCount = 0;
+        }
+    });
+
+// Function for responsive navigation menu
+function toggleMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const links = document.querySelector('.links');
+    const nav = document.querySelector('nav');
+    hamburger.classList.toggle('active');
+    links.classList.toggle('active');
+    nav.classList.toggle('active');
+}
+
+// Ensure toggleMenu is accessible globally
+window.toggleMenu = toggleMenu;
+
+    document.querySelectorAll(".quote").forEach((quote) => {
+      const bigText = quote.getAttribute("big-text");
+      if (!bigText) {
+        quote.setAttribute("big-text", "“");
+      }
+    });
+
+    async function handleImageAspectRatio(figureElement) {
+      const imgElement = figureElement.querySelector('img');
+      await loadImage(imgElement);
+
+      const image = new Image();
+      image.src = imgElement.src;
+
+      if (image.height * 1.1 >= image.width) {
+        figureElement.classList.add('half-width');
+      }
+    }
 
   function addExternalLinkClass() {
-    // Get all anchor elements on the page
     const links = document.querySelectorAll('a');
 
-    // Iterate over each link
     links.forEach(link => {
-        // Check if the link's hostname is different from the current hostname
         if (link.hostname && link.hostname !== window.location.hostname) {
-            // Add the 'external' class
             link.classList.add('external');
         }
     });
 }
 
 // Call the function after the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', addExternalLinkClass);
+  document.addEventListener('DOMContentLoaded', addExternalLinkClass);
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const figureElements = document.querySelectorAll('figure');
-    figureElements.forEach(function (figureElement) {
-      handleImageAspectRatio(figureElement);
+    document.addEventListener("DOMContentLoaded", function () {
+      loadPreferredStylesheet();
+      const figureElements = document.querySelectorAll('figure');
+      figureElements.forEach(function (figureElement) {
+        handleImageAspectRatio(figureElement);
+      });
     });
-  });
-})();
+  })();
