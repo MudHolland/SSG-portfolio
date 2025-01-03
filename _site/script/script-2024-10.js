@@ -66,12 +66,6 @@ function toggleMenu() {
     hamburger.classList.toggle('active');
     links.classList.toggle('active');
     nav.classList.toggle('active');
-
-    if (links.classList.contains('active')) {
-        links.style.maxHeight = links.scrollHeight + "px";
-    } else {
-        links.style.maxHeight = null;
-    }
 }
 
 
