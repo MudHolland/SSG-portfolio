@@ -99,7 +99,6 @@ The GitHub Actions workflow is defined in `.github/workflows/deploy.yml`
 - [x] Configure hosting party to push main channel to public_html
 - [x] Implement lazy loading
 - [x] Add previous / next article below article
-- [-] Add related project articles for project articles
 
 ### Content
 - [x] Check article pages for data and layout
@@ -110,7 +109,7 @@ The GitHub Actions workflow is defined in `.github/workflows/deploy.yml`
 
 
 ### Design
-- [ ] Refine responsive design
+- [x] Refine responsive design
 - [ ] Update typography system
 - [ ] Add more interactive elements
 - [ ] Publish 2025 design style
