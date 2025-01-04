@@ -6,9 +6,8 @@ description: Een kijkje in het proces van het herontwerpen van mijn portfolio we
 date: 2024-12-22
 thumbnail: /images/DennisUlijn-2024-10.png
 tags:
-  - Web Development
-  - Design
-  - Portfolio
+  - Web Design
+  - Inspiratie
 ---
 
 In december 2024 heb ik besloten om mijn portfolio website te vernieuwen. Het doel was om een moderne, snelle en onderhoudbare website te creëren die mijn werk als Interaction Designer goed presenteert.

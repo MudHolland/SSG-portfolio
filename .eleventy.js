@@ -91,7 +91,7 @@ module.exports = function(eleventyConfig) {
   // Update featured blog collection to use same tag logic
   eleventyConfig.addCollection("featuredBlog", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/blog/*.md")
-      .filter(item => item.data.featured)
+      .filter(item => item.data.featured && !item.data.exclude)
       .map(item => {
         item.data.tags = item.data.tags || [];
         if (!item.data.tags.includes('Uitgelicht')) {
@@ -111,11 +111,11 @@ module.exports = function(eleventyConfig) {
     return Array.from(tagSet).sort();
   });  
 
-  // Group posts by tag
+  // Group posts by tag and exclude posts with exclude: true
   eleventyConfig.addCollection("postsByTag", function(collectionApi) {
     const tagMap = {};
     collectionApi.getAll().forEach(item => {
-      if (item.data.tags) {
+      if (item.data.tags && !item.data.exclude) {
         item.data.tags.forEach(tag => {
           if (!tagMap[tag]) {
             tagMap[tag] = [];
@@ -160,7 +160,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/script");
   eleventyConfig.addPassthroughCopy("src/.htaccess");
-  eleventyConfig.addPassthroughCopy("src/project/");
+  eleventyConfig.addPassthroughCopy("readme.md");
 
   return {
     dir: {

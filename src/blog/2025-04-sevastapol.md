@@ -1,5 +1,6 @@
 ---
 exclude: true
+featured: true
 layout: redirect.njk
 title: Sevastapol 2025
 description: "Attention: Initiating detailed analysis of the portfolio redesign process. Utilizing retro 70's text-based user interface inspired by the Alien franchise. Proceed with caution."

@@ -15,7 +15,7 @@ layout: base.njk
 
     <main>
     <div class="cards">
-        {% set tagPosts = collections.postsByTag[tag] | reverse %}
+        {% set tagPosts = collections.postsByTag[tag] | reverse %}   
         {% for post in tagPosts %}
         <a href="{{ post.url }}" class="card {% if post.data.featured == true %}card-featured{% endif %}">
           {% if post.data.thumbnail %}

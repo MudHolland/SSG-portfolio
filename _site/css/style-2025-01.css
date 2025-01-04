@@ -565,6 +565,8 @@ h1{
 	line-height:1.1;
 	text-shadow: var(--shadow-size-s) var(--shadow-size-s) var(--element-bg-color);
 	z-index:10;
+	word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .subtitle{
@@ -737,10 +739,10 @@ button{
 		box-shadow: var(--shadow-size-m) var(--shadow-size-m) 0 var(--element-shadow-color);
 
 		&:hover{
-			color:var(--text-color);
-			border-color: var(--border-color);
-			background-color: var(--element-bg-color);
-			box-shadow: var(--shadow-size-s) var(--shadow-size-s) 0 var(--shadow-color);
+			background-color: transparent;
+			color:var(--element-text-color);
+			border-color: var(--element-border-color);
+			box-shadow: var(--shadow-size-s) var(--shadow-size-s) 0 var(--element-shadow-color);
 			transform: translateY(calc( var(--shadow-size-m) - var(--shadow-size-s)));
 		}
 	
@@ -780,10 +782,10 @@ button.dark,
 	&.secondary,
 	&.ghost{
 		color:var(--element-text-color);
+	}
 
-		&:hover{
-			color:var(--white);
-		}
+	&.ghost:hover{
+		color:var(--white);
 	}
 }
 
@@ -814,7 +816,7 @@ button:disabled{
 .chip{
 
 	background-color: var(--element-bg-color);
-    color: var(--text-color);
+    color: var (--text-color);
     border: 0.125rem solid var(--border-color);
     box-shadow: var(--shadow-size-m) var(--shadow-size-m) 0 var(--shadow-color);
 
