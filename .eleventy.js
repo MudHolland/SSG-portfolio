@@ -159,6 +159,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/script");
+  eleventyConfig.addPassthroughCopy("src/project");
   eleventyConfig.addPassthroughCopy("src/.htaccess");
   eleventyConfig.addPassthroughCopy("readme.md");
 
