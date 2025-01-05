@@ -748,8 +748,7 @@ button{
 		transform 200ms ease;
 
 	&:hover{
-		/* color:var(--element-text-color); */
-		/* background-color: var(--page-bg-color); */
+		background-color: var(--element-bg-color);
 		box-shadow: var(--shadow-size-s) var(--shadow-size-s) 0 var(--shadow-color);
 		transform: translateY(calc( var(--shadow-size-m) - var(--shadow-size-s)));
 	}
@@ -804,16 +803,18 @@ button{
 
 button.dark,
 .chip.dark{
+	background-color: var(--element-bg-color);
 	color:var(--white);
 
 	&.secondary,
 	&.ghost{
+		background-color: transparent;
 		color:var(--element-text-color);
 	}
+}
 
-	&.ghost:hover{
-		color:var(--white);
-	}
+.chip.dark:hover{
+	color:var(--white);
 }
 
 button:disabled{
