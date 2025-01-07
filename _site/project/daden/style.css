@@ -1,0 +1,380 @@
+/* Theme Name: Minimalist */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+	--ff-heading: 'Inter', sans-serif;
+	--ff-body: 'Inter', sans-serif;
+	--ff-code: 'Fira Code', monospace;
+
+	/* Colors */
+	--white: white;
+	--black: black;
+	--gray-10: hsl(0, 0%, 10%);
+	--gray-30: hsl(0, 0%, 30%);
+	--gray-50: hsl(0, 0%, 50%);
+	--gray-70: hsl(0, 0%, 70%);
+	--gray-90: hsl(0, 0%, 90%);
+	--colora: rgb(230, 202, 25);
+	--colorb: rgb(108, 147, 239);
+
+	--colora-light: hsl(52, 80%, 70%);
+	--colorb-light: hsl(222, 80%, 80%);
+	--colora-dark: hsl(52, 80%, 30%);
+	--colorb-dark: hsl(222, 80%, 50%);
+
+	/* Spacing */
+	--spacing: 1rem;
+
+	/* Border radius */
+	--border-radius: 0.25rem;
+
+	/* Landing page */
+	--h1: bold 4rem/1em var(--ff-heading);
+	--h2: bold 3rem/1.2em var(--ff-heading);
+	--h3: bold 2.25rem/1.2em var(--ff-heading);
+	--h4: bold 1.5rem/1.6em var(--ff-heading);
+
+	--big: 1.25rem/1.6em var(--ff-body);
+	--p: 1rem/1.6em var(--ff-body);
+	--small: 0.75em/2rem var(--ff-body);
+	
+	--button-font: 1rem/1.6em var(--ff-body);
+	--link-font: 1rem/1.6rem var(--ff-body);
+	--code-font: 1rem/1.6rem var(--ff-code);
+
+	/* Buttons */
+	--button-padding: 0.5rem 1rem;
+	--button-border-radius: var(--border-radius);
+	--button-border: 1px solid transparent;
+	--button-color: var(--white);
+	--button-background: var(--colora);
+	--button-hover-background: var(--colorb);
+	--button-active-background: var(--colorb);
+	--button-focus-background: var(--colorb);
+	--button-disabled-background: var(--gray-50);
+	--button-disabled-color: var(--gray-90);
+
+	/* Inputs */
+
+	--input: 1rem/1.6rem var(--ff-body);
+
+	/* Form */
+
+	--form: 1rem/1.6rem var(--ff-body);
+
+	/* Links */
+	--link-color: var(--colora);
+	--link-hover-color: var(--colora-dark);
+	--link-active-color: var(--colora-dark);
+	--link-focus-color: var(--colora-dark);
+	--link-visited-color: var(--colora-light);
+
+	/* Code */
+	--code-background: var(--gray-10);
+	--code-color: var(--black);
+	--code-padding: 1rem;
+	--code-border-radius: var(--border-radius);
+	--code-line-height: 1.6rem;
+	--code-font-size: 1rem;
+
+	
+}
+
+/* @media (prefers-color-scheme: dark){
+	:root{
+		--white: black;
+		--black: white;
+		--gray-10: hsl(0, 0%, 90%);
+		--gray-30: hsl(0, 0%, 70%);
+		--gray-50: hsl(0, 0%, 50%);
+		--gray-70: hsl(0, 0%, 30%);
+		--gray-90: hsl(0, 0%, 10%);
+		--colora: hsl(52, 80%, 50%);
+		--colorb: hsl(222, 80%, 32%);
+
+		--colora-light: hsl(52, 80%, 30%);
+		--colorb-light: hsl(222, 80%, 50%);
+		--colora-dark: hsl(52, 80%, 70%);
+		--colorb-dark: hsl(222, 80%, 80%);
+	}
+} */
+
+html,
+body{
+	font-family: 'Inter', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.6;
+	
+	color: var(--black);
+	background-color: var(--white);
+	
+	margin: 0;
+	padding: 0;
+}
+
+.colora{
+	color: var(--colora);
+}
+
+.colorb{
+	color: var(--colorb);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing);
+}
+
+/* Navigation */
+.nav {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+	display:flex;
+	height: 40px;
+	gap:1rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav__links {
+    display: flex;
+    gap: 2rem;
+}
+
+a {
+	font: var(--link-font);
+	color: var(--link-color);
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: var(--link-hover-color);
+}
+
+/* Hero Section */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 8rem 0;
+    align-items: center;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero__content h1 {
+	font: var(--h1);
+}
+
+.hero__buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero__image {
+    width: 100%;
+    height: auto;
+}
+
+/* Tech Stack Section */
+.tech-stack {
+	font: var(--h3);
+	text-align: center;
+    padding: 8rem 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Add this to prevent edge fade */
+.tech-stack::before,
+.tech-stack::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+}
+
+.tech-stack::before {
+    left: 0;
+    background: linear-gradient(to right, var(--white), transparent);
+}
+
+.tech-stack::after {
+    right: 0;
+    background: linear-gradient(to left, var(--white), transparent);
+}
+
+.logos-scroll {
+    display: flex;
+    gap: 120px;
+    animation: scroll 20s linear infinite;
+    /* Add these new properties */
+    width: fit-content;
+    white-space: nowrap;
+}
+
+/* Add new keyframes for infinite scroll */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 60px)); }
+}
+
+.tech-logo {
+    height: 120px;
+    object-fit: contain;
+	filter: grayscale(100%);
+	-webkit-text-fill-color: aliceblue;
+	transition: filter 0.3s ease;
+}
+
+.tech-logo:hover {
+	filter: grayscale(0);
+}
+
+/* What Section */
+.what-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 4rem 0;
+    align-items: center;
+}
+
+.what-section h2 {
+	font: var(--h2);
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero, .what-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+.button {
+	font: var(--button-font);
+	padding: var(--button-padding);
+	border-radius: var(--button-border-radius);
+	border: var(--button-border);
+	color: var(--button-color);
+	background: var(--button-background);
+	cursor: pointer;
+	transition: 
+		background-color 0.3s ease,
+		color 0.3s ease;
+}
+
+.button:hover {
+	background: var(--button-hover-background);
+}
+
+.button:active {
+	background: var(--button-active-background);
+}
+
+.button:focus {
+	background: var(--button-focus-background);
+}
+
+.button:disabled {
+	background: var(--button-disabled-background);
+	color: var(--button-disabled-color);
+}
+
+.button--secondary{
+	background: var(--colorb);
+}
+
+.button--secondary:hover{
+	background: var(--colora);
+}
+
+.button--secondary:active{
+	background: var(--colora);
+}
+
+.button--secondary:focus{
+	background: var(--colora);
+}
+
+.button--secondary:disabled{
+	background: var(--gray-50);
+	color: var(--gray-90);
+}
+
+/* Footer Section */
+.footer {
+    margin-top: 8rem;
+    padding: 4rem 0;
+    background-color: var(--gray-10);
+	color: var(--gray-50);
+}
+
+.footer__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 4rem;
+}
+
+.footer__section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer__section h4 {
+    font: var(--h4);
+    color: var(--colorb-dark);
+}
+
+.footer__section p {
+	margin:0;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer__bottom {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--gray-50);
+    text-align: center;
+    color: var(--gray-90);
+    font: var(--small);
+}
+
+@media (max-width: 768px) {
+    .footer__content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
