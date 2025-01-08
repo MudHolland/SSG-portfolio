@@ -52,23 +52,42 @@
     let lastTapTime = 0;
 
     function switchStylesheet() {
-        const stylesheet = document.querySelector('link[rel="stylesheet"][href*="style"]');
+        const stylesheet = document.getElementById('main-stylesheet');
         if (stylesheet) {
             const currentHref = stylesheet.getAttribute('href');
-            const newHref = currentHref === '/css/style-2024-10.css' ? '/css/style-2025-01.css' : '/css/style-2024-10.css';
+            let newHref;
+
+            console.log(`Current stylesheet: ${currentHref}`);
+
+            if (currentHref === '/css/style-2024-10.css') {
+                newHref = '/css/style-2025-01.css';
+            } else if (currentHref === '/css/style-2025-01.css') {
+                newHref = '/css/sevastapol-2025.css';
+            } else if (currentHref === '/css/sevastapol-2025.css') {
+                newHref = '/css/style-2024-10.css';
+            } else {
+                newHref = '/css/style-2024-10.css';
+            }
+
+            console.log(`Switching to new stylesheet: ${newHref}`);
             stylesheet.setAttribute('href', newHref);
             
             // Store the new stylesheet in localStorage
             localStorage.setItem('preferredStylesheet', newHref);
+        } else {
+            console.log('Stylesheet not found');
         }
     }
 
     function loadPreferredStylesheet() {
         const preferredStylesheet = localStorage.getItem('preferredStylesheet');
         if (preferredStylesheet) {
-            const stylesheet = document.querySelector('link[rel="stylesheet"][href*="style"]');
+            const stylesheet = document.getElementById('main-stylesheet');
             if (stylesheet) {
+                console.log(`Loading preferred stylesheet: ${preferredStylesheet}`);
                 stylesheet.setAttribute('href', preferredStylesheet);
+            } else {
+                console.log('Stylesheet not found');
             }
         }
     }
@@ -84,6 +103,7 @@
         lastTapTime = currentTime;
 
         if (tapCount === 3) {
+            console.log('Triple click detected on h1');
             switchStylesheet();
             tapCount = 0;
         }
@@ -128,6 +148,26 @@ window.toggleMenu = toggleMenu;
         if (link.hostname && link.hostname !== window.location.hostname) {
             link.classList.add('external');
         }
+    });
+}
+
+  // Function to reset the preferred stylesheet
+  function resetPreferredStylesheet() {
+    localStorage.removeItem('preferredStylesheet');
+    const stylesheet = document.getElementById('main-stylesheet');
+    if (stylesheet) {
+        console.log('Resetting to default stylesheet: /css/style-2024-10.css');
+        stylesheet.setAttribute('href', '/css/style-2024-10.css'); // Set to default stylesheet
+    } else {
+        console.log('Stylesheet not found');
+    }
+}
+
+// Add event listener to the reset button
+const resetButton = document.getElementById('reset-stylesheet-button');
+if (resetButton) {
+    resetButton.addEventListener('click', () => {
+        resetPreferredStylesheet();
     });
 }
 

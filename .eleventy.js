@@ -76,7 +76,11 @@ module.exports = function(eleventyConfig) {
   // Add collections with exclude filter and auto-tag featured posts
   eleventyConfig.addCollection("blog", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/blog/*.md")
-      .filter(item => !item.data.exclude)
+      .filter(item => {
+        const postDate = new Date(item.data.date); // Use front matter `date`
+        const now = new Date(); // Current date
+        return postDate <= now && !item.data.exclude; // Show only past or current posts
+      })
       .map(item => {
         if (item.data.featured) {
           item.data.tags = item.data.tags || [];
@@ -91,7 +95,11 @@ module.exports = function(eleventyConfig) {
   // Update featured blog collection to use same tag logic
   eleventyConfig.addCollection("featuredBlog", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/blog/*.md")
-      .filter(item => item.data.featured && !item.data.exclude)
+      .filter(item => {
+        const postDate = new Date(item.data.date); // Use front matter `date`
+        const now = new Date(); // Current date
+        return postDate <= now && item.data.featured && !item.data.exclude; // Show only past or current posts
+      })
       .map(item => {
         item.data.tags = item.data.tags || [];
         if (!item.data.tags.includes('Uitgelicht')) {
