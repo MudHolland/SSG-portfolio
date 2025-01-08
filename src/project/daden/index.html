@@ -23,7 +23,7 @@
         <section class="hero">
             <div class="hero__content">
                 <h1>Where <span class="colora">ideas</span> meet <span class="colorb">execution</span></h1>
-                <p>We are driven by a shared passion for learning and teaching. As knowledge-based professionals, we aim to create solutions that educate, inspire, and empower others.</p>
+                <p class="intro">We are driven by a shared passion for learning and teaching. As knowledge-based professionals, we aim to create solutions that educate, inspire, and empower others.</p>
                 <div class="hero__buttons">
                     <button class="button">Get Started</button>
                     <button class="button button--secondary">Learn More</button>
@@ -33,7 +33,7 @@
             <div class="blob-container">
                 <div class="blob"></div>
                 <div class="blob blob-2"></div>
-                <!-- <div class="blob blob-3"></div> -->
+                <div class="blob blob-3"></div>
             </div>
         </section>
 
@@ -115,7 +115,7 @@
             </div>
             <div>
                 <h2>Technical <span class="colorb">Expertise</span></h2>
-                <p>Our team combines deep technical knowledge with practical implementation experience. We specialize in:</p>
+                <p class="intro">Our team combines deep technical knowledge with practical implementation experience. We specialize in:</p>
                 <ul class="process-list">
                     <li>Reactive Programming & Event-Driven Architecture</li>
                     <li>High-Performance Data Processing</li>
@@ -128,7 +128,7 @@
         <section id="what" class="what-section">
             <div class="what-content">
                 <h2>Our <span class="colora">Approach</span></h2>
-                <p>We evaluate opportunities based on complexity, uncertainty, vagueness, time pressure, and originality. This systematic approach ensures we deliver impactful solutions through our proven design process.</p>
+                <p class="intro">We evaluate opportunities based on complexity, uncertainty, vagueness, time pressure, and originality. This systematic approach ensures we deliver impactful solutions through our proven design process.</p>
                 <ul class="process-list">
                     <li>Discovery & Research</li>
                     <li>Requirements & Definition</li>
@@ -142,7 +142,7 @@
                 <img src="src/mockups.webp" alt="Innovation Illustration" class="hero__image">
             </div>
         </section>
-    </div><!-- container end -->
+    </div>
     
     <footer class="footer">
         <div class="container">
@@ -179,10 +179,14 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer__bottom">
-                <p>&copy; 2024 Daden. All rights reserved.</p>
+                <p>&copy; <span id="current-year"></span> Daden. All rights reserved.</p>
             </div>
+            
+            <script>
+                document.getElementById('current-year').textContent = new Date().getFullYear();
+            </script>
         </div>
     </footer>
 </body>

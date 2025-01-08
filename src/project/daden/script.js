@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const deltaY = mouseY - blobCenterY;
 
             // Move blob away from mouse
-            const translateX = -deltaX * sensitivity * (index + 1);
-            const translateY = -deltaY * sensitivity * (index + 1);
+            const translateX = deltaX * sensitivity * (index + 1);
+            const translateY = deltaY * sensitivity * (index + 1);
 
             // Apply transformation
             blob.style.transform = `translate(calc(-50% + ${translateX}px), calc(-50% + ${translateY}px))`;
