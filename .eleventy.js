@@ -111,19 +111,23 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addCollection("tagList", function(collectionApi) {
     const tagSet = new Set();
+    const now = new Date(); // Current date
     collectionApi.getAll().forEach(item => {
-      if (item.data.tags) {
+      const postDate = new Date(item.data.date); // Use front matter `date`
+      if (item.data.tags && postDate <= now && !item.data.exclude) {
         item.data.tags.forEach(tag => tagSet.add(tag));
       }
     });
     return Array.from(tagSet).sort();
   });  
 
-  // Group posts by tag and exclude posts with exclude: true
+  // Group posts by tag and exclude posts with exclude: true and future dates
   eleventyConfig.addCollection("postsByTag", function(collectionApi) {
     const tagMap = {};
+    const now = new Date(); // Current date
     collectionApi.getAll().forEach(item => {
-      if (item.data.tags && !item.data.exclude) {
+      const postDate = new Date(item.data.date); // Use front matter `date`
+      if (item.data.tags && !item.data.exclude && postDate <= now) {
         item.data.tags.forEach(tag => {
           if (!tagMap[tag]) {
             tagMap[tag] = [];
