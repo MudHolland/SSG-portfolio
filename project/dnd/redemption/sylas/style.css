@@ -179,6 +179,10 @@ ul {
 		flex-direction: column;
 		gap:0rem;
 	}
+
+	.reverse{
+		flex-direction: column-reverse;
+	}
 	/* .character-details .detail-row {
 		flex-direction: column;
 	} */
@@ -201,5 +205,6 @@ ul {
 	.flex-2{
 		flex-direction: column;
 		gap:0rem;
+		margin-bottom:2rem;
 	}
 }
