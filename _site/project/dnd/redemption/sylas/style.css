@@ -80,7 +80,7 @@ input[type="number"] {
 .character-details {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	/* justify-content: center; */
 	align-items: start;
 	margin-left: 20px;
 }
@@ -111,9 +111,17 @@ input[type="number"] {
 .section {
 	margin-bottom: 20px;
 }
-.flex{
+.flex,
+.flex-row,
+.flex-2 {
 	display: flex;
+	flex-direction: row;
 	gap:4rem;
+}
+
+.flex-2{
+	justify-content: center;
+	align-items: center;
 }
 .section h2 {
 	font-size: 1.5em;
@@ -161,14 +169,37 @@ ul {
 	list-style-type: square;
 	padding-left: 20px;
 }
-@media (min-width: 768px) {
-	.flex-row {
-		display: flex;
-		justify-content: center;
-		margin:0 auto 20px;
+
+@media screen and (max-width: 1200px) {
+	.character-details {
+		margin-left: 0;
 	}
-	.flex-column {
-		flex: 1;
-		margin: 0 10px;
+	.flex,
+	.flex-row {
+		flex-direction: column;
+		gap:0rem;
+	}
+	/* .character-details .detail-row {
+		flex-direction: column;
+	} */
+	.character-portrait {
+		margin-block:3rem;
+	}
+	/*.ac-shield {
+		bottom: -15px;
+		width: 30px;
+		height: 30px;
+		font-size: 0.8em;
+	} */
+	.backstory{
+		width:100%;
+		padding-right: 0;
+	}
+	
+}
+@media screen and (max-width: 768px) {
+	.flex-2{
+		flex-direction: column;
+		gap:0rem;
 	}
 }
