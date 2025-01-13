@@ -581,17 +581,17 @@ blockquote.small::before {
 	filter:blur(0.5rem);
 }
 
-b,strong{
-	/* font-weight:400; */
+/* b,strong{
+	font-weight:400;
 }
 
 i,em{
-	/* font-style: italic; */
+	font-style: italic;
 }
 
 s{
-	/* text-decoration: line-through; */
-}
+	text-decoration: line-through;
+} */
 
 u{
 	text-decoration: underline;
