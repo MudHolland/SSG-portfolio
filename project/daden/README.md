@@ -37,16 +37,42 @@ This grading system will guide us in identifying and prioritizing impactful proj
 6. **Delivery**: Deploy and evaluate the impact.
 7. **Reflection**: Document learnings and identify areas for improvement.
 
-### Planning
+## Planning
 - Define milestones and timelines for each phase.
 - Conduct regular reviews to assess progress and align on next steps.
 
-## Preliminary Project Timelines
+### Preliminary Project Timelines
 - **Project 1**: `Daden Home` - `January 8 2025` to `February 28 2025`
 - **Project 2**: `Daden Setup` - `March 1 2025` to `June 30 2025`
 - **Project 3**: `Daden Connect` - `July 1 2025` to `october 30 2025`
 - **Project 4**: `Daden Impact` - `October 1 2025` to `December 31 2025`
 - **Project 5**: `Daden Future` - `January 1 2026`
+
+## Daden Home
+- Determine concept and scope for the `Daden Home` project. This will be the first project we tackle together.
+- Create branding and design assets for the Daden brand.
+- Develop a landing page for Daden to showcase our (future) services and expertise.
+
+## Daden Setup
+- Define the (pricing) structure and services offered by Daden.
+- Develop a platform for clients to engage with Daden's services.
+- Implement a project management system to streamline our workflow.
+- *Create a knowledge base for sharing insights and learnings?*
+
+## Daden Connect
+- Expand Daden's reach and impact through community engagement.
+- Develop a platform for collaboration and knowledge sharing.
+- Establish partnerships with organizations that align with our mission.
+- Collaborate with partners to address complex challenges.
+
+## Daden Impact
+- Measure and document the impact of our projects.
+- Deliver high-impact projects that showcase Daden's capabilities.
+
+## Daden Future
+- Plan for the future of Daden.
+
+
 ---
 
 This README serves as a living document to guide our collaboration and track our journey.
