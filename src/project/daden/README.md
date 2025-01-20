@@ -48,30 +48,130 @@ This grading system will guide us in identifying and prioritizing impactful proj
 - **Project 4**: `Daden Impact` - `October 1 2025` to `December 31 2025`
 - **Project 5**: `Daden Future` - `January 1 2026`
 
-## Daden Home
+### Daden Home
 - Determine concept and scope for the `Daden Home` project. This will be the first project we tackle together.
 - Create branding and design assets for the Daden brand.
 - Develop a landing page for Daden to showcase our (future) services and expertise.
 
-## Daden Setup
+### Daden Setup
 - Define the (pricing) structure and services offered by Daden.
 - Develop a platform for clients to engage with Daden's services.
 - Implement a project management system to streamline our workflow.
 - *Create a knowledge base for sharing insights and learnings?*
 
-## Daden Connect
+### Daden Connect
 - Expand Daden's reach and impact through community engagement.
 - Develop a platform for collaboration and knowledge sharing.
 - Establish partnerships with organizations that align with our mission.
 - Collaborate with partners to address complex challenges.
 
-## Daden Impact
+### Daden Impact
 - Measure and document the impact of our projects.
 - Deliver high-impact projects that showcase Daden's capabilities.
 
-## Daden Future
+### Daden Future
 - Plan for the future of Daden.
 
+## Daden Services
+
+Our services are based on a combination of Design Thinking steps and development processes. We offer the following services:
+
+### Empathize (Brand Level)
+
+1. **User Research** (5): Understand the needs and motivations of users.
+1. **Company Research** (5): Understand the business goals and constraints.	
+1. **Competitive Analysis** (5): Evaluate competitors to identify opportunities and gaps.
+1. **Accessibility Audit** (5): Evaluate the accessibility of a product or service.
+1. **Heuristic Evaluation** (5): Assess the usability of a product based on established principles.
+1. **Usability Testing** (5): Test a product with real users to identify usability issues.
+
+#### Deliverables
+
+1. **User Research Report**: Summarize findings from user research activities.
+1. **User Personas**: Create detailed profiles of target users.
+1. **Brand Design**: Create visual assets that represent the brand (tone-of-voice, logo, brand guide).
+1. **Competitive Analysis Report**: Analyze competitors and identify opportunities.
+1. **User Journey Map**: Visualize the user's experience with a product or service.
+1. **Empathy Map**: Capture user emotions, thoughts, and behaviors.
+
+### Define (Problem Level)
+
+1. **Problem Statement** (5): Clearly define the problem to be solved.
+1. **User Stories** (5): Define features from the user's perspective.
+1. **Requirements Gathering** (5): Collect and document project requirements.
+1. **Feature Prioritization** (5): Rank features based on importance and impact.
+1. **Product Roadmap** (5): Plan the development of a product over time.
+1. **Information Architecture** (5): Organize content and structure to improve usability.
+
+#### Deliverables
+
+1. **Project Brief**: Summarize the project goals, scope, and constraints.
+1. **User Stories**: Define features from the user's perspective.
+1. **Feature Prioritization Matrix**: Rank features based on importance and impact.
+1. **Requirements Document**: Document project requirements.
+
+### Ideate (Concept Level)
+
+1. **Card Sorting** (5): Organize content to improve information architecture.
+1. **Brainstorming** (5): Generate creative ideas to solve a problem.
+1. **Concept Development** (5): Refine ideas into concrete concepts.
+1. **Low-Fidelity Concept** (5): Create rough visual representations of a product.
+1. **Mid-Fidelity Concept** (5): Create low-fidelity visual sketches of a product.
+
+#### Deliverables
+
+1. **Concept Sketches**: Visualize early ideas and concepts.
+
+### Prototype (Solution Level)
+
+1. **Mid-Fidelity Design** (5): Create rough visual digital designs of a product.
+1. **High-Fidelity Design** (5): Create detailed visual designs of a product.
+1. **Usability Testing** (5): Test a product with real users to identify usability issues.
+
+#### Deliverables
+
+1. **Interactive Prototype**: Create a clickable prototype of a product.
+1. **Design System**: Create a set of reusable design components.
+1. **Design Mockups**: Create detailed visual designs of a product.
+1. **Usability Test Report**: Summarize findings from usability testing.
+
+### Develop (Implementation Level)
+
+1. **Frontend Development** (5): Build the user interface of a product.
+1. **Backend Development** (5): Build the user interface of a product.
+1. **Database Development** (5): Design the structure of a database.
+
+#### Deliverables
+
+1. **Frontend Code**: Develop the frontend code of a product.
+1. **Backend Code**: Develop the backend code of a product.
+1. **Database Schema**: Design the structure of a database.
+
+### Deliver
+
+1. **Deployment** (5): Release a product to the public.
+
+#### Deliverables
+
+1. **Product Release**: Launch a product to the public.
+
+### Upkeep
+
+1. **Maintenance** (5): Provide ongoing support and updates for a product.
+
+### Hosting
+
+1. **Domain Hosting** (5): Provide hosting services for a product.
+1. **Server Hosting** (5): Provide server hosting services for a product.
+1. **Service Hosting** (5): Provide service hosting services for a product.
+
+### Support
+
+1. **Technical Support** (x): Provide technical support for a product.
+
+## Pricing
+
+Our pricing model is based on the complexity and scope of the project. Prices are based on tokens, with each token representing a unit of work. The price per token is €100 (excluding VAT).
 
 ---
 
