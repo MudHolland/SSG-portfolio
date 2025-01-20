@@ -175,4 +175,13 @@ Our pricing model is based on the complexity and scope of the project. Prices ar
 
 ---
 
-This README serves as a living document to guide our collaboration and track our journey.
+*This README serves as a living document to guide our collaboration and track our journey.*
+
+<style>
+  html{
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+</style>
