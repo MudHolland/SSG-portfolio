@@ -1,0 +1,82 @@
+.carousel {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+  }
+  
+  .carousel-track {
+	display: flex;
+	transition: transform 0.5s ease;
+	/* gap: var(--spacing-l); */
+	padding: var(--spacing-l) 0;
+  }
+  
+  .carousel-item {
+	flex: 0 0 50%; /* Default to show two items at a time */
+	box-sizing: border-box;
+	/* padding: var(--spacing); */
+  }
+  
+  .carousel.single-item .carousel-item {
+	flex: 0 0 100%; /* Adjust to show one item at a time */
+	display: flex;
+	justify-content: center;
+  }
+  
+  .carousel-item figure{
+	  max-width:60%;
+	  height:auto;
+  }
+  
+  .carousel-item figure img{
+	  width:100%;
+	  max-height:calc(100% - 3rem);
+	  object-fit:cover;
+  }
+  
+  .carousel-controls {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	transform: translateY(-50%);
+	pointer-events: none;
+  }
+  
+  .carousel-control {
+	background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-6&color=CCB07F) no-repeat;
+	border: none;
+	padding: var(--spacing-s);
+	cursor: pointer;
+	font-size: 1.5rem;
+	color: var(--white);
+	pointer-events: auto;
+  }
+  
+  .carousel-control:hover {
+	background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-6&color=000) no-repeat;
+  }
+  
+  .carousel-indicators {
+	display: flex;
+	justify-content: center;
+	margin-top: var(--spacing);
+  }
+  
+  .carousel-indicator {
+	width: 10px;
+	height: 10px;
+	background-color: var(--gray-30);
+	border-radius: 50%;
+	margin: 0 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	border:1px solid var(--white);
+  }
+  
+  .carousel-indicator.active {
+	background-color: var(--primary-500);
+	border:1px solid var(--white);
+  }
