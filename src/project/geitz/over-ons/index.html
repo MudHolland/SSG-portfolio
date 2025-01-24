@@ -5,42 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../reset.css">
   <link rel="stylesheet" href="../style.css">
-  <script src="script.js" defer></script>
+  <script src="../script.js" defer></script>
   <title>Over ons - Geitz Klussenbedrijf</title>
 </head>
 <body>
- 
+
+	
 	<header>
 		<div class="container">
 			<nav>
-				<div class="nav__logo">
-					<a href="/">
-						<img src="../src/logo.avif" alt="Geitz Klussenbedrijf">
-					</a>
-				</div>
-				<div class="nav__links">
-					<ul>
-						<li><a href="../diensten/">Diensten ▽</a>
-							<ul>
-								<li><a href="../diensten/#renovatie">Renovatie</a></li>
-								<li><a href="../diensten/#timmerwerk">Timmerwerk</a></li>
-								<li><a href="../diensten/#stucwerk">Stucwerk</a></li>
-								<li><a href="../diensten/#schilderwerk">Schilderwerk</a></li>
-								<li><a href="../diensten/#installatie">Installatie</a></li>
-								<li><a href="../diensten/#coating">Vloercoating</a></li>
-							</ul>
-						</li>
-						<li><a>Over ons ▽</a>
-							<ul>
-								<li><a href="#wie-ben-ik">Wie zijn wij</a></li>
-								<li><a href="#partners">Partners</a></li>
-							</ul>
-						</li>
-						<li><a class="button" href="#contact">Contact</a></li>
+			  <div class="nav__logo">
+				<a href="/">
+				  <img src="../src/Geitz_woordmerk.png" alt="Geitz Klussenbedrijf">
+				</a>
+			  </div>
+			  <div class="nav__links">
+				<ul>
+				  <li>
+					<a href="./diensten/" aria-haspopup="true" aria-expanded="false">Diensten</a>
+					<ul class="submenu">
+						<li><a href="../diensten/#renovatie">Renovatie</a></li>
+						<li><a href="../diensten/#timmerwerk">Timmerwerk</a></li>
+						<li><a href="../diensten/#stucwerk">Stucwerk</a></li>
+						<li><a href="../diensten/#schilderwerk">Schilderwerk</a></li>
+						<li><a href="../diensten/#installatie">Installatie</a></li>
+						<li><a href="../diensten/#coating">Vloercoating</a></li>
 					</ul>
-				</div>
+				  </li>
+				  <li>
+					<a aria-haspopup="true" aria-expanded="false" style="cursor:default">Over ons</a>
+					<ul class="submenu">
+						<li><a href="#wie-ben-ik">Wie zijn wij</a></li>
+						<li><a href="#partners">Partners</a></li>
+					</ul>
+				  </li>
+				  <li><a class="button" href="#contact">Contact</a></li>
+				</ul>
+			  </div>
 			</nav>
-		</div>
+		  </div>
 	</header>
   <main>
 		<section id="hero">
@@ -136,22 +139,26 @@
 		<img class="lightbox-content" id="lightbox-img">
 		<div id="lightbox-caption" class="lightbox-caption"></div>
 	</div>
-  <footer>
-    <div class="container footer-container">
-      <div class="footer-logo">
-        <img src="src/logo.avif" alt="Geitz Klussenbedrijf">
-      </div>
-      <div class="footer-contact">
-        <p>Geitz Klussenbedrijf<br>
-          Wrijfschaalpad 21c<br>
-          5347 HX Oss<br>
-          06 - 21 813 113<br>
-          <a href="mailto:geitzklussenbedrijf@outlook.com">geitzklussenbedrijf@outlook.com</a></p>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <p>&copy; 2021 - <span id="current-year"></span> Geitz klussenbedrijf</p>
-    </div>
-  </footer>
+	<footer>
+		<div class="container footer-container">
+			<div class="footer-logo">
+				<img src="../src/logo.avif" alt="Geitz Klussenbedrijf">
+			</div>
+			<div class="footer-contact">
+				<p>Geitz Klussenbedrijf<br>
+					Wrijfschaalpad 21c<br>
+					5347 HX Oss<br>
+					06 - 21 813 113<br>
+					<a href="mailto:geitzklussenbedrijf@outlook.com">geitzklussenbedrijf@outlook.com</a><br>
+					KvK Oost Brabant: 81824092<br>
+					<div style="background-color:white;padding:4px;border-radius:4px;margin-top:8px;"><img src="../src/logo-vca.webp" alt=""></div>
+				</p>
+
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<p>&copy; 2021 - <span id="current-year"></span> Geitz klussenbedrijf</p>
+		</div>
+	</footer>
 </body>
 </html>

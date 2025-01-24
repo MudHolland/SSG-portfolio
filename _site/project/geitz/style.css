@@ -76,6 +76,8 @@
   --code-border-radius: var(--border-radius-lg);
   --code-line-height: 1.6rem;
   --code-font-size: 1rem;
+
+  --time-m: 250ms;
 }
 
 /* * {
@@ -182,7 +184,16 @@ h4{
 }
 
 header {
-  padding: var(--spacing) 0;
+  /* padding: var(--spacing) 0; */
+  height:78px;
+}
+
+header .container{
+  height:100%;
+}
+
+nav{
+  height:100%;
 }
 
 nav, 
@@ -198,67 +209,91 @@ footer .container {
   max-height: 50px;
 }
 
+.nav__links{
+  height:100%;
+  display: flex;
+  align-items: center;
+}
+
 .nav__links ul {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: var(--spacing-l);
+  height:100%;
+  gap: var(--spacing-xl);
   margin: 0;
   padding: 0;
-  position:relative;
 }
 
 .nav__links ul li {
   position: relative;
-  z-index: 111;
-  cursor:pointer;
+  height:100%;
+  display: flex;
+  align-items: center;
 }
 
 .nav__links a {
   text-decoration: none;
   color: var(--black);
   font-weight: bold;
+  height:100%;
+  display: flex;
+  align-items: center;
+  transition: color var(--time-m) ease;
+}
+
+.nav__links .button{
+  height:auto;
+}
+
+.nav__links .button:hover{
+  color:black;
 }
 
 .nav__links a:hover {
   color: var(--link-hover-color);
 }
 
-.nav__links ul li {
-  position: relative; /* Add this to create a positioning context */
-}
-
-.nav__links ul ul {
+/* Submenu styles */
+.nav__links ul ul.submenu {
   display: none;
   position: absolute;
-  top: 225%; /* Change from fixed spacing to relative positioning */
-  left: calc(-1 * (var(--spacing-l)));
+  top: 78px; /* Position the submenu 50px below the parent link */
+  left: 0;
+  height:auto;
+  word-break:keep-all;
   background-color: var(--primary-500);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: var(--spacing-m) 0;
   border-radius: var(--border-radius);
-  min-width: 200px; /* Add minimum width to ensure content fits */
+  min-width: 125px;
+  z-index: 250; /* Ensure the submenu is above other content */
+  align-items: flex-start; /* Align submenu items to the start */
 }
 
-.nav__links ul li:hover > ul {
+.nav__links ul li:hover > ul.submenu {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap:var(--spacing-l);
-  padding:var(--spacing-l);
-  background-color: var (--white);
-  z-index: 110;
+  gap: var(--spacing-l);
+  padding: var(--spacing-l);
+  background-color: var(--white);
 }
 
-.nav__links ul ul::before { /* Add invisible area to prevent gap */
+/* Hover bridge to prevent submenu from closing */
+.nav__links ul li:hover > a::after {
   content: '';
   position: absolute;
-  top: -200px; /* Negative margin to create hover bridge */
-  /* background-color: pink; */
+  top: 100%;
   left: 0;
-  width: 50%;
-  height: 200px;  pointer-events: none; /* Make the pseudo-element not clickable */
+  width: 100%;
+  height: 50px; /* Match the distance between the parent link and submenu */
+  background-color: transparent;
+  pointer-events: none; /* Ensure the pseudo-element doesn't block clicks */
+}
 
+/* Ensure the submenu stays open when hovering over it */
+.nav__links ul ul.submenu:hover {
+  display: flex;
 }
 
 /* nav .button{	
@@ -275,13 +310,21 @@ footer .container {
 
 #hero {
   position: relative;
-  background-color: var(--primary-500);
+  background-color: var(--primary-100);
   /* color:black; */
   z-index: 0; /* Ensure this creates a new stacking context */
 }
 
 #hero .flex-column {
 	gap: var(--spacing-xl)
+}
+
+#hero .flex-column:nth-child(1){
+  min-width:400px;
+}
+
+#hero .flex-column:nth-last-child(1){
+  min-width:700px;
 }
 
 #hero:before {
@@ -293,7 +336,7 @@ footer .container {
   height: 100%;
   z-index: 1; /* Background image layer */
   background-image: url('src/werk-schilder-overkapping.webp');
-  opacity:0.5;
+  opacity:0.3;
   background-size: cover;
   background-position: 0 -100px;
   background-repeat: no-repeat;
@@ -306,12 +349,13 @@ footer .container {
 
 #hero h1 {
   font: var(--h1);
-  /* color:var(--secondary-500); */
+  word-break: keep-all;
+  color:var(--primary-900);
 }
 
 #hero p {
   font: var(--big);
-  opacity: 0.8;
+  opacity: 0.75;
 }
 
 section {
@@ -460,14 +504,14 @@ footer .footer-copyright {
 
 .button {
   font: var(--button-font);
-  border: 2px solid var(--primary-500);
+  border: 2px solid var(--black);
   cursor: pointer;
   padding: var(--spacing-s) var(--spacing-m);
   border-radius: var(--spacing-s);
   width: fit-content;
   text-decoration: none;
   position: relative;
-  color: var(--white);
+  color: var(--black);
   background-color: var(--primary-500);
   transition: 
     color 0.3s ease, 
@@ -477,11 +521,13 @@ footer .footer-copyright {
 .button:hover,
 .button.secondary:hover {
   background-color: var(--primary-900);
+  color:var(--black);
 }
 
 .button.secondary{
   background-color:transparent;
-  color:var(--primary-500);
+  border-color:var(--black);
+  color:var(--black);
 }
 
 /* figure {
@@ -531,6 +577,7 @@ figure{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height:auto;
   width:auto;
+  max-height:450px;
   margin-inline:auto;
   gap:16px;
 }
@@ -538,7 +585,7 @@ figure img{
   width:100%;
   object-fit: contain;
   max-width: 100%;
-  max-height: 100%;
+  max-height: calc(450px - 4 * var(--spacing-m));
 }
 figure figcaption{
   opacity: 0.75;
