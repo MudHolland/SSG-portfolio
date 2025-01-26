@@ -91,27 +91,34 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Lightbox functionality
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const lightboxCaption = document.getElementById('lightbox-caption');
-  const lightboxClose = document.querySelector('.lightbox-close');
+// Lightbox functionality
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxCaption = document.getElementById('lightbox-caption');
+const lightboxClose = document.querySelector('.lightbox-close');
 
-  document.querySelector('main').addEventListener('click', function(event) {
-    if (event.target.tagName === 'IMG') {
-      lightbox.style.display = 'block';
-      lightboxImg.src = event.target.src;
-      lightboxCaption.textContent = event.target.alt;
-    }
-  });
+document.querySelector('main').addEventListener('click', function (event) {
+  if (event.target.tagName === 'IMG') {
+    lightbox.style.display = 'block';
+    lightboxImg.src = event.target.src;
+    lightboxCaption.textContent = event.target.alt;
 
-  lightboxClose.addEventListener('click', function() {
+    // Trigger the zoom-in effect after a short delay
+    setTimeout(() => {
+      lightboxImg.classList.add('zoom-in');
+    }, 10); // Small delay to ensure the lightbox is rendered
+  }
+});
+
+lightboxClose.addEventListener('click', function () {
+  lightbox.style.display = 'none';
+  lightboxImg.classList.remove('zoom-in'); // Reset zoom effect
+});
+
+lightbox.addEventListener('click', function (event) {
+  if (event.target === lightbox) {
     lightbox.style.display = 'none';
-  });
-
-  lightbox.addEventListener('click', function(event) {
-    if (event.target === lightbox) {
-      lightbox.style.display = 'none';
-    }
-  });
+    lightboxImg.classList.remove('zoom-in'); // Reset zoom effect
+  }
+});
 });

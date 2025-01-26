@@ -1,8 +1,8 @@
 /* Theme Name: Minimalist */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Knewave&family=Caveat+Brush&display=swap');
 
 :root {
-  --ff-heading: 'Knewave', cursive;
+  --ff-heading: "Caveat Brush", serif;
   --ff-body: 'Inter', sans-serif;
   --ff-code: 'Fira Code', monospace;
   --ff-formal: 'Knewave', cursive;
@@ -350,7 +350,8 @@ footer .container {
 #hero h1 {
   font: var(--h1);
   word-break: keep-all;
-  color:var(--primary-900);
+  color:var(--primary-900);  
+  background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-7&color=fff) no-repeat;
 }
 
 #hero p {
@@ -579,7 +580,11 @@ figure{
   width:auto;
   max-height:450px;
   margin-inline:auto;
+  cursor:pointer;
   gap:16px;
+  transition: 
+    box-shadow 0.25s ease, /* Smooth zoom effect */
+    scale 0.25s ease;
 }
 figure img{
   width:100%;
@@ -715,12 +720,20 @@ figure figcaption{
 }
 
 .lightbox-content {
-  padding-top:32px;
+  padding-top: 32px;
   margin: auto;
   display: block;
   width: 80%;
-  height:90vh;
+  height: 90vh;
   object-fit: contain;
+  transform: scale(0.8); /* Start smaller for zoom-in effect */
+  opacity: 0; /* Start transparent */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+.lightbox-content.zoom-in {
+  transform: scale(1); /* Zoom to full size */
+  opacity: 1; /* Fade in */
 }
 
 .lightbox-caption {
@@ -731,6 +744,13 @@ figure figcaption{
   text-align: center;
   color: #ccc;
   padding: 10px 0;
+  opacity: 0; /* Start transparent */
+  transition: opacity 0.3s ease; /* Fade in with delay */
+}
+
+.lightbox-content.zoom-in + .lightbox-caption,
+.lightbox-content.zoom-in ~ .lightbox-close {
+  opacity: 1; 
 }
 
 .lightbox-close {
@@ -741,15 +761,15 @@ figure figcaption{
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
+  opacity: 1; /* Start transparent */
 }
 
-lightbox-close:hover,
+.lightbox-close:hover,
 .lightbox-close:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
 }
-
 .contact-form {
   background-color: var(--primary-100);
   padding: var(--spacing-l);
@@ -802,34 +822,63 @@ lightbox-close:hover,
 .partners-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: var(--spacing-l);
   padding: var(--spacing-l) var(--spacing-l);
 }
 
-.jobs-list {
-  display: flex;
-  flex-wrap: wrap;
+.partners-list figure {
   justify-content: space-between;
-  gap: var(--spacing-s);
-  padding: var(--spacing-m) var(--spacing-m);
+  width: 20rem;
+  height:170px;
 }
 
-.jobs-list a{
-  text-decoration:none;
+.partners-list a{
+  text-decoration: none;
   color: inherit;
 }
 
-.partners-list figure {
-  justify-content: space-between;
-  max-width: 20rem;
+.jobs-list {
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-m);
+  padding: var(--spacing-m);
 }
 
 .jobs-list figure {
-  justify-content: space-between;
   width: 15rem;
-  
   text-align: center;
+}
+
+figure:hover{
+  box-shadow:0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index:11;
+  scale:1.1;
+
+}
+
+.jobs-list .image-wrapper {
+  width: 100%; /* Match the width of the figure */
+  height: 160px; /* Maintain aspect ratio */
+  overflow: hidden; /* Clip the zoomed-in portion */
+  position: relative; /* Ensure proper clipping */
+}
+
+.jobs-list .image-wrapper img {
+  width: 100%; /* Ensure the image fills the wrapper */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.25s ease; /* Smooth zoom effect */
+}
+
+/* .jobs-list figure:hover .image-wrapper img {
+  transform: scale(1.1);
+} */
+
+.jobs-list a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .partners-list img,
