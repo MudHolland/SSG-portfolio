@@ -255,7 +255,9 @@ footer .container {
   height:100%;
   display: flex;
   align-items: center;
-  transition: color var(--time-m) ease;
+  transition: 
+    color 250ms ease,
+    opacity 250ms ease;
 }
 
 .nav__links .button{
@@ -963,91 +965,6 @@ figure:hover{
   image-rendering: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--secondary-900);
-    color: var(--white);
-  }
-  
-  h2{
-    background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-7&color=806333) no-repeat;
-  }
-  #hero h1{
-    background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-7&color=162237) no-repeat;
-  }
-
-  #hero:after{
-    background: linear-gradient(to bottom, var(--secondary-900), transparent);
-  }
-
-  #hero h1,
-  #hero p{
-    color:white;
-  }
-
-  section:nth-child(odd){
-    background-color: var(--primary-900);
-  
-    h2 {
-      /* color:var(--secondary-900); */
-      background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-7&color=162237) no-repeat;
-    }
-  }
-
-  .partners-list figure,
-  .jobs-list figure {
-    background-color: var(--primary-900);
-  }
-
-  #hero {
-    background-color: var(--primary-900);
-  }
-  .nav__links a {
-    color: var(--white);
-  }
-
-  figure figcaption{
-    color:var(--secondary-900)
-  }
-
-  .contact-form{
-    background-color: var(--secondary-900);
-  }
-
-  .contact-form label{
-    color:white;
-  }
-
-  blockquote{
-    background-color: var(--primary-900);
-    color:white;
-  }
-
-  cite{
-    color:white;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  #hero:before {
-    background-position:0;
-  }
-  
-  .flex-column {
-	  min-width:auto;
-  }
-}
-
-
-@media only screen and (max-width: 768px) {
-  .flex{
-    flex-direction: column;
-  }
-  /* .contact-form {
-    width:100%;
-  } */
-}
-
 /* Hamburger Menu Button */
 .hamburger {
   display: none; /* Hide by default */
@@ -1069,8 +986,34 @@ figure:hover{
   transition: all 0.3s ease;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
+/* Hamburger Animation */
+.hamburger.active .hamburger__line:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 5px);
+}
+
+.hamburger.active .hamburger__line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .hamburger__line:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -5px);
+}
+
+@media only screen and (max-width: 1200px) {
+  #hero:before {
+    background-position:0;
+  }
+  
+  .flex-column {
+	  min-width:auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .flex{
+    flex-direction: column;
+  }
+
   .hamburger {
     display: flex; /* Show hamburger button on small screens */
   }
@@ -1115,15 +1058,80 @@ figure:hover{
   }
 }
 
-/* Hamburger Animation */
-.hamburger.active .hamburger__line:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 5px);
-}
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--secondary-900);
+    color: var(--white);
+  }
 
-.hamburger.active .hamburger__line:nth-child(2) {
-  opacity: 0;
-}
+  .hamburger__line {
+    background: var(--primary-500);
+  }
+  
+  h2{
+    background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-7&color=806333) no-repeat;
+  }
 
-.hamburger.active .hamburger__line:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -5px);
-}
+  .nav__links a:hover{
+    color:white;
+    opacity:0.5;
+  }
+
+  .nav__links ul li:hover > ul.submenu{
+    background-color: var(--primary-900);
+  }
+  
+  #hero h1{
+    background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-7&color=162237) no-repeat;
+  }
+
+  #hero:after{
+    background: linear-gradient(to bottom, var(--secondary-900), transparent);
+  }
+
+  #hero h1,
+  #hero p{
+    color:white;
+  }
+
+  section:nth-child(odd){
+    background-color: var(--primary-900);
+  
+    h2 {
+      background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-7&color=162237) no-repeat;
+    }
+  }
+
+  .partners-list figure,
+  .jobs-list figure {
+    background-color: var(--primary-900);
+  }
+
+  #hero {
+    background-color: var(--primary-900);
+  }
+  .nav__links a {
+    color: var(--white);
+  }
+
+  figure figcaption{
+    color:var(--secondary-900)
+  }
+
+  .contact-form{
+    background-color: var(--secondary-900);
+  }
+
+  .contact-form label{
+    color:white;
+  }
+
+  blockquote{
+    background-color: var(--primary-900);
+    color:white;
+  }
+
+  cite{
+    color:white;
+  }
+} */
