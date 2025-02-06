@@ -122,3 +122,19 @@ lightbox.addEventListener('click', function (event) {
   }
 });
 });
+
+// Select the hamburger button and the nav links
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav__links');
+
+// Toggle the menu when the hamburger button is clicked
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  hamburger.classList.toggle('active');
+});
+
+// Close the menu when a link is clicked (optional)
+navLinks.addEventListener('click', () => {
+  navLinks.classList.remove('active');
+  hamburger.classList.remove('active');
+});

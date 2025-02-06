@@ -13,10 +13,16 @@
 		<div class="container">
 			<nav>
 			  <div class="nav__logo">
-				<a href="/">
-				  <img src="./src/woordmerk_Geitz.png" alt="Geitz Klussenbedrijf">
+				<a href="/" class="wordmark">
+				  <!-- <img src="./src/woordmerk_Geitz.png" alt="Geitz Klussenbedrijf"> -->
+				   Geitz Klussenbedrijf
 				</a>
 			  </div>
+			  <button class="hamburger" aria-label="Toggle menu">
+				<span class="hamburger__line"></span>
+				<span class="hamburger__line"></span>
+				<span class="hamburger__line"></span>
+			  </button>
 			  <div class="nav__links">
 				<ul>
 				  <li>
@@ -52,26 +58,10 @@
 				<div class="flex-column">
 					<h1>Geitz <wbr>Klussen</wbr>bedrijf</h1>
 					<p>Wij zijn een klussenbedrijf dat gespecialiseerd is in het renoveren van woningen en bedrijfspanden. Wij werken met een team van ervaren vakmensen die u graag helpen met uw klus.</p>
-					<div class="flex">
+					<div class="flex align-left">
 						<a class="button" href="#contact">Contact</a>
 						<a class="button secondary" href="./diensten/">diensten</a>
 					</div>
-				</div>
-			</div>
-		</section>
-		<section id="about">
-			<div class="container flex">
-				<div class="flex-column">
-					<div class="title-wrapper">
-						<h2>Over ons</h2>
-					</div>
-					<p>Wij zijn een klussenbedrijf dat gespecialiseerd is in het renoveren van woningen en bedrijfspanden. Wij werken met een team van ervaren vakmensen die u graag helpen met uw klus.</p>
-				</div>
-				<div class="flex-column">
-					<figure class="angle">
-						<img src="src/foto-voorstellen.jpeg" alt="dit is een titel" style="height:400px">
-						<figcaption>Even voorstellen</figcaption>
-					</figure>
 				</div>
 			</div>
 		</section>
@@ -85,52 +75,103 @@
 					<a href="./diensten/#renovatie">
 						<figure>
 						<div class="image-wrapper">
-							<img src="src/balkon-resultaat2.jpeg" alt="Sigma">
+							<img src="src/balkon-resultaat2.jpeg" alt="Renovatie">
 						</div>
-						<figcaption>Renovatie</figcaption>
+						<div class="jobs-list__content">
+							<h3>Renovatie</h3>
+							<p>Geef je woning of bedrijfspand een complete make-over! Wij renoveren met oog voor detail en kwaliteit.</p>
+							<h4>meer info -></h4>
+						</div>
 						</figure>
 					</a>
 					<a href="./diensten/#timmerwerk">
 						<figure>
 						<div class="image-wrapper">
-							<img src="src/timmerwerk-resultaat.webp" alt="Felix">
+							<img src="src/timmerwerk-resultaat.webp" alt="Timmerwerk">
 						</div>
-						<figcaption>Timmerwerk</figcaption>
+						<div class="jobs-list__content">
+							<h3>Timmerwerk</h3>
+							<p>Maatwerk timmerwerk voor elk project. Van kozijnen tot meubels tot schuren, wij zorgen voor vakmanschap op maat.</p>
+							<h4>meer info -></h4>
+						</div>
 						</figure>
 					</a>
 					<a href="./diensten/#stucwerk">
 						<figure>
 						<div class="image-wrapper">
-							<img src="src/schilder4-resultaat.webp" alt="Felix">
+							<img src="src/schilder4-resultaat.webp" alt="Stucwerk">
 						</div>
-						<figcaption>Stucwerk</figcaption>
+						<div class="jobs-list__content">
+							<h3>Stucwerk</h3>
+							<p>Strakke muren en plafonds? Ons stucwerk geeft je interieur een hoogwaardige afwerking. Laat je adviseren door ons.</p>
+							<h4>meer info -></h4>
+						</div>
 						</figure>
 					</a>
 					<a href="./diensten/#schilderwerk">
 						<figure href="">
 							<div class="image-wrapper">
-								<img src="src/schilder-resultaat1.jpeg" alt="Sigma">
+								<img src="src/schilder-resultaat1.jpeg" alt="Schilderwerk">
 							</div>
-							<figcaption>Schilderwerk</figcaption>
+							<div class="jobs-list__content">
+								<h3>Schilderwerk</h3>
+								<p>Professioneel schilderwerk voor binnen en buiten. Duurzaam, strak en vakkundig uitgevoerd. </p>
+								<h4>meer info -></h4>
+							</div>
 						</figure>
 					</a>
 					<a href="./diensten/#installatie">
 						<figure>
 							<div class="image-wrapper">
-								<img src="src/dak2.jpeg" alt="Felix">
+								<img src="src/dak2.jpeg" alt="Installatie">
 							</div>
-						<figcaption>Installatie</figcaption>
+							<div class="jobs-list__content">
+								<h3>Installatie</h3>
+								<p>Van elektra tot sanitair: wij verzorgen alle installatiewerkzaamheden met precisie en betrouwbaarheid.</p>
+								<h4>meer info -></h4>
+							</div>
 						</figure>
 					</a>
 					<a href="./diensten/#coating">
 						<figure>
 						<div class="image-wrapper">
-							<img src="src/coating-resultaat1.jpeg" alt="Felix">
+							<img src="src/coating-resultaat1.jpeg" alt="Vloercoating">
 						</div>
-						<figcaption>Vloercoating</figcaption>
+						<div class="jobs-list__content">
+							<h3>Vloercoating</h3>
+							<p>Duurzame en stijlvolle vloercoatings voor een strakke en slijtvaste afwerking. Geschikt voor woningen en bedrijfsruimtes.</p>
+							<h4>meer info -></h4>
+						</div>
 						</figure>
 					</a>
 					</div>
+				</div>
+			</div>
+		</section>
+		<section id="about">
+			<div class="container flex">
+				<div class="flex-column">
+					<div class="title-wrapper">
+						<h2>Over ons</h2>
+					</div>
+					<p>Wij zijn een klussenbedrijf dat gespecialiseerd is in het renoveren van woningen en bedrijfspanden. Wij werken met een team van ervaren vakmensen die u graag helpen met uw klus.</p>
+				</div>
+				<div class="flex-column">
+					<div class="about-list">
+					<a href="./over-ons">
+						<figure class="">
+							<div class="image-wrapper">
+							<img src="https://images.pexels.com/photos/5025669/pexels-photo-5025669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="dit is een titel">
+							<!-- <img src="src/foto-voorstellen.jpeg" alt="dit is een titel" style="height:400px"> -->
+							 </div>
+							<figcaption>Even voorstellen</figcaption>
+						</figure>
+					</a>
+					</div>
+
+
+
+
 				</div>
 			</div>
 		</section>
@@ -224,7 +265,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="afbeeldingen">
+		<!-- <section id="afbeeldingen">
 			<div class="container">
 				<div class="title-wrapper">
 					<h2>Foto's</h2>
@@ -299,20 +340,18 @@
 						<button class="carousel-control next">&gt;</button>
 					</div>
 					<div class="carousel-indicators">
-						<!-- Circles will be dynamically added here -->
 					</div>
 				</div>
 			</div>
-		</section>
+		</section>-->
 		<section id="contact">	
 				<div class="container flex">
-					<div class="flex-column">
-									
-				<div class="title-wrapper">
-					<h2>Contact</h2>
+					<div class="flex-column wide">	
+					<div class="title-wrapper">
+						<h2>Contact</h2>
+					</div>
+					<p>Heeft u vragen of wilt u een offerte aanvragen? Neem dan contact met ons op via dit formulier.</p>
 				</div>
-				<p>Heeft u vragen of wilt u een offerte aanvragen? Neem dan contact met ons op via dit formulier.</p>
-			</div>
 			<div class="flex-column">
 				<div class="contact-form">
 					<form action="contact.php" method="post">
