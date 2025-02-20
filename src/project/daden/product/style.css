@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Knewave&display=swap');
+
+:root{
+	--c-white-800:#f0f0f0;
+	--c-dark-800:#333333;
+
+	--size-xxs:2px;
+	--size-xs:4px;
+	--size-s:8px;
+	--size-m:16px;
+	--size-l:24px;
+	--size-xl:32px;
+	--size-xxl:48px;
+
+	--ff-heading:'Inter', sans-serif;
+	--ff-body:'Inter', sans-serif;
+	--ff-code:'Fira Code', monospace;
+	--ff-formal:'Knewave', cursive; 
+
+	--h1: 700 6rem/1em var(--ff-heading);
+	--h2: 700 3rem/1.2em var(--ff-heading);
+	--h3: 700 2.25rem/1.2em var(--ff-heading);
+	--h4: 700 1rem/1.6em var(--ff-heading);
+  
+	--p: 400 1rem/1.6em var(--ff-body);
+	--big: 400 1.25rem/1.6em var(--ff-body);
+	--small: 400 0.75em/2rem var(--ff-body);
+	--xsmall: 400 0.5em/2rem var(--ff-body);
+	--quote: 400 italic 1rem/1.6em var(--ff-body);
+
+	--transition-m: all 250ms ease;
+}
+
+html,
+body{
+	background:var(--c-white-800);
+	color:var(var(--c-dark-800));
+	font-size:var(--size-m);
+	font-family:var(--ff-body);
+	height:100dvh;
+	width:100dvw;
+
+	display:flex;
+	flex-direction:row;
+
+	position:relative;
+}
+
+.sidebar,
+.examples,
+main{
+	padding:16px;
+
+	display:flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+.sidebar,
+.examples{
+	width:25vw;
+
+	background-color:var(--c-dark-800);
+	color:var(--c-white-800);
+}
+
+main{
+	width:100%;
+
+	background-color:var(--c-white-800);
+	color:var(--c-dark-800);
+
+}
+
+h1{
+	font:var(--h1);
+}
+
+h2{
+	font:var(--h2);
+}
+
+h3{
+	font:var(--h3);
+}
+
+h4{
+	font:var(--h4);
+}
+
+p{
+	font:var(--p);
+}
+
+.big{
+	font:var(--big);
+}
+
+.small{
+	font:var(--small);
+}
+
+.xsmall{
+	font:var(--xsmall);
+}
+
+.quote{
+	font:var(--quote);
+}
+
+.sidebar{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height:calc(100vh - var(--size-xxl));
+
+	a{
+		color:white;
+		text-decoration: none;
+		transition:var(--transition-m);
+	}
+
+	a:hover{
+		opacity:0.75;
+	}
+
+	.logo{
+		display:flex;
+		flex-direction: row;
+		gap:var(--size-s);
+		align-items: center;
+		margin-bottom:var(--size-l);
+
+		img {
+			height:var(--size-xxl);
+		}
+
+		p{
+			font: var(--h4);
+		}
+
+	}
+
+	h2{
+		font:var(--p);
+	}
+
+	ul{
+		font:var(--p);
+		padding-left:16px;
+		list-style:none;
+		margin-bottom:var(--size-m);
+	}
+
+	li:active{
+		font-weight:700;
+	}
+
+}

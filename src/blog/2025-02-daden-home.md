@@ -1,5 +1,6 @@
 ---
 layout: post.njk
+exclude: 'true'
 title: 'Daden Home: Branding en Design Missie voor Innovatie'
 description: Daden richt zich ons op innovatieve en creatieve probleemoplossing. In dit artikel deel ik het ontwerp van de branding, om uit te stralen dat Daden mogelijkheden en kennis biedt voor brand en web design.
 opening: Daden is een startup thinktank die zich richt op het ontwerpen, ontwikkelen en leveren van innovatieve oplossingen. In dit artikel deel ik de branding en design missie, om uit te stralen dat Daden mogelijkheden en kennis biedt voor brand en web design.
