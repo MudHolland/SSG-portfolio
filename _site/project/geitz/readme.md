@@ -7,8 +7,11 @@ Geitz Klussenbedrijf is a renovation and construction company specializing in va
 ## Important Information
 
 - **Project Name:** Geitz Klussenbedrijf
+
 - **Client:** Marc Geitz
+
 - **Location:** Oss, Netherlands
+
 - **Services Provided:**
   - Renovation
   - Carpentry
@@ -16,6 +19,7 @@ Geitz Klussenbedrijf is a renovation and construction company specializing in va
   - Painting
   - Installation
   - Floor Coating
+
 - **Website Structure:**
   - Home Page
   - Services Page
@@ -162,3 +166,46 @@ Geitz Klussenbedrijf is a renovation and construction company specializing in va
   - Logo
   - Contact Information
   - Copyright
+
+<style>
+	html{
+		width:100%;
+		font-size:16px;
+		font-family:'inter', sans-serif;
+		max-width:900px;
+		margin-inline: auto;
+		margin-block:60px;
+	}
+
+	body{
+		max-width:100%;
+		margin-inline:16px;
+	}
+
+	h1{
+		text-align:center;
+		font-size:6rem;
+		margin-bottom:0rem;
+	}
+
+	.ondertitel{
+		text-align:center;
+		font-size:2rem;
+		margin-top:1rem;
+		padding-bottom:3rem;
+		font-style:italic;
+	}
+
+	h2{
+		font-size:3rem;
+		margin-top:6rem;
+	}
+
+	h3{
+		font-size:2rem;
+	}
+
+	h3, h4{
+		margin-bottom:0;
+	}
+</style>
