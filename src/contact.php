@@ -6,7 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $senderMessage = htmlspecialchars(trim($_POST['message']));
 
     if (!$senderEmail) {
-        die("Ongeldig e-mailadres. Probeer het opnieuw.");
+        echo "error";
+        exit;
     }
 
     // Receiver data
