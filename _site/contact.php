@@ -65,7 +65,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         mail($senderEmail, $subject_copy, $body_copy, $headers_copy);
 
-        echo "success";
+        // Redirect to thank-you page
+        header("Location: /contactformulier-ontvangen/");
+        exit();
     } else {
         echo "error";
     }
