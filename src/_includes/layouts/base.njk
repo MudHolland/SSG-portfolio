@@ -20,18 +20,19 @@
       .then(response => response.text())
       .then(result => {
         if (result === "success") {
-          document.getElementById('successMessage').style.display = "block";
-          document.getElementById('errorMessage').style.display = "none";
+          document.getElementById('contactModal').style.display = "block";
           form.reset();
         } else {
-          document.getElementById('successMessage').style.display = "none";
-          document.getElementById('errorMessage').style.display = "block";
+          alert("Er is een fout opgetreden. Probeer het opnieuw.");
         }
       })
       .catch(() => {
-        document.getElementById('successMessage').style.display = "none";
-        document.getElementById('errorMessage').style.display = "block";
+        alert("Er is een fout opgetreden. Probeer het opnieuw.");
       });
+    });
+
+    document.querySelector('.contact-modal .close').addEventListener('click', function() {
+      document.getElementById('contactModal').style.display = "none";
     });
   </script>
 </body>

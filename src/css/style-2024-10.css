@@ -131,7 +131,7 @@ main{
 
 .green {
 	--element-bg-color: var(--green-025);
-	--element-text-color: var(--green-150);
+	--element-text-color: var (--green-150);
 	--element-border-color: var(--green-025);
 	--element-shadow-color: var(--green-050);
 	--element-hover-color: var(--green-050);
@@ -1418,4 +1418,53 @@ td:first-child {
 .contact-form textarea {
 	  resize: vertical;
 	  height:10rem;
+}
+
+.contact-modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 32, 51, 0.9);
+}
+
+.contact-modal .contact-modal-content {
+  background-color: var(--element-bg-color);
+  margin: 15% auto;
+  padding: 2rem;
+  border: 0.125rem solid var(--element-border-color);
+  border-radius: 0.5rem;
+  width: 80%;
+  max-width: 30rem;
+  box-shadow: 0 var(--shadow-size-m) 0 var(--element-shadow-color);
+  text-align: center;
+}
+
+.contact-modal .close {
+  color: var(--element-text-color);
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-modal .close:hover,
+.contact-modal .close:focus {
+  color: var(--element-hover-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-modal h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.contact-modal p {
+  color: var(--text-color);
 }
