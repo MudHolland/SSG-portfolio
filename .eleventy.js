@@ -173,6 +173,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/script");
   eleventyConfig.addPassthroughCopy("src/project");
   eleventyConfig.addPassthroughCopy("src/.htaccess");
+  eleventyConfig.addPassthroughCopy("src/contact.php");
   eleventyConfig.addPassthroughCopy("readme.md");
 
   return {
