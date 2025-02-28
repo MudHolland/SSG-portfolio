@@ -3,7 +3,8 @@ Redirect 301 /personal/VanLentHolding-Branding/ /blog/2014-05-van-lent-holding-b
 Redirect 301 /personal/Rehan-Racing/ /blog/2020-12-rehan-racing-branding/
 Redirect 301 /personal/recepten/ /blog/2023-09-ontwerpen-voor-de-smaakpapillen/
 Redirect 301 /personal/Dedicon/Monet/ /blog/2024-06-dedicon-resultaat/
-Redirect 301 /personal/rekenen/ /blog/2023-12-reken-maar/
+Redirect 301 /personal/rekenen/ /project/reken-maar/
+Redirect 301 /rekenen/ /project/reken-maar/
 
 Redirect 301 /showcases/denkalseenkunstenaar/ /blog/2021-10-denken-als-kunstenaar/
 Redirect 301 /showcases/game-interfaces/ /blog/2022-05-diegetische-interfaces/
