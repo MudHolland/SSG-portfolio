@@ -1,0 +1,46 @@
+body {
+	background-color: black;
+	color: #00ff00;
+	font-family: 'Courier New', monospace;
+	margin: 0;
+	padding: 20px;
+  }
+  
+  #terminal {
+	width: 80%;
+	margin: 0 auto;
+  }
+  
+  #top-bar {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+  }
+  
+  #top-bar span {
+	cursor: pointer;
+  }
+  
+  #top-bar span:hover {
+	text-decoration: underline;
+  }
+  
+  #main-content {
+	min-height: 400px;
+	border: 1px solid #00ff00;
+	padding: 10px;
+	white-space: pre-wrap;
+  }
+  
+  #command-input {
+	margin-top: 20px;
+  }
+  
+  #command {
+	width: 100%;
+	background-color: black;
+	color: #00ff00;
+	border: none;
+	outline: none;
+	font-family: 'Courier New', monospace;
+  }
