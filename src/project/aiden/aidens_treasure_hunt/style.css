@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(15, 40px); /* 15 squares wide, 30px each */
+    gap: 1px;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.square {
+    width: 40px; /* Smaller squares */
+    height: 40px;
+    background-color: lightgray;
+	border-radius:5px;
+    /* border: 1px solid black; */ /* You commented this out */
+    cursor: pointer;
+}
+
+.square:hover {
+    background-color: lightblue; /* Changes color when you hover */
+}
+
+button{
+	padding:6px 12px;
+	border-radius:5px;
+	background-color: blue;
+	color:white;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}

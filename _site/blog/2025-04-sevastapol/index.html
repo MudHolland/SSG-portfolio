@@ -237,8 +237,7 @@
 <h3>Wat een dag</h3>
 <p>Maar pas op, beste bezoeker, want deze transformatie is niet wat het lijkt. Op deze dag nodig ik u uit om met mij mee te doen aan een speelse ode aan het verleden. Dus leun achterover, ontspan en geniet van de rit. En vergeet niet: 'in de ruimte kan niemand je horen klikken.'</p>
 <h3>Terug naar het heden</h3>
-<p>Vind je het nou toch niks, of wil je gewoon weer even weten hoe het internet en er in het heden uit ziet, klik dan hieronder om terug gegaan naar de vorige stijl.</p>
-<p><button id="reset-stylesheet-button">Terug naar het heden</button></p>
+<p>Vind je het nou toch niks, of wil je gewoon weer even weten hoe het internet en er in het heden uit ziet, klik dan onderaan de pagina op 'terug naar het heden' om terug gegaan naar de vorige stijl.</p>
 <p><audio id="crt-sound" src="/images/crt-sound.mp3" loop></audio></p>
 <script>
     // Automatically set preferred stylesheet to /css/sevastapol-2025.css
@@ -294,20 +293,6 @@
 
     observer.observe(stylesheet, { attributes: true, attributeFilter: ['href'] });
 
-    // Add event listener to the reset button
-    const resetButton = document.getElementById('reset-stylesheet-button');
-    if (resetButton) {
-        resetButton.addEventListener('click', () => {
-            localStorage.removeItem('preferredStylesheet');
-            if (stylesheet) {
-                console.log('Resetting to default stylesheet: /css/style-2024-10.css');
-                stylesheet.setAttribute('href', '/css/style-2024-10.css'); // Set to default stylesheet
-                stopCrtSound();
-            } else {
-                console.log('Stylesheet not found');
-            }
-        });
-    }
 </script>
     </article>
 
@@ -505,10 +490,33 @@
 </footer>
 
     
+    <div class="reset-button">
+        <button id="reset-stylesheet-button">Terug naar het heden</button>
+    </div>
+    
     <div id="myModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="img01">
         <div id="caption"></div>
     </div>
+    
+
+    <script>
+        const resetButtons = document.querySelectorAll('.reset-stylesheet-button'); // Use class instead of ID
+
+        resetButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                localStorage.removeItem('preferredStylesheet');
+                if (stylesheet) {
+                    console.log('Resetting to default stylesheet: /css/style-2024-10.css');
+                    stylesheet.setAttribute('href', '/css/style-2024-10.css'); // Set to default stylesheet
+                    stopCrtSound();
+                } else {
+                    console.log('Stylesheet not found');
+                }
+            });
+        });
+
+    </script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 ---
 # exclude: true
-featured: true
+featured: false
 layout: post.njk
 title: Sevastapol 2025
 description: "Let op: Gedetailleerde analyse van het herontwerp van het portfolio wordt gestart. Gebruikmakend van retro 70's tekstgebaseerde gebruikersinterface geïnspireerd door de Alien-franchise. Ga voorzichtig te werk..."
@@ -49,9 +49,8 @@ Maar pas op, beste bezoeker, want deze transformatie is niet wat het lijkt. Op d
 
 ### Terug naar het heden
 
-Vind je het nou toch niks, of wil je gewoon weer even weten hoe het internet en er in het heden uit ziet, klik dan hieronder om terug gegaan naar de vorige stijl.
+Vind je het nou toch niks, of wil je gewoon weer even weten hoe het internet en er in het heden uit ziet, klik dan onderaan de pagina op 'terug naar het heden' om terug gegaan naar de vorige stijl.
 
-<button id="reset-stylesheet-button">Terug naar het heden</button>
 
 <audio id="crt-sound" src="/images/crt-sound.mp3" loop></audio>
 
@@ -109,18 +108,4 @@ Vind je het nou toch niks, of wil je gewoon weer even weten hoe het internet en 
 
     observer.observe(stylesheet, { attributes: true, attributeFilter: ['href'] });
 
-    // Add event listener to the reset button
-    const resetButton = document.getElementById('reset-stylesheet-button');
-    if (resetButton) {
-        resetButton.addEventListener('click', () => {
-            localStorage.removeItem('preferredStylesheet');
-            if (stylesheet) {
-                console.log('Resetting to default stylesheet: /css/style-2024-10.css');
-                stylesheet.setAttribute('href', '/css/style-2024-10.css'); // Set to default stylesheet
-                stopCrtSound();
-            } else {
-                console.log('Stylesheet not found');
-            }
-        });
-    }
 </script>

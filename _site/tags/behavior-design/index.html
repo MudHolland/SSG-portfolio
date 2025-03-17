@@ -4456,10 +4456,33 @@
 </footer>
 
     
+    <div class="reset-button">
+        <button id="reset-stylesheet-button">Terug naar het heden</button>
+    </div>
+    
     <div id="myModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="img01">
         <div id="caption"></div>
     </div>
+    
+
+    <script>
+        const resetButtons = document.querySelectorAll('.reset-stylesheet-button'); // Use class instead of ID
+
+        resetButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                localStorage.removeItem('preferredStylesheet');
+                if (stylesheet) {
+                    console.log('Resetting to default stylesheet: /css/style-2024-10.css');
+                    stylesheet.setAttribute('href', '/css/style-2024-10.css'); // Set to default stylesheet
+                    stopCrtSound();
+                } else {
+                    console.log('Stylesheet not found');
+                }
+            });
+        });
+
+    </script>
 </body>
 </html>
