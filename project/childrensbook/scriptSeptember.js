@@ -87,7 +87,10 @@ function handleDeviceOrientation(event) {
     if (!hasGyroscopeAccess) return;
     // Map device tilt to acceleration
     tiltX = (event.gamma || 0) / 90; // Left-right tilt (-1 to 1)
-    tiltY = (event.beta || 0) / 90;  // Forward-back tilt (-1 to 1)
+    tiltY = (event.beta || 0) / 45;  // Forward-back tilt (adjusted for sensitivity)
+
+    // Log tilt values for debugging (optional)
+    console.log('Beta (forward-back tilt):', event.beta, 'Mapped tiltY:', tiltY);
 }
 
 // Swipe handling for devices without gyroscope or as a fallback
@@ -100,7 +103,7 @@ document.addEventListener('touchend', (e) => {
     const touchEndY = e.changedTouches[0].clientY;
     if (touchStartY - touchEndY > 50) { // Swipe up
         leaves.forEach(leaf => {
-            leaf.applyForce((Math.random() - 0.5) * 6, -15); // Stronger upward impulse with random horizontal scatter
+            leaf.applyForce((Math.random() - 0.5) * 6, -15); // Strong upward impulse with random horizontal scatter
         });
     }
 });
@@ -108,13 +111,25 @@ document.addEventListener('touchend', (e) => {
 // Animation loop
 function animate() {
     leaves.forEach(leaf => {
-        // Apply gravity
+        // Apply gravity (always downward)
         leaf.vy += GRAVITY;
 
         // Apply tilt forces (from gyroscope)
         if (hasGyroscopeAccess) {
+            // Horizontal movement based on left-right tilt (gamma)
             leaf.vx += tiltX * 0.1;
-            leaf.vy += tiltY * 0.1;
+
+            // Vertical movement based on forward-back tilt (beta)
+            // When beta = 0 (flat), no additional vertical force from tilt
+            // When beta < 0 (tilted back), apply upward force (negative vy)
+            // When beta > 0 (tilted toward user), apply downward force (positive vy)
+            if (tiltY < 0) {
+                // Tilted backward: leaves "fall upward" slowly
+                leaf.vy += tiltY * 0.05; // Smaller multiplier for slower upward movement
+            } else if (tiltY > 0) {
+                // Tilted toward user: leaves fall downward, faster with more tilt
+                leaf.vy += tiltY * 0.2; // Larger multiplier for faster downward movement
+            }
         }
 
         // Apply friction
