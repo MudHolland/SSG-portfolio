@@ -10,7 +10,7 @@ class Leaf {
         this.vx = (Math.random() - 0.5) * 2; // Random initial horizontal velocity
         this.vy = 0; // Initial vertical velocity
         this.rotation = Math.random() * 360; // Random initial rotation
-        this.rotationSpeed = (Math.random() - 0.5) * 1; // Random rotation speed
+        this.rotationSpeed = (Math.random() - 0.5) * 5; // Random rotation speed
         document.querySelector('.container').appendChild(this.element);
         this.updatePosition();
     }
@@ -43,7 +43,7 @@ for (let i = 0; i < 10; i++) {
 
 // Physics constants
 const GRAVITY = 0.2;
-const FRICTION = 0.8;
+const FRICTION = 0.98;
 let tiltX = 0;
 let tiltY = 0;
 
