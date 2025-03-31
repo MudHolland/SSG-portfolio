@@ -125,7 +125,7 @@ function animate() {
             // When beta > 0 (tilted toward user), apply downward force (positive vy)
             if (tiltY < 0) {
                 // Tilted backward: leaves "fall upward" slowly
-                leaf.vy += tiltY * 0.05; // Smaller multiplier for slower upward movement
+                leaf.vy += tiltY * -0.05; // Smaller multiplier for slower upward movement
             } else if (tiltY > 0) {
                 // Tilted toward user: leaves fall downward, faster with more tilt
                 leaf.vy += tiltY * 0.2; // Larger multiplier for faster downward movement
