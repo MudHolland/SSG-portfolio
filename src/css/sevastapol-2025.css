@@ -607,6 +607,16 @@ h1,h2,h3,h4,h5,h6{
 	bottom:0;
 	padding:0.5rem;
 	background-color: black;
+	border: 1px solid var(--green);
+    box-shadow: 0 0 1px green, 0 0 2px green, 0 0 4px green;
+
+	button{
+		text-shadow: 0 0 5px green, 0 0 10px green, 0 0 20px green;
+	}
+
+	&:hover{
+		animation: blink 1s infinite;
+	}
 }
 
 h1 {
