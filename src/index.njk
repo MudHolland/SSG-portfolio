@@ -18,7 +18,7 @@ title: Dennis Ulijn | Interaction Designer | Portfolio
     <div class="cards">
         {% for blog in collections.featuredBlog 
             | reverse 
-            | limit(3) %}
+            | limit(4) %}
         <a href="{{ blog.url }}" class="card card-featured">
             <img loading="lazy" src="{{ blog.data.thumbnail }}" alt="{{ blog.data.title }}">
             <div class="card-content">
