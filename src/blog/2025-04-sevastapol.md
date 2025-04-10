@@ -1,6 +1,6 @@
 ---
 # exclude: true
-featured: true
+featured: false
 layout: post.njk
 title: Sevastapol 2025
 description: "Let op: Gedetailleerde analyse van het herontwerp van het portfolio wordt gestart. Gebruikmakend van retro 70's tekstgebaseerde gebruikersinterface geïnspireerd door de Alien-franchise. Ga voorzichtig te werk..."
