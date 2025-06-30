@@ -73,22 +73,3 @@ body, html {
 .next-button {
     right: 20px;
 }
-
-.gyro-button {
-    position: absolute;
-    bottom: 80px;
-    padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.2);
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
-    font-family: 'Georgia', serif;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
-}
-
-.gyro-button:hover {
-    background: rgba(255, 255, 255, 0.4);
-}

@@ -507,6 +507,7 @@ blockquote{
 	margin-block:1rem;
 	font-style: italic;
 	padding:1rem;
+	padding-bottom:2rem;
 }
 
 blockquote::before,
