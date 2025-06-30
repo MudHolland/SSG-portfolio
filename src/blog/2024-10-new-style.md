@@ -44,7 +44,7 @@ Een grote afbeelding bovenaan het artikel zorgt voor een kleurrijke opening van 
 
 Een belangrijk aspect van de nieuwe stijl is de toevoeging van interactieve elementen. Knoppen, links en andere interactieve componenten hebben *hover*-effecten en *subtiele animaties als je ze indrukt* gekregen, waardoor de gebruikerservaring dynamischer en intuïtiever wordt. Hiermee heb ik primaire, secondary en tertiaire stijlen gedefinieert, zoals hieronder is te zien.
 
-<div class="centered">
+<!-- <div class="centered">
 	<button class="">tekst</button>
 	<button class="red">tekst</button>
 	<button class="yellow">tekst</button>
@@ -66,8 +66,6 @@ Een belangrijk aspect van de nieuwe stijl is de toevoeging van interactieve elem
 	<button class="ghost dark" style="min-width:7.5rem">tekst</button>
 </div>
 
-Deze stijlen zijn ook toegepast op chips, om categorieën in plaats van acties te tonen.
-
 <br>
 	<div class="chips">
 	<div class="chip">tekst</div>
@@ -75,7 +73,14 @@ Deze stijlen zijn ook toegepast op chips, om categorieën in plaats van acties t
 	<div class="chip yellow">tekst</div>
 	<div class="chip green">tekst</div>
 	<div class="chip dark">tekst</div>
-</div>
+</div> -->
+
+![Primaire, secundaire en tertiare knoppen in de 2024-10-stijl](/images/2024-10-knoppen.png)
+
+Deze stijlen zijn ook toegepast op chips, om categorieën in plaats van acties te tonen.
+
+![Verschillende chipkleuren in de 2024-10-stijl](/images/2024-10-chips.png)
+
 
 ### Conclusie
 

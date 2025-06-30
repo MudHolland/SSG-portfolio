@@ -1,0 +1,43 @@
+ik wil een sankey diagram met inkomsten en uitgaven rijksbegroting 2023. Hiervoor heb ik de volgende onderdelen (alle waarden zijn in miljarden euro's):
+
+inkomsten:
+
+Indirecte belastingen (subtotaal) 110,8:
+- Omzetbelasting (btw) 76,1
+- Accijnzen (alcohol, brandstof en tabak) 11,5
+- Belastingen op een milieugrondslag 5,3
+- Motorrijtuigenbelasting 4,6
+- Invoerrechten 4,3
+- Assurantiebelasting3,7
+- Overdrachtsbelasting 3,1
+- Belasting op personenauto’s en motorrijwielen (bpm) 1,4
+- Overig 0,9
+
+Directe belastingen (subtotaal) 150,7: 
+- Loon- en inkomstenbelasting 87,1
+- Vennootschapsbelasting 47,5
+- Dividendbelasting 11,6
+- Schenk- en erfbelasting 3,0
+- Kansspelbelasting 1,0
+- Overig 0,5
+
+Zorgpremies 52,4
+Premies volksverzekeringen 40,2
+Premies werknemersverzekeringen 31,5
+
+Dit gaat naar uitgaven:
+
+- Zorg 101,5
+- Sociale Zekerheid en Arbeidsmarkt 99,1
+- Onderwijs, Cultuur en Wetenschap 51,7
+- Gemeentefonds, Provinciefonds en Btw-compensatiefonds 45,8
+- Justitie en Veiligheid 20,2
+- Buitenlandse Zaken en Internationale Samenwerking 16,6
+- Defensie 13,8
+- Infrastructuur en Waterstaat 12,1
+- Binnenlandse Zaken en Koninkrijksrelaties 8,7
+- Economische Zaken en Klimaat 7,5
+- Rentelasten 6,1
+- Financiën 6,0
+- Landbouw, Natuur en Voedselkwaliteit 2,1
+- Overig -0,7
