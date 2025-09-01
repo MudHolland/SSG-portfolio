@@ -203,6 +203,12 @@
         }
 
         function start() {
+            // Bepaal de factor range
+            let maxFactor = 10; // standaard 1–10
+            const tableRange = document.querySelector('input[name="table-range"]:checked').value;
+            if (tableRange === "11-20") {
+                maxFactor = 20; // gebruik hier de logica die grootste getal ≤20 garandeert
+            }
             mistakes = 0;
             playerName = document.getElementById('player-name').value.trim();
             const delers = [];
@@ -222,13 +228,26 @@
                 alert("Voer ten minste één geldige deler in.");
                 return;
             }
+
             problems = [];
-            delers.forEach(deler => {
-                for (let i = 1; i <= 10; i++) {
-                    problems.push({x: deler, y: i});
-                }
-            });
-            problems = problems.sort(() => Math.random() - 0.5);
+problems = [];
+delers.forEach(deler => {
+    const tableRange = document.querySelector('input[name="table-range"]:checked').value;
+
+    let minAnswer = 1;
+    let maxAnswer = 10;
+
+    if (tableRange === "11-20") {
+        minAnswer = 11;
+        maxAnswer = 20;
+    }
+
+    for (let i = minAnswer; i <= maxAnswer; i++) {
+        problems.push({x: deler, y: i});
+    }
+});
+problems = problems.sort(() => Math.random() - 0.5);
+
             currentIndex = 0;
             document.getElementById('intro').style.display = 'none';
             document.getElementById('quiz').style.display = 'block';
@@ -398,9 +417,16 @@ function displayHighScores() {
             <button type="button" id="remove-table" onclick="removeTableField()" disabled>-</button>
             <button type="button" id="add-table" onclick="addTableField()">+</button>
         </div>
+        <div class="input-group" style="margin-block:2rem;">
+            <div  style="padding-bottom:0.5rem;">
+                <label>Welke tafels wil je oefenen?</label>
+            </div>
+            <label><input type="radio" name="table-range" value="1-10" checked> 1 t/m 10</label>
+            <label><input type="radio" name="table-range" value="11-20"> 11 t/m 20</label>
+        </div>
         <div class="input-group">
             <label>
-                <input type="checkbox" id="story-mode"> Maak er een verhaalsom van
+                <input type="checkbox" id="story-mode"> Maak er verhaalsommetjes van
             </label>
         </div>
         <button onclick="start()">Start</button>
