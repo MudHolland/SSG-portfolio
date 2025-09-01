@@ -5,6 +5,7 @@ Redirect 301 /personal/recepten/ /blog/2023-09-ontwerpen-voor-de-smaakpapillen/
 Redirect 301 /personal/Dedicon/Monet/ /blog/2024-06-dedicon-resultaat/
 Redirect 301 /personal/rekenen/ /project/reken-maar/
 Redirect 301 /rekenen/ /project/reken-maar/
+Redirect 301 /delen/ /project/deel-maar/
 Redirect 301 /aiden/ /project/aiden/
 
 Redirect 301 /showcases/denkalseenkunstenaar/ /blog/2021-10-denken-als-kunstenaar/
