@@ -264,21 +264,15 @@ function showProblem() {
     if (storyMode) {
         // Verhaalsjablonen
         const templates = [
-            `{y} snoepjes moeten worden verdeeld over {x} kinderen. Hoeveel krijgt ieder kind?`,
-            `Een boer heeft {x} appels en wil ze verdelen over {y} manden. Hoeveel appels zitten er in elke mand?`,
-            `{y} vrienden hebben {x} chocoladerepen. Ze willen ze eerlijk verdelen. Hoeveel krijgt iedereen?`,
+            `{y} snoepjes moeten worden verdeeld over {x} kinderen. Hoeveel snoepjes krijgt eenieder?`,
+            `Een boer heeft {y} appels en wil ze verdelen over {x} manden. Hoeveel appels zitten er in elke mand?`,
+            `{x} vrienden hebben {y} chocolaatjes. Ze willen ze eerlijk verdelen. Hoeveel krijgt iedereen?`,
             `Er zijn {y} ballonnen en {x} kinderen die ze willen verdelen. Hoeveel krijgt ieder kind?`
         ];
 
         // Kies een random template
         let template = templates[Math.floor(Math.random() * templates.length)];
-
-        // Randomize order: soms x en y omdraaien
-        if (Math.random() < 0.5) {
-            template = template.replace(/{x}/g, `<b>${divisor}</b>`).replace(/{y}/g, `<b>${dividend}</b>`);
-        } else {
-            template = template.replace(/{x}/g, `<b>${dividend}</b>`).replace(/{y}/g, `<b>${divisor}</b>`);
-        }
+        template = template.replace(/{x}/g, `<b>${divisor}</b>`).replace(/{y}/g, `<b>${dividend}</b>`);
 
         document.getElementById('problem').innerHTML = template;
 
@@ -337,11 +331,11 @@ function showProblem() {
             let combinedTables;
 
             if (tables.length === 1) {
-                combinedTables = `Tafel van ${tables[0]}`;
+                combinedTables = `Deeltafel van ${tables[0]}`;
             } else if (tables.length === 2) {
-                combinedTables = `Tafel van ${tables[0]} en ${tables[1]}`;
+                combinedTables = `Deeltafel van ${tables[0]} en ${tables[1]}`;
             } else {
-                combinedTables = `Tafel van ${tables.slice(0, -1).join(', ')} en ${tables[tables.length - 1]}`;
+                combinedTables = `Deeltafel van ${tables.slice(0, -1).join(', ')} en ${tables[tables.length - 1]}`;
             }
 
             highScores.push({name: name, table: combinedTables, time: parseFloat(time), mistakes: mistakes});
