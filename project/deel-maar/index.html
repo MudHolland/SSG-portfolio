@@ -255,22 +255,40 @@ problems = problems.sort(() => Math.random() - 0.5);
             showProblem();
         }
 
-        function showProblem() {
-            const problem = problems[currentIndex];
-            const dividend = problem.x * problem.y;
-            const divisor = problem.x;
-            const storyMode = document.getElementById('story-mode').checked;
+function showProblem() {
+    const problem = problems[currentIndex];
+    const dividend = problem.x * problem.y;
+    const divisor = problem.x;
+    const storyMode = document.getElementById('story-mode').checked;
 
-            if (storyMode) {
-                document.getElementById('problem').innerHTML =
-                    `<b>${divisor}</b> kinderen verdelen <b>${dividend}</b> snoepjes. Hoeveel krijgt ieder kind?`;
-            } else {
-                document.getElementById('problem').innerHTML = `<b>${dividend}</b> : <b>${divisor}</b> = `;
-            }
+    if (storyMode) {
+        // Verhaalsjablonen
+        const templates = [
+            `{y} snoepjes moeten worden verdeeld over {x} kinderen. Hoeveel krijgt ieder kind?`,
+            `Een boer heeft {y} appels en wil ze verdelen over {x} manden. Hoeveel appels zitten er in elke mand?`,
+            `{x} vrienden hebben {y} chocoladerepen. Ze willen ze eerlijk verdelen. Hoeveel krijgt iedereen?`,
+            `Er zijn {y} ballonnen en {x} kinderen die ze willen verdelen. Hoeveel krijgt ieder kind?`
+        ];
 
-            document.getElementById('answer').value = '';
-            document.getElementById('answer').focus();
+        // Kies een random template
+        let template = templates[Math.floor(Math.random() * templates.length)];
+
+        // Randomize order: soms x en y omdraaien
+        if (Math.random() < 0.5) {
+            template = template.replace(/{x}/g, `<b>${divisor}</b>`).replace(/{y}/g, `<b>${dividend}</b>`);
+        } else {
+            template = template.replace(/{x}/g, `<b>${dividend}</b>`).replace(/{y}/g, `<b>${divisor}</b>`);
         }
+
+        document.getElementById('problem').innerHTML = template;
+
+    } else {
+        document.getElementById('problem').innerHTML = `<b>${dividend}</b> : <b>${divisor}</b> = `;
+    }
+
+    document.getElementById('answer').value = '';
+    document.getElementById('answer').focus();
+}
 
         function checkAnswer() {
             const problem = problems[currentIndex];
