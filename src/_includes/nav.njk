@@ -1,0 +1,31 @@
+<nav>
+    <div class="content">
+        <a href="/" class="logo">
+            {% include "logo.njk" %}
+        </a>
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="/blog/">
+                        <button class="{% if page.url == '/blog/' %}secondary dark{% else %}ghost dark{% endif %}">Blog</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="/tags/">
+                        <button class="{% if page.url == '/tags/' %}secondary dark{% else %}ghost dark{% endif %}">Tags</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="/about/">
+                        <button class="{% if page.url == '/about/' %}secondary dark{% else %}ghost dark{% endif %}">About</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#gameArea {
+    width: 600px;
+    height: 400px;
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto;
+    background-color: lightgray;
+}
+
+.snake {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+    transition: all 0.1s linear; /* Smooth, slow movement */
+}
+
+.food {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+}

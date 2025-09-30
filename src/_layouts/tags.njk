@@ -1,0 +1,38 @@
+---
+layout: base.njk
+---
+
+    <header>
+        <div class="header-content">
+            <h1>{{ title }}</h1>
+            <p class="subtitle">{{ subtitle }}</p>
+        </div>
+        {% if headerImage %}
+            <img class="header-img blur" src="{{ headerImage }}" alt="">
+        {% endif %}
+        <div class="header-gradient"></div>
+    </header>
+
+    <main>
+    <div class="cards">
+        {% set tagPosts = collections.postsByTag[tag] | reverse %}   
+        {% for post in tagPosts %}
+        <a href="{{ post.url }}" class="card {% if post.data.featured == true %}card-featured{% endif %}">
+          {% if post.data.thumbnail %}
+          <img loading="lazy" src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}">
+          {% endif %}
+          <div class="card-content">
+              <h3>{{ post.data.title }}</h3>
+              <p class="subtitle">{{ post.data.date | dateFilter }}</p>
+              {% if post.data.description %}
+              <p>{{ post.data.description }}</p>
+              {% endif %}
+              {% if post.data.tags %}
+                  {% set tags = post.data.tags %}
+                  {% include "tagChips.njk" %}
+              {% endif %}
+          </div>
+      </a>
+        {% endfor %}
+    </div>
+</main>

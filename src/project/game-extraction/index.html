@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dino Extraction Shooter</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        canvas { display: block; }
+        #healthBar { 
+            position: absolute; 
+            top: 10px; 
+            left: 50%; 
+            transform: translateX(-50%);
+            width: 200px; 
+            height: 20px; 
+            background: gray;
+        }
+        #health { width: 100%; height: 100%; background: red; }
+    </style>
+</head>
+<body>
+    <div id="healthBar" style="display: none;"><div id="health"></div></div>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module">
+        import * as THREE from 'three';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+        // Scene setup
+        const scene = new THREE.Scene();
+        const camera = new THREE.OrthographicCamera(
+            window.innerWidth / -2,
+            window.innerWidth / 2,
+            window.innerHeight / 2,
+            window.innerHeight / -2,
+            1,
+            1000
+        );
+        camera.position.set(0, 0, 500);
+        camera.lookAt(0, 0, 0);
+
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // Player
+        const playerGeometry = new THREE.CircleGeometry(20, 32);
+        const playerMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+        const player = new THREE.Mesh(playerGeometry, playerMaterial);
+        scene.add(player);
+
+        // Reticule (cursor)
+        const reticuleGeometry = new THREE.RingGeometry(5, 7, 32);
+        const reticuleMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+        const reticule = new THREE.Mesh(reticuleGeometry, reticuleMaterial);
+        scene.add(reticule);
+
+        // Ground
+        const groundGeometry = new THREE.PlaneGeometry(2000, 2000);
+        const groundMaterial = new THREE.MeshBasicMaterial({ color: 0x808080 });
+        const ground = new THREE.Mesh(groundGeometry, groundMaterial);
+        ground.position.z = -1;
+        scene.add(ground);
+
+        // Game objects
+        let clues = [];
+        let dinosaur = null;
+        let extractionArrow = null;
+        let bullets = [];
+        let dinoHealth = 100;
+
+        // Movement controls
+        const keys = {
+            w: false,
+            a: false,
+            s: false,
+            d: false
+        };
+        const playerSpeed = 5;
+
+        // Clue class
+        class Clue {
+            constructor(type, position, direction = null) {
+                this.type = type;
+                const geometry = new THREE.BoxGeometry(10, 10, 10);
+                const material = new THREE.MeshBasicMaterial({ 
+                    color: type === 'tracks' ? 0x8B4513 : 0x654321 
+                });
+                this.mesh = new THREE.Mesh(geometry, material);
+                this.mesh.position.copy(position);
+                if (type === 'tracks' && direction) {
+                    this.mesh.rotation.z = Math.atan2(direction.y, direction.x);
+                }
+                scene.add(this.mesh);
+            }
+        }
+
+        // Dinosaur class
+        class Dinosaur {
+            constructor(position) {
+                const geometry = new THREE.BoxGeometry(40, 40, 40);
+                const material = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+                this.mesh = new THREE.Mesh(geometry, material);
+                this.mesh.position.copy(position);
+                scene.add(this.mesh);
+            }
+        }
+
+        // Extraction Arrow
+        function createExtractionArrow() {
+            const geometry = new THREE.ConeGeometry(20, 40, 32);
+            const material = new THREE.MeshBasicMaterial({ color: 0xffff00 });
+            extractionArrow = new THREE.Mesh(geometry, material);
+            extractionArrow.position.set(800, 0, 0);
+            extractionArrow.rotation.z = Math.PI / 2;
+            scene.add(extractionArrow);
+        }
+
+        // Spawn initial clues
+        clues.push(new Clue('droppings', new THREE.Vector3(-200, 100, 0)));
+        clues.push(new Clue('tracks', new THREE.Vector3(100, -100, 0), new THREE.Vector3(300, -200, 0)));
+
+        // Mouse handling
+        const raycaster = new THREE.Raycaster();
+        const mouse = new THREE.Vector2();
+
+        window.addEventListener('mousemove', (event) => {
+            mouse.x = event.clientX - window.innerWidth / 2;
+            mouse.y = -(event.clientY - window.innerHeight / 2);
+            reticule.position.set(mouse.x, mouse.y, 0);
+        });
+
+        window.addEventListener('click', () => {
+            const direction = new THREE.Vector2(mouse.x, mouse.y).sub(new THREE.Vector2(player.position.x, player.position.y)).normalize();
+            
+            const bulletGeometry = new THREE.CircleGeometry(5, 32);
+            const bulletMaterial = new THREE.MeshBasicMaterial({ color: 0xffff00 });
+            const bullet = new THREE.Mesh(bulletGeometry, bulletMaterial);
+            bullet.position.copy(player.position);
+            bullet.velocity = direction.clone().multiplyScalar(10);
+            scene.add(bullet);
+            bullets.push(bullet);
+        });
+
+        // Keyboard controls
+        window.addEventListener('keydown', (event) => {
+            switch(event.key.toLowerCase()) {
+                case 'w': keys.w = true; break;
+                case 'a': keys.a = true; break;
+                case 's': keys.s = true; break;
+                case 'd': keys.d = true; break;
+            }
+        });
+
+        window.addEventListener('keyup', (event) => {
+            switch(event.key.toLowerCase()) {
+                case 'w': keys.w = false; break;
+                case 'a': keys.a = false; break;
+                case 's': keys.s = false; break;
+                case 'd': keys.d = false; break;
+            }
+        });
+
+        // Game loop
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // Player movement
+            if (keys.w) player.position.y += playerSpeed;
+            if (keys.s) player.position.y -= playerSpeed;
+            if (keys.a) player.position.x -= playerSpeed;
+            if (keys.d) player.position.x += playerSpeed;
+
+            // Camera follows player
+            camera.position.x = player.position.x;
+            camera.position.y = player.position.y;
+
+            // Bullet movement and collision
+            bullets.forEach((bullet, index) => {
+                bullet.position.x += bullet.velocity.x;
+                bullet.position.y += bullet.velocity.y;
+
+                if (dinosaur && bullet.position.distanceTo(dinosaur.mesh.position) < 30) {
+                    scene.remove(bullet);
+                    bullets.splice(index, 1);
+                    
+                    if (dinoHealth === 100) {
+                        document.getElementById('healthBar').style.display = 'block';
+                    }
+                    
+                    dinoHealth -= 10;
+                    document.getElementById('health').style.width = `${dinoHealth}%`;
+                    
+                    if (dinoHealth <= 0) {
+                        scene.remove(dinosaur.mesh);
+                        createExtractionArrow();
+                        dinosaur = null;
+                    }
+                }
+                
+                if (Math.abs(bullet.position.x) > 1000 || Math.abs(bullet.position.y) > 1000) {
+                    scene.remove(bullet);
+                    bullets.splice(index, 1);
+                }
+            });
+
+            // Check proximity to clues
+            clues.forEach(clue => {
+                if (player.position.distanceTo(clue.mesh.position) < 50) {
+                    if (clue.type === 'tracks' && !dinosaur) {
+                        const direction = new THREE.Vector3(300, -200, 0).normalize();
+                        dinosaur = new Dinosaur(new THREE.Vector3(400, -300, 0));
+                    }
+                }
+            });
+
+            renderer.render(scene, camera);
+        }
+
+        // Window resize handling
+        window.addEventListener('resize', () => {
+            camera.left = window.innerWidth / -2;
+            camera.right = window.innerWidth / 2;
+            camera.top = window.innerHeight / 2;
+            camera.bottom = window.innerHeight / -2;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        animate();
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+    "name": "Dennis Ulijn Portfolio",
+    "short_name": "Portfolio",
+    "icons": [
+        {
+            "src": "/images/ulijn-logo.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#E5F6FF",
+    "theme_color": "#002B40"
+}

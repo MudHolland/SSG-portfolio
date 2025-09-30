@@ -1,4 +1,4 @@
-_site
-node_modules
-.nojekyll
-admin
+node_modules/
+.env
+.DS_Store
+test/
