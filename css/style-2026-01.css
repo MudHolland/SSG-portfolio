@@ -762,7 +762,7 @@ a {
 		color: var(--hover-color);
 	}
 }
-article a {
+article p a:not(.chip) {
 	color: var(--text-color);
 	position: relative;
 	transition: color 0.3s ease, scale 0.3s ease;
@@ -770,13 +770,13 @@ article a {
 	z-index: 11;
 }
 
-article a:hover {
+article p a:hover {
 	color: white;
 	scale: 1.5;
 	text-decoration: none;
 }
 
-article a::after {
+article p a::after {
 	content: "";
 	position: absolute;
 	left: -1rem;
@@ -786,17 +786,15 @@ article a::after {
 	background: var(--blue);
 	border-radius: 0.5rem;
 	opacity: 0;
-	/* transform: scaleY(0) scaleX(0); */
 	transform-origin: center center;
 	transition: transform 0.3s ease, opacity 0.3s ease, scale 0.3s ease;
 	z-index: -1;
 	scale: 1.1;
 }
 
-article a:hover::after {
+article p a:hover::after {
 	opacity: 1;
 	scale: 1.1;
-	/* transform: scaleY(1) scaleX(1); */
 }
 
 .disabled {
