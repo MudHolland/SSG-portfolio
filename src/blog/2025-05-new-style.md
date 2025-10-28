@@ -3,15 +3,15 @@ layout: post.njk
 title: "De 2025 huisstijl van dennisulijn.com"
 description: Met de komst van een nieuw jaar ontwikkelde ik opnieuw een frisse huisstijl die mijn groei en experimentdrang als ontwerper weerspiegelt. Waar de vorige stijl nog draaide om balans en subtiliteit, omarmt de nieuwe stijl voor 2025 juist contrast, richting en directheid.
 opening: Met de komst van een nieuw jaar ontwikkelde ik opnieuw een frisse huisstijl die mijn groei en experimentdrang als ontwerper weerspiegelt. Waar de vorige stijl nog draaide om balans en subtiliteit, omarmt de nieuwe stijl voor 2025 juist contrast, richting en directheid.
-date: '2025-05'
+date: "2025-05"
 headerImage: /images/2025-05-bg.png
 thumbnail: /images/2025-05-bg.png
 headerImagePosition: bottom
 exclude: false
 tags:
-- Web Design
-- Interaction Design
-- Inspiratie
+  - Web Design
+  - Interaction Design
+  - Inspiratie
 ---
 
 ## Van pastel naar pixels
@@ -63,23 +63,37 @@ Mijn ontwerpfilosofie blijft in beweging. Door jaarlijks mijn huisstijl opnieuw 
 
 Naast deze jaarlijkse stijlvernieuwing werk ik aan een jaarlijks terugkerend ‘1 april-thema’, waarin ik een onverwachte stijl uit het verleden hergebruik en herinterpreteer. Meer daarover? Houd mijn website in de gaten rond 1 april.
 
-
 ### Conclusie
 
-Met style-2024-10.css heb ik een nieuwe mijlpaal bereikt in mijn ontwerptraject. Deze update weerspiegelt mijn toewijding aan het creëren van een consistente, moderne en gebruiksvriendelijke ervaring. Ik nodig je uit om de nieuwe stijl te verkennen en te ontdekken hoe deze bijdraagt aan een verbeterde gebruikerservaring. 
+Met style-2024-10.css heb ik een nieuwe mijlpaal bereikt in mijn ontwerptraject. Deze update weerspiegelt mijn toewijding aan het creëren van een consistente, moderne en gebruiksvriendelijke ervaring. Ik nodig je uit om de nieuwe stijl te verkennen en te ontdekken hoe deze bijdraagt aan een verbeterde gebruikerservaring.
 
+> [~ Frank Chimero] "People ignore design that ignores people."
 
->[~ Frank Chimero] "People ignore design that ignores people."
-
-Ik kijk ernaar uit om deze nieuwe stijl verder te verfijnen en te zien hoe deze bijdraagt aan de groei van mijn portfolio en de tevredenheid van mijn bezoekers. 
+Ik kijk ernaar uit om deze nieuwe stijl verder te verfijnen en te zien hoe deze bijdraagt aan de groei van mijn portfolio en de tevredenheid van mijn bezoekers.
 
 #### Even terugkijken naar 2024?
 
 Ik zal je een geheimpje verklappen: je kunt elk moment wisselen van stijl door drie keer op de titel van de pagina te klikken. Hiermee kun je wisselen tussen de oude en nieuwe stijl, zodat je zelf kunt ervaren hoe de veranderingen zich vertalen naar de gebruikerservaring.
 
-
 ### Toekomst
 
-Door ieder jaar mijn huisstijl kritisch tegen het licht te houden en mezelf te forceren een nieuwe stijl te creëren, zorg ik ervoor dat ik bewust onderzoek en oefen met nieuwe stijlen, die mijn oplossingsrepertoire als (Interaction) Designer blijf uitbreiden. 
+Door ieder jaar mijn huisstijl kritisch tegen het licht te houden en mezelf te forceren een nieuwe stijl te creëren, zorg ik ervoor dat ik bewust onderzoek en oefen met nieuwe stijlen, die mijn oplossingsrepertoire als (Interaction) Designer blijf uitbreiden.
 
 Naast een jaarlijkse stijl wil ik jaarlijks op 1 april een bestaande stijl incorporeren. Ik heb hier veel ideeën bij, maar die houd ik liever graag nog even geheim. Check mijn website op of na 1 april voor deze verassingkjes.
+
+<script>
+    // Automatically set preferred stylesheet to /css/style-2025-01.css
+    const preferredStylesheet = '/css/style-2025-01.css';
+    localStorage.setItem('preferredStylesheet', preferredStylesheet);
+    const stylesheet = document.getElementById('main-stylesheet');
+
+    if (stylesheet) {
+        console.log(`Automatically setting preferred stylesheet: ${preferredStylesheet}`);
+        stylesheet.setAttribute('href', preferredStylesheet);
+    } else {
+        console.log('Stylesheet not found');
+    }
+
+    observer.observe(stylesheet, { attributes: true, attributeFilter: ['href'] });
+
+</script>
