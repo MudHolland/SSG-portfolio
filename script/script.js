@@ -59,12 +59,12 @@
 
             console.log(`Current stylesheet: ${currentHref}`);
 
-            if (currentHref === '/css/style-2024-10.css') {
+            if (currentHref === '/css/style-2025-01.css') {
+                newHref = '/css/style-2026-01.css';
+            } else if (currentHref === '/css/style-2026-01.css') {
                 newHref = '/css/style-2025-01.css';
-            } else if (currentHref === '/css/style-2025-01.css') {
-                newHref = '/css/style-2024-10.css';
             } else {
-                newHref = '/css/style-2025-01.css';
+                newHref = '/css/style-2026-01.css';
             }
 
             console.log(`Switching to new stylesheet: ${newHref}`);
@@ -154,8 +154,8 @@ window.toggleMenu = toggleMenu;
     localStorage.removeItem('preferredStylesheet');
     const stylesheet = document.getElementById('main-stylesheet');
     if (stylesheet) {
-        console.log('Resetting to default stylesheet: /css/style-2025-01.css');
-        stylesheet.setAttribute('href', '/css/style-2025-01.css'); // Set to default stylesheet
+        console.log('Resetting to default stylesheet: /css/style-2026-01.css');
+        stylesheet.setAttribute('href', '/css/style-2026-01.css'); // Set to default stylesheet
     } else {
         console.log('Stylesheet not found');
     }
