@@ -501,21 +501,20 @@ article figure {
 	padding-bottom: 0.5rem;
 	background-color: white;
 	box-sizing: border-box;
-	margin: -1rem 0;
+	margin: -1rem;
 	padding: 1rem;
-	/* margin: 0 auto; */
-	width: 100%;
+	width: auto;
 	cursor: pointer;
-	border: 0.125rem solid transparent;
-	border-radius: var(--size-m);
+	border: 0.1rem solid transparent;
+	border-radius: 1.5rem;
 	overflow: hidden;
-	border: 0rem solid var(--light-grey);
 	transition: box-shadow 200ms ease, scale 200ms ease, border 200ms ease,
 		padding 200ms ease;
 }
 
 article figure:hover {
 	border: 0.1rem solid var(--light-grey);
+	box-sizing: border-box;
 	box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
 		0 8px 10px -6px rgb(0 0 0 / 0.1);
 	cursor: pointer;
@@ -525,7 +524,7 @@ article figure:hover {
 article img,
 article video {
 	width: 100%;
-	/* border-radius: 0.5rem; */
+	border-radius: var(--size-m);
 	box-sizing: border-box;
 	position: relative;
 	display: inline-block;
@@ -762,7 +761,7 @@ a {
 		color: var(--hover-color);
 	}
 }
-article p a:not(.chip) {
+article p a:not(:has(button)):not(.chip) {
 	color: var(--text-color);
 	position: relative;
 	transition: color 0.3s ease, scale 0.3s ease;
@@ -1550,8 +1549,8 @@ table {
 	}
 
 	.half-width {
-		width: 100%;
-		margin: auto;
+		width: auto;
+		margin: -1rem;
 	}
 
 	nav .links {
