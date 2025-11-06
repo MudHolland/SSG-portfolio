@@ -11,6 +11,7 @@ exclude: false
 tags:
   - Web Design
   - Interaction Design
+  - Personal Brand Design
   - Inspiratie
 ---
 

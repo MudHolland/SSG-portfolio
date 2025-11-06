@@ -3,14 +3,15 @@ layout: post.njk
 title: In Personal Brand Design meet ik mezelf een nieuw ontwerp aan gebaseerd op wat ik wil uitdragen
 description: Ontdek hoe ik mijn unieke ontwerpstijl heb ontwikkeld en vormgegeven tot een krachtig persoonlijk merk. Laat je inspireren door mijn creatieve proces, van strategie tot uitvoering, en ontdek de kern van mijn visie als ontwerper.
 opening: Ontdek hoe ik mijn unieke ontwerpstijl heb ontwikkeld en vormgegeven tot een krachtig persoonlijk merk. Laat je inspireren door mijn creatieve proces, van strategie tot uitvoering, en ontdek de kern van mijn visie als ontwerper.
-date: '2020-07-15'
+date: "2020-07-15"
 headerImage: /images/m1-lwg2-small.png
 thumbnail: /images/m1-lwg2-small.png
 tags:
-- Creative Design
-- Brand Design
-- Behavior Design
-- Reflectie
+  - Creative Design
+  - Brand Design
+  - Behavior Design
+  - Personal Brand Design
+  - Reflectie
 ---
 
 ### Merkwijzer
@@ -20,15 +21,19 @@ De eigenschappen van mijn werk worden duidelijk weergegeven in mijn merkwijzer. 
 ![Merkwijzer Dennis Ulijn](/images/m1-lwg2-merkwijzer.png)
 
 #### Zien
+
 Strak, doordacht, eenvoud, geometisch, berekend, knipoog.
 
 #### Voelen
+
 Rust, zekerheid, opluchting, op je gemak.
 
 #### Horen
+
 Resultaatgericht, analytisch, berekend.
 
 #### Tone-of-voice
+
 Zekerheid geven, denken in oplossingen, met een knipoog (niet te serieus).
 
 ### Merkwijzer naar merk
@@ -62,9 +67,10 @@ De bold-variant van Rubik en Inter Regular bieden een mooi contrast in gewicht. 
 Kleurgebruik is een interessante case, ik ben namelijk gedeeltelijk kleurenblind. Dit zorgt er onder andere voor dat ik rood en groen slecht uit elkaar kan houden. Dit heeft me nooit geremd om mijn passie te volgen, waardoor ik elektrotechniek en ontwerpende bezigheden zonder angst ben aangegaan.
 
 #### Zelfverzekerd en uitgesproken
+
 Om op te vallen in de concurrerende wereld van designers wilde ik in lijn met mijn karakter juist een duidelijk statement maken. Flauwe of pastelachtige kleuren vielen dus als snel af. Als hoofdkleur wilde ik een sterk emotie uitlokken en straight-to-the-point uitstralen. In het kleurenspectrum doet rood dat het beste. Omdat rood snel schreeuwerig overkomt, heb ik dieper rood gekozen.
 
-Daarnaast wilde ik de secundaire kleur ook terug laten komen in de tekst als speelse elementen, zodat het geheel niet te statisch werd. In combinatie met de primaire kleur, landde dit ergens tussen geel en oranje.  Omdat deze kleur erg lastige te lezen is op wit door het lage contrast, wilde ik het contrast verhogen door deze wat donker te houden.
+Daarnaast wilde ik de secundaire kleur ook terug laten komen in de tekst als speelse elementen, zodat het geheel niet te statisch werd. In combinatie met de primaire kleur, landde dit ergens tussen geel en oranje. Omdat deze kleur erg lastige te lezen is op wit door het lage contrast, wilde ik het contrast verhogen door deze wat donker te houden.
 
 ![Primaire en secundaire kleur](/images/m1-lwg2-kleuren.png)
 
@@ -83,4 +89,3 @@ Dit monogramontwerp samen met de basis van de huisstijl komt tot het volgende st
 Wat leidt tot dit resultaat:
 
 ![DU Design-logo](/images/m1-lwg2-dudesign-logo.png)
-

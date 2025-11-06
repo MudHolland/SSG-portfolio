@@ -10,6 +10,7 @@ headerImagePosition: bottom
 tags:
   - Web Design
   - Interaction Design
+  - Personal Brand Design
   - Inspiratie
 ---
 

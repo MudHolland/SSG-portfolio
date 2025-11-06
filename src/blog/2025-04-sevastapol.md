@@ -5,19 +5,20 @@ layout: post.njk
 title: Sevastapol 2025
 description: "Let op: Gedetailleerde analyse van het herontwerp van het portfolio wordt gestart. Gebruikmakend van retro 70's tekstgebaseerde gebruikersinterface geïnspireerd door de Alien-franchise. Ga voorzichtig te werk..."
 opening: Het was een donkere en stormachtige nacht toen het idee bij me opkwam. Het moderne web, met zijn strakke lijnen en levendige kleuren, was verouderd. Ik verlangde naar iets meer...
-date: '2025-04-01'
+date: "2025-04-01"
 thumbnail: /images/alien-sevastapol.jpg
 headerImage: /images/alien-sevastapol.jpg
 tags:
   - Web Design
   - Interaction Design
+  - Personal Brand Design
   - Inspiratie
 redirect: /project/sevastapol/
 ---
 
 ## De grote interface-overhaul van 2025
 
-Ik verlangde naar  meer... iets dat rillingen over de ruggengraat van mijn bezoekers zou bezorgen. En toen drong het tot me door: de jaren 70. Het tijdperk van tekstgebaseerde gebruikersinterfaces, waarin elke interactie voelde als een commando aan de mainframe van een ruimteschip. Geïnspireerd door de huiveringwekkende sfeer van de Alien-franchise, begon ik aan een missie om mijn portfolio om te vormen tot een retro-futuristisch meesterwerk.
+Ik verlangde naar meer... iets dat rillingen over de ruggengraat van mijn bezoekers zou bezorgen. En toen drong het tot me door: de jaren 70. Het tijdperk van tekstgebaseerde gebruikersinterfaces, waarin elke interactie voelde als een commando aan de mainframe van een ruimteschip. Geïnspireerd door de huiveringwekkende sfeer van de Alien-franchise, begon ik aan een missie om mijn portfolio om te vormen tot een retro-futuristisch meesterwerk.
 
 ### Een reis terug in de tijd
 
@@ -50,7 +51,6 @@ Maar pas op, beste bezoeker, want deze transformatie is niet wat het lijkt. Op d
 ### Terug naar het heden
 
 Vind je het nou toch niks, of wil je gewoon weer even weten hoe het internet en er in het heden uit ziet, klik dan onderaan de pagina op 'terug naar het heden' om terug gegaan naar de vorige stijl.
-
 
 <audio id="crt-sound" src="/images/crt-sound.mp3" loop></audio>
 

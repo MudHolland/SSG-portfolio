@@ -23,6 +23,7 @@ module.exports = {
         'Experience Design', 
         'Game Design', 
         'Brand Design',
+        'Personal Brand Design',
         'Web Design', 
         'App Design', 
     ],
