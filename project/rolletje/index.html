@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+        <title>Rolletje — Prototype</title>
+        <style>
+    /* Basic reset */
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --phone-w:380px; --phone-h:820px;
+      --bg:#f6f5f3; --card:#fff; --muted:#9aa3a8; --accent:#7a5f44;
+      font-family:Inter,system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    body{display:flex;align-items:center;justify-content:center;min-height:100vh;background:linear-gradient(180deg,#eef2f1,#f6f5f3);padding:24px}
+
+    /* Phone container: centered on desktop, fullscreen on small screens */
+    .device{
+      width:var(--phone-w);height:var(--phone-h);border-radius:28px;box-shadow:0 10px 30px rgba(20,20,20,0.12);
+      overflow:hidden;background:linear-gradient(180deg,#ffffff,#fbfbfb);display:flex;flex-direction:column;border:1px solid rgba(0,0,0,0.06);
+    }
+
+    @media (max-width:480px){
+      .device{width:100vw;height:100vh;border-radius:0;box-shadow:none;border:0}
+      body{padding:0}
+    }
+
+    /* Top bar */
+    header{height:56px;display:flex;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.04);background:transparent}
+    header h1{font-size:16px;color:var(--accent);letter-spacing:0.2px}
+    header .pill{margin-left:auto;font-size:12px;color:var(--muted)}
+
+    /* Main area */
+    main{flex:1;overflow:auto;padding:14px}
+
+    /* Big camera button area */
+    .camera-card{background:var(--card);border-radius:12px;padding:14px;box-shadow:0 6px 20px rgba(10,10,10,0.03)}
+    .camera-preview{height:300px;border-radius:10px;background:linear-gradient(180deg,#eee,#ddd);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px}
+    .camera-actions{display:flex;gap:8px;margin-top:12px;align-items:center}
+    .btn{padding:10px 12px;border-radius:10px;background:transparent;border:1px solid rgba(0,0,0,0.06);font-weight:600}
+    .btn.primary{background:var(--accent);color:white;border:none}
+
+    /* Feed */
+    .feed{margin-top:16px;display:grid;grid-template-columns:1fr;gap:10px}
+    .photo-card{background:var(--card);padding:10px;border-radius:12px;display:flex;gap:10px;align-items:center;border:1px solid rgba(0,0,0,0.03)}
+    .avatar{width:56px;height:56px;border-radius:10px;background:#ddd;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-weight:700;color:#666}
+    .photo-thumb{flex:1;border-radius:8px;background:#eee;height:160px;display:flex;align-items:center;justify-content:center;color:var(--muted);overflow:hidden}
+    .meta{font-size:12px;color:var(--muted);margin-top:6px}
+
+    /* Tabs */
+    .tabs{display:flex;gap:8px;padding:12px}
+    .tab{flex:1;text-align:center;padding:10px;border-radius:10px;background:transparent;border:1px solid rgba(0,0,0,0.04)}
+    .tab.active{background:var(--accent);color:white;border:none}
+
+    /* Profile / calendar */
+    .calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:10px}
+    .cal-day{height:44px;border-radius:8px;background:linear-gradient(180deg,#fff,#fafafa);display:flex;align-items:center;justify-content:center;border:1px dashed rgba(0,0,0,0.04);font-size:12px;color:var(--muted)}
+    .cal-day.has{border-style:solid;background:linear-gradient(180deg,#fff8ee,#fff)}
+
+    /* Modal / Chat */
+    .modal{position:fixed;inset:0;background:rgba(0,0,0,0.35);display:none;align-items:center;justify-content:center;padding:20px}
+    .modal.active{display:flex}
+    .sheet{width:100%;max-width:420px;background:white;border-radius:12px;padding:12px}
+    .chat{max-height:60vh;overflow:auto;margin-bottom:8px}
+    .msg{padding:8px 10px;border-radius:10px;margin-bottom:6px;display:inline-block}
+    .msg.me{background:#e9f7f3;align-self:flex-end}
+    .msg.them{background:#f1f1f1}
+
+    footer{height:64px;border-top:1px solid rgba(0,0,0,0.04);display:flex;align-items:center;padding:10px 12px;gap:8px}
+    footer .small{font-size:12px;color:var(--muted)}
+
+    /* Small helpers */
+    .muted{color:var(--muted)}
+    .hidden{display:none}
+    .blur{filter:blur(6px)}
+        </style>
+    </head>
+    <body>
+        <div class="device" role="application" aria-label="Rolletje prototype">
+            <header>
+                <h1>Rolletje</h1>
+                <div class="pill" id="user-stats">Je wereld • 8 contacten</div>
+            </header>
+            <main>
+                <!-- Camera card -->
+                <section class="camera-card">
+                    <div id="cameraPreview" class="camera-preview">Klik of tik op 'Maak foto' om je rolletje te plaatsen</div>
+                    <div class="camera-actions">
+                        <button class="btn primary" id="takePhoto">Maak foto van vandaag</button>
+                        <button class="btn" id="useFile">Gebruik foto uit bestanden</button>
+                        <div style="margin-left:auto" class="muted">Geen likes. Geen cijfers.</div>
+                    </div>
+                    <input
+                        id="fileIn"
+                        type="file"
+                        accept="image/*"
+                        class="hidden"
+                    >
+                    <div style="margin-top:8px;font-size:12px;color:var(--muted)">Tip: Je mag je profielfoto eens per 30 dagen aanpassen.</div>
+                </section>
+                <!-- Feed -->
+                <div class="tabs" style="margin-top:12px">
+                    <div class="tab active" data-tab="feed">Feed</div>
+                    <div class="tab" data-tab="profile">Dagboek</div>
+                    <div class="tab" data-tab="contacts">Bekenden</div>
+                </div>
+                <div id="feedView">
+                    <div id="feedList" class="feed" aria-live="polite"></div>
+                </div>
+                <div id="profileView" class="hidden">
+                    <div style="display:flex;gap:12px;align-items:center">
+                        <div style="width:76px;height:76px;border-radius:12px;background:#ddd;display:flex;align-items:center;justify-content:center;font-weight:700" id="profilePic">DU</div>
+                        <div>
+                            <div style="font-weight:700">Dennis Ulijn</div>
+                            <div class="muted" id="profileInfo">Profielfoto wijzigbaar over
+                                <span id="daysLeft">0</span> dagen
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top:12px;display:flex;gap:8px">
+                        <button class="btn" id="changeProfile">Wijzig profielfoto</button>
+                        <button class="btn" id="exportYear" disabled>Exporteer jaaralbum</button>
+                    </div>
+                    <div class="calendar" id="calendar"></div>
+                </div>
+                <div id="contactsView" class="hidden">
+                    <div style="display:flex;flex-direction:column;gap:8px">
+                        <div class="muted">Je telefoonboek (simulatie) — selecteer wie Rolletje gebruikt</div>
+                        <div id="contactsList"></div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="small">Rolletje prototype — geen likes, alleen delen met bekenden</div>
+                <div style="margin-left:auto" class="small muted">Versie prototype</div>
+            </footer>
+        </div>
+        <!-- Modal for chat / viewing photo -->
+        <div class="modal" id="modal">
+            <div class="sheet">
+                <div id="modalContent"></div>
+                <div style="display:flex;gap:6px;margin-top:8px">
+                    <input id="replyInput" placeholder="Stuur bericht (vervliegt morgen)" style="flex:1;padding:8px;border-radius:10px;border:1px solid #eee">
+                    <button class="btn primary" id="sendReply">Stuur</button>
+                </div>
+            </div>
+        </div>
+        <script>
+    // Small prototype state using localStorage. This is a client-side interactive mock.
+    const STORAGE_KEY = 'rolletje_data_v1';
+    const USER_ID = 'me';
+
+    // Helper: load & save
+    function load(){
+      try{ return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {} }catch(e){return{}}
+    }
+    function save(data){ localStorage.setItem(STORAGE_KEY, JSON.stringify(data)) }
+
+    // Initialize minimal data if empty
+    let data = load();
+    if(!data.users){
+      // sample contacts: some 'connected' to the app
+      data.users = {
+        me: {id:'me', name:'Dennis Ulijn', profileChangedAt: Date.now() - (1000*60*60*24*40), photos: {}},
+        a: {id:'a', name:'Annemieke', profileChangedAt: Date.now(), photos:{}},
+        b: {id:'b', name:'Bas', profileChangedAt: Date.now(), photos:{}},
+        c: {id:'c', name:'Carl', profileChangedAt: Date.now(), photos:{}},
+        d: {id:'d', name:'Daphne', profileChangedAt: Date.now(), photos:{}},
+        e: {id:'e', name:'Els', profileChangedAt: Date.now(), photos:{}}
+      };
+      // simulate some previous photos for others
+      const yesterday = (ts)=> new Date(Date.now()-1000*60*60*24*ts).toISOString();
+      data.users.b.photos[yesterday(1)] = {src: '', placeholder:true};
+      data.users.c.photos[yesterday(2)] = {src: '', placeholder:true};
+      data.users.d.photos[new Date().toISOString()] = {src: '', placeholder:true};
+      data.connected = ['a','b','c','d','e'];
+      save(data);
+    }
+
+    // UI refs
+    const feedList = document.getElementById('feedList');
+    const cameraPreview = document.getElementById('cameraPreview');
+    const takePhotoBtn = document.getElementById('takePhoto');
+    const fileIn = document.getElementById('fileIn');
+    const useFile = document.getElementById('useFile');
+    const tabs = document.querySelectorAll('.tab');
+    const feedView = document.getElementById('feedView');
+    const profileView = document.getElementById('profileView');
+    const contactsView = document.getElementById('contactsView');
+    const contactsList = document.getElementById('contactsList');
+    const modal = document.getElementById('modal');
+    const modalContent = document.getElementById('modalContent');
+    const replyInput = document.getElementById('replyInput');
+    const sendReply = document.getElementById('sendReply');
+    const profilePic = document.getElementById('profilePic');
+    const daysLeft = document.getElementById('daysLeft');
+    const changeProfile = document.getElementById('changeProfile');
+    const calendar = document.getElementById('calendar');
+
+    // Utility: today's ISO day index
+    function dayKey(d=new Date()){ return new Date(d.getFullYear(),d.getMonth(),d.getDate()).toISOString() }
+
+    function hasPostedToday(user){ return !!(user.photos && user.photos[dayKey()]) }
+
+    // Render contacts list (simulate phonebook connect toggle)
+    function renderContacts(){
+      contactsList.innerHTML = '';
+      Object.values(data.users).forEach(u=>{
+        if(u.id==='me') return;
+        const div = document.createElement('div');
+        div.style.display='flex';div.style.alignItems='center';div.style.gap='8px';div.style.padding='8px';
+        const av = document.createElement('div');av.className='avatar';av.textContent = u.name.split(' ')[0].slice(0,2).toUpperCase();
+        const txt = document.createElement('div');txt.innerHTML = `<div style="font-weight:700">${u.name}</div><div class='muted' style='font-size:12px'>${Object.keys(u.photos||{}).length} momenten</div>`;
+        const btn = document.createElement('button');btn.className='btn';btn.textContent = data.connected.includes(u.id)?'Gekoppeld':'Koppel';
+        btn.onclick=()=>{
+          if(data.connected.includes(u.id)){ data.connected = data.connected.filter(x=>x!==u.id); btn.textContent='Koppel' }
+          else{ data.connected.push(u.id); btn.textContent='Gekoppeld' }
+          save(data); renderContacts(); renderFeed();
+        }
+        div.appendChild(av);div.appendChild(txt);div.appendChild(btn);
+        contactsList.appendChild(div);
+      })
+    }
+
+    // Render calendar (profile)
+    function renderCalendar(){
+      calendar.innerHTML='';
+      const me = data.users.me;
+      // simple last 35 days grid
+      const days = [];
+      for(let i=34;i>=0;i--) days.push(new Date(Date.now()-1000*60*60*24*i));
+      days.forEach(d=>{
+        const k = dayKey(d);
+        const div = document.createElement('div');div.className='cal-day';
+        if(me.photos[k]){ div.classList.add('has'); div.innerHTML = new Date(d).getDate(); div.onclick=()=>openPhotoModal('me',k) }
+        else div.textContent = new Date(d).getDate();
+        calendar.appendChild(div);
+      })
+      // days left for profile change
+      const daysSince = Math.floor((Date.now()-me.profileChangedAt)/(1000*60*60*24));
+      daysLeft.textContent = Math.max(0,30-daysSince);
+      if(daysSince>=30) changeProfile.disabled=false; else changeProfile.disabled=false; // allow but will enforce in code
+    }
+
+    // Render feed: chronological from connected users within last 24h or prior days (but respect rule: must post before seeing today's photos)
+    function renderFeed(){
+      feedList.innerHTML='';
+      const now = Date.now();
+      const me = data.users.me;
+      // Collect entries from connected users
+      const items = [];
+      data.connected.forEach(id=>{
+        const u = data.users[id]; if(!u) return;
+        Object.keys(u.photos||{}).forEach(k=>{
+          const ts = new Date(k).getTime();
+          // allow if within 24h or earlier (we show previous days too)
+          if(now - ts <= 1000*60*60*24*7){ // show up to 7 days for prototype
+            items.push({user:u, day:k, ts});
+          }
+        })
+      })
+      // sort chronologically desc
+      items.sort((a,b)=>b.ts-a.ts);
+
+      // if user hasn't posted today, block viewing today's photos
+      const blockedToday = !hasPostedToday(me);
+
+      items.forEach(it=>{
+        const card = document.createElement('div');card.className='photo-card';
+        const av = document.createElement('div');av.className='avatar';av.textContent = it.user.name.split(' ')[0].slice(0,2).toUpperCase();
+        const right = document.createElement('div');right.style.flex='1';
+        const thumb = document.createElement('div');thumb.className='photo-thumb';
+        if(it.user.photos[it.day].src){
+          const img = document.createElement('img');img.src=it.user.photos[it.day].src;img.style.width='100%';img.style.height='100%';img.style.objectFit='cover';thumb.appendChild(img);
+        } else {
+          // placeholder visual
+          thumb.innerHTML = `<div style='text-align:center'><div style='font-weight:700;color:#777'>${it.user.name}</div><div class='muted' style='font-size:12px;margin-top:6px'>Moment — ${new Date(it.ts).toLocaleString()}</div></div>`
+        }
+
+        // block today's photos until you post
+        const isToday = (new Date(it.day).toDateString() === new Date().toDateString());
+        if(isToday && blockedToday){ thumb.classList.add('blur'); const overlay=document.createElement('div'); overlay.style.position='absolute'; overlay.style.inset='0'; overlay.style.display='flex'; overlay.style.alignItems='center'; overlay.style.justifyContent='center'; overlay.style.color='var(--muted)'; overlay.style.fontWeight='700'; overlay.textContent='Plaats eerst je eigen foto om dit te zien'; thumb.appendChild(overlay) }
+
+        right.appendChild(thumb);
+        const meta = document.createElement('div');meta.className='meta';meta.textContent = `${it.user.name} — ${new Date(it.ts).toLocaleString()}`;
+        right.appendChild(meta);
+
+        card.appendChild(av);card.appendChild(right);
+        card.onclick = ()=>{ if(isToday && blockedToday) return alert('Plaats eerst je foto van vandaag om te zien wat anderen deden.'); openPhotoModal(it.user.id,it.day) }
+        feedList.appendChild(card);
+      })
+
+      if(items.length===0){ const empty = document.createElement('div'); empty.className='photo-card'; empty.textContent='Geen momenten gevonden. Nodig bekenden uit of koppel contacten.'; feedList.appendChild(empty) }
+    }
+
+    // Open modal for viewing a photo and chatting
+    function openPhotoModal(userId, day){
+      const u = data.users[userId];
+      const photo = u.photos[day];
+      modalContent.innerHTML = '';
+      const h = document.createElement('div');h.style.fontWeight='700';h.style.marginBottom='8px';h.textContent = `${u.name} — ${new Date(day).toLocaleString()}`;
+      modalContent.appendChild(h);
+      const thumb = document.createElement('div');thumb.style.height='320px';thumb.style.borderRadius='8px';thumb.style.background='#eee';thumb.style.marginBottom='8px';thumb.style.display='flex';thumb.style.alignItems='center';thumb.style.justifyContent='center';
+      if(photo.src){ const img=document.createElement('img');img.src=photo.src;img.style.width='100%';img.style.height='100%';img.style.objectFit='cover';thumb.appendChild(img)} else {thumb.textContent='(placeholder photo)'}
+      modalContent.appendChild(thumb);
+
+      // messages area
+      const chat = document.createElement('div');chat.className='chat';
+      const convKey = `conv_${userId}_${day}`;
+      const conv = JSON.parse(localStorage.getItem(convKey) || '[]');
+      conv.forEach(m=>{
+        const el = document.createElement('div');el.className='msg '+(m.from==='me'?'me':'them');el.textContent=m.text;chat.appendChild(el);
+      })
+      modalContent.appendChild(chat);
+
+      // hook send
+      sendReply.onclick = ()=>{
+        const text = replyInput.value.trim(); if(!text) return; conv.push({from:'me',text,ts:Date.now()}); localStorage.setItem(convKey,JSON.stringify(conv)); replyInput.value=''; openPhotoModal(userId,day);
+      }
+
+      modal.classList.add('active');
+      modal.onclick = (e)=>{ if(e.target===modal) modal.classList.remove('active') }
+    }
+
+    // Camera logic: use getUserMedia when possible; otherwise file input
+    let stream=null;
+    async function takePhoto(){
+      // if already posted today, warn and stop
+      const me = data.users.me;
+      if(hasPostedToday(me)){ if(!confirm('Je hebt al een foto voor vandaag. Overschrijven?')) return }
+
+      // Try camera if available
+      if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia){
+        try{
+          stream = await navigator.mediaDevices.getUserMedia({video:{facingMode:'environment'}});
+          const video = document.createElement('video'); video.autoplay=true; video.playsInline=true; video.srcObject = stream;
+          cameraPreview.innerHTML=''; cameraPreview.appendChild(video);
+          // show a capture overlay button for 10s
+          const cap = document.createElement('button'); cap.className='btn primary'; cap.textContent='Klik om vast te leggen'; cap.style.position='absolute'; cap.style.bottom='20px';
+          cameraPreview.style.position='relative'; cameraPreview.appendChild(cap);
+          cap.onclick = ()=>{ captureFromVideo(video); stopStream(); }
+          // also allow recording timeout: after 30s stop
+          setTimeout(()=>{ if(stream) stopStream(); },30000);
+        }catch(err){ console.warn('camera err',err); fileIn.click() }
+      } else fileIn.click();
+    }
+
+    function stopStream(){ if(stream){ stream.getTracks().forEach(t=>t.stop()); stream=null; cameraPreview.innerHTML='Klik of tik op \'Maak foto\' om je rolletje te plaatsen' }}
+
+    function captureFromVideo(video){
+      const canvas = document.createElement('canvas'); canvas.width=video.videoWidth; canvas.height=video.videoHeight; const ctx = canvas.getContext('2d'); ctx.drawImage(video,0,0);
+      const dataUrl = canvas.toDataURL('image/jpeg',0.85);
+      savePhotoForToday(dataUrl);
+    }
+
+    fileIn.addEventListener('change',e=>{
+      const f = e.target.files[0]; if(!f) return; const reader = new FileReader(); reader.onload = ()=> savePhotoForToday(reader.result); reader.readAsDataURL(f);
+    })
+
+    useFile.addEventListener('click',()=> fileIn.click());
+    takePhotoBtn.addEventListener('click',takePhoto);
+
+    function savePhotoForToday(src){
+      const me = data.users.me;
+      const key = dayKey();
+      me.photos[key] = {src,ts:Date.now()};
+      data.users.me = me; save(data); renderAll();
+      alert('Je foto van vandaag is gedeeld met je bekenden.');
+    }
+
+    // Profile photo change (enforce 30 days)
+    changeProfile.addEventListener('click',()=>{
+      const me = data.users.me; const sinceDays = Math.floor((Date.now()-me.profileChangedAt)/(1000*60*60*24));
+      if(sinceDays < 30 && !confirm(`Je profielfoto is ${sinceDays} dagen geleden gewijzigd. Wil je toch wijzigen? (aanbevolen: wacht 30 dagen)`)) return;
+      fileIn.click();
+      fileIn.onchange = ()=>{
+        const f = fileIn.files[0]; if(!f) return; const r = new FileReader(); r.onload = ()=>{
+          me.profilePic = r.result; me.profileChangedAt = Date.now(); data.users.me=me; save(data); profilePic.style.backgroundImage=`url(${r.result})`; profilePic.textContent=''; renderAll();
+        }; r.readAsDataURL(f);
+      }
+    })
+
+    // Tabs
+    tabs.forEach(t=>t.addEventListener('click',()=>{
+      tabs.forEach(x=>x.classList.remove('active')); t.classList.add('active');
+      const tab = t.dataset.tab;
+      feedView.classList.toggle('hidden', tab!=='feed');
+      profileView.classList.toggle('hidden', tab!=='profile');
+      contactsView.classList.toggle('hidden', tab!=='contacts');
+    }))
+
+    function renderProfilePic(){ const me = data.users.me; if(me.profilePic){ profilePic.style.backgroundImage=`url(${me.profilePic})`; profilePic.textContent=''; profilePic.style.backgroundSize='cover' } else { profilePic.textContent='DU' }}
+
+    function renderAll(){ renderContacts(); renderFeed(); renderCalendar(); renderProfilePic(); document.getElementById('user-stats').textContent = `Je wereld • ${data.connected.length} contacten` }
+
+    renderAll();
+
+    // small demo convenience: if you click device header name quickly, fill sample photo for others
+    document.querySelector('header h1').addEventListener('dblclick',()=>{
+      // simulate others posting now (placeholder images)
+      data.connected.forEach((id,i)=>{
+        if(id==='me') return; const k = dayKey(); data.users[id].photos[k] = {src:'',placeholder:true,ts:Date.now()-i*60000};
+      }); save(data); renderAll(); alert('Simulated other users posting now (placeholder)')
+    })
+        </script>
+    </body>
+</html>
