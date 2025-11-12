@@ -2,7 +2,11 @@
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Gegevens uit formulier ophalen en schoonmaken
     $senderName    = htmlspecialchars(trim($_POST['name'] ?? ''));
-    $senderEmail   = filter_var(trim($_POST['email'] ?? ''), FILTER_VALIDATE_EMAIL);
+    $senderEmail = trim($_POST['email'] ?? '');
+    if (!filter_var($senderEmail, FILTER_VALIDATE_EMAIL) || 
+        preg_match('/[а-яА-ЯёЁ]/u', $senderEmail . $senderName . $senderSubject . $senderMessage)) {
+        echo "error"; exit;
+    }
     $senderSubject = htmlspecialchars(trim($_POST['subject'] ?? ''));
     $senderMessage = htmlspecialchars(trim($_POST['message'] ?? ''));
 
@@ -10,6 +14,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (!$senderName || !$senderEmail || !$senderSubject || !$senderMessage) {
         echo "error";
         exit;
+    }
+
+    if (!empty($_POST['honeypot'])) {
+        echo "error"; exit; // Bot gevuld
     }
 
     // Ontvanger
