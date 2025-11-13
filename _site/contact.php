@@ -7,7 +7,7 @@ require 'src/SMTP.php';
 require 'src/Exception.php';
 
 $config = require __DIR__ . '/config.php';
-$smtpPassword = $config['7M]qwT+QpI'];
+$smtpPassword = $config['smtp_password'];
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     echo "error"; exit;
@@ -86,7 +86,7 @@ try {
     $mail->Host       = 'smtp.hostinger.com';
     $mail->SMTPAuth   = true;
     $mail->Username   = 'info@dennisulijn.com';
-    $mail->Password = $smtpPassword;
+    $mail->Password   = $smtpPassword;
     $mail->SMTPSecure = 'tls';
     $mail->Port       = 587;
 
