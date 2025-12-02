@@ -695,18 +695,6 @@ document.getElementById("close-modal").addEventListener("click", () => {
   document.getElementById("contact-modal").style.display = "none";
 });
 
-document.querySelector(".form").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  // Simuleer "succesvolle verzending"
-  document.getElementById("contact-modal").style.display = "flex";
-  e.target.reset();
-});
-
-// Sluit modal
-document.getElementById("close-modal").addEventListener("click", () => {
-  document.getElementById("contact-modal").style.display = "none";
-});
 
 
 
