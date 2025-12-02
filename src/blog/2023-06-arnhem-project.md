@@ -1,23 +1,24 @@
 ---
 layout: post.njk
-title: Conceptualisatie, prototype-ontwerp en ontwikkeling omgevingsbeleving van voetgangers
+title:
+  Conceptualisatie, prototype-ontwerp en ontwikkeling omgevingsbeleving van voetgangers
   voor Gemeente Arnhem
-description: Gemeente Arnhem wil een mobiliteitsshift creëren, uit de auto en in de benenwagen. In dit project heb ik als communicatie-ontwerper middels biebonderzoeken, expert interviews en co-creatiesessies met inwoners van Arnhem onderzocht wat mensen drijft te lopen en hoe de omgeving de beleving van de voetganger beïnvloedt. In samenwerking met ICT-en BIM-studenten heb ik een interface ontworpen en ontwikkeld die de invloed van de omgeving inschaalt en weergeeft. Dit resultaat biedt de gemeente Arnhem inzicht in de reikwijdte van wandelend Arnhem en de handvatten om deze te optimaliseren.
-opening: 'In het hart van Arnhem begon ik aan een missie om de stedelijke mobiliteit te innoveren door gebruik te maken van de 1-10-100 ontwikkelmethode. Binnen deze methode werkten we volgens het Agile/Scrum-principe. Deze reis begon met een gedurfde vraag: Hoe kunnen we de ervaring van fietsen en lopen voor de inwoners van Arnhem verbeteren?'
-date: '2023-06-15'
+description: Gemeente Arnhem wil een mobiliteitsshift creëren, uit de auto en in de benenwagen. In dit project heb ik als communicatie- en interactie-ontwerper middels biebonderzoeken, expert interviews en co-creatiesessies met inwoners van Arnhem onderzocht wat mensen drijft te lopen en hoe de omgeving de beleving van de voetganger beïnvloedt. In een multidisciplinair team van mij, interactieontwerper, en IT en Business Analysis heb ik een protoype van een interface ontworpen en ontwikkeld die de invloed van de omgeving inschaalt en weergeeft. Dit resultaat biedt de gemeente Arnhem inzicht in de reikwijdte van wandelend Arnhem en de handvatten om deze te optimaliseren.
+opening: "In het hart van Arnhem begon ik aan een missie om de stedelijke mobiliteit te innoveren door gebruik te maken van de 1-10-100 ontwikkelmethode. Binnen deze methode werkten we volgens het Agile/Scrum-principe. Deze reis begon met een gedurfde vraag: Hoe kunnen we de ervaring van fietsen en lopen voor de inwoners van Arnhem verbeteren?"
+date: "2023-06-15"
 headerImage: /images/Arnhem_Web-App_Mockup.png
 thumbnail: /images/Arnhem_Web-App_Mockup.png
 featured: true
 tags:
-- Agile/Scrum
-- Team Project
-- Multi-disciplinair
-- Behavior Design
-- Web Design
-- 1-10-100
-- Co-creatie
-- Interaction Design
-- UI/UX
+  - Agile/Scrum
+  - Team Project
+  - Multi-disciplinair
+  - Behavior Design
+  - Web Design
+  - 1-10-100
+  - Co-creatie
+  - Interaction Design
+  - UI/UX
 ---
 
 ## 1-Fase: De Basis Leggen
@@ -101,4 +102,3 @@ Ik deelde mijn Adobe XD-bestanden, afbeeldingen en video van de high-fidelity-in
 Na het updaten van typografie, marges, en het toevoegen van interactieve elementen, resulteerde dit in een webinterface die zowel esthetisch aantrekkelijk als functioneel was. Met behulp van HTML, CSS en mijn beperkte JavaScript-kennis droeg ik bij aan een volledig klikbare high-fidelity prototype, dat nu als basis dient voor verdere ontwikkeling en presentatie.
 
 ![De software-ontwikkelaar in ons team heeft mijn XD-schermen omgezet tot deze web-interface](/images/BTH-IxD-web1.png)
-

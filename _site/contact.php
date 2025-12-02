@@ -59,7 +59,7 @@ $body = "
     <p><b>Naam:</b> $senderName</p>
     <p><b>E-mailadres:</b> <a href='mailto:$senderEmail'>$senderEmail</a></p>
     <p><b>Onderwerp:</b> $senderSubject</p>
-    <p><b>Bericht:</b><br>$senderMessage</p>
+    <p><b>Bericht:</b> $senderMessage</p>
 </body>
 </html>
 ";

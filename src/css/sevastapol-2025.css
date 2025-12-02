@@ -450,7 +450,6 @@ article ol li {
 	font-size: 1rem;
 	counter-increment: ordered-list;
 	padding-left: 1.75rem;
-	cursor: pointer;
 	backface-visibility: hidden;
 }
 

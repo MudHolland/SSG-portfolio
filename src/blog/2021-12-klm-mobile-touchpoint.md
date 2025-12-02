@@ -1,90 +1,91 @@
 ---
 layout: post.njk
 title: Uitbreiding voor de klantervaring van de KLM-dienstverlening middels uitbreiding van de KLM-app
-description: KLM heeft haar klantreis van voor tot achter ontworpen om de reiziger zich bij KLM thuis en gewaardeerd te laten voelen. In dit project heb ik voor KLM onderzocht middels Cultural Probes wat deze gebruiker denkt en voelt tijdens de voorbereiding van een (vlieg-)reis. Door de onderdelen van de dienstverlening van KLM en de klantervaring samen te laten komen, vond ik de grootste pijnpunten en stressoren van de klantreis voor zowel reizigers als KLM-personeel, 'wachttijden en onduidelijkheden op het vliegveld'. Om de reiziger hierin te ondersteunen, bouwde ik een prototype van gesproken begeleiding in de KLM-app en testte deze met gebruikers en medewerkers van KLM.
-opening: In dit project heb ik als onderdeel van een ontwerpteam een opdracht gekregen van KLM. We hebben deze casus aangepakt met de Double Diamond-ontwikkelmethode.
-date: '2021-12-15'
+description: KLM heeft haar klantreis van voor tot achter ontworpen om de reiziger zich bij KLM thuis en gewaardeerd te laten voelen. In dit project heb ik voor KLM onderzocht middels Cultural Probes wat deze gebruiker denkt en voelt tijdens de voorbereiding van een (vlieg-)reis. Door de onderdelen van de dienstverlening van KLM en de klantervaring samen te laten komen, vond ik de grootste pijnpunten en stressoren van de klantreis voor zowel reizigers als KLM-personeel, 'wachttijden en onduidelijkheden naar en op het vliegveld'. Om de reiziger hierin te ondersteunen, bouwde ik een prototype van gesproken begeleiding in de KLM-app en testte deze met gebruikers en medewerkers van KLM.
+opening: In dit project heb ik als onderdeel van een ontwerpteam een opdracht gekregen van KLM. We hebben deze casus aangepakt met de Double Diamond-ontwikkelmethode, omdat dit een uitgelezen kans is voor het vinden van nieuwe kansen.
+date: "2021-12-15"
 headerImage: /images/proto-2.png
 thumbnail: /images/KLM-mockup.png
 featured: true
 tags:
-- Service Design
-- Double Diamond
-- Team Project
-- App Design
-- Interaction Design
-- Co-creatie
+  - Service Design
+  - Double Diamond
+  - Team Project
+  - App Design
+  - Interaction Design
+  - Co-creatie
 ---
 
 ### Casus: KLM Experience Upgrade
 
-*De KLM Mobile App wordt het meest gebruikt door frequent flyers die vaak voor zakelijke doeleinden reizen. Mensen die de app gebruiken kunnen tickets kopen, bestemmingen bekijken, inchecken, hun boarding pass bekijken en nog veel meer. KLM heeft haar vluchten en passagiers zien dalen sinds het begin van de corona pandemie in 2020. Naast de daling in vluchten kijken mensen ook anders naar reizen sinds corona. KLM ziet het als een uitdaging om opnieuw te bekijken hoe wij op een veilige manier vliegreizen kunnen aanbieden.*
+_De KLM Mobile App wordt het meest gebruikt door frequent flyers die vaak voor zakelijke doeleinden reizen. Mensen die de app gebruiken kunnen tickets kopen, bestemmingen bekijken, inchecken, hun boarding pass bekijken en nog veel meer. KLM ziet het als een uitdaging om opnieuw te bekijken hoe wij vliegreizen prettiger kunnen aanbieden._
 
-*In deze case gaan jullie kijken naar de preparation fase uit de customer journey van KLM. De sleutelwoorden voor deze fase zijn voorpret en voorbereiding. Deze fase is van groot belang in het laten slagen van een reis, hier gebeurt bijna alles. Passagiers spenderen tijd om hun reis voor te bereiden en reizen af naar het vliegveld. Hebben alle juiste documenten? Hadden ze toch niet die stoelupgrade moeten kopen en vanaf welke gate vertrekt hun vlucht? Allemaal vragen die weleens voorbij kunnen komen in deze fase.*
+_In de preparation fase uit de customer journey van KLM ziet KLM de sleutelwoorden voorpret en voorbereiding. Deze fase is van groot belang in het laten slagen van een reis, hier gebeurt bijna alles. Passagiers spenderen tijd om hun reis voor te bereiden en reizen af naar het vliegveld. Hebben alle juiste documenten? Hadden ze toch niet die stoelupgrade moeten kopen en vanaf welke gate vertrekt hun vlucht? Allemaal vragen die weleens voorbij kunnen komen in deze fase._
 
-*KLM staat daarnaast bekend om de goede service en echte Nederlandse gezelligheid aan boord. Maar in de preparation fase, de aanloop naar je reis toe, is er van die sfeer weinig te merken. Wij willen ook aan jullie vragen om te onderzoeken hoe wij de reis kunnen verrijken nog voor je het vliegtuig instapt?*
+_KLM staat daarnaast bekend om de goede service en echte Nederlandse gezelligheid aan boord. Maar in de preparation fase, de aanloop naar je reis toe, is er van die sfeer weinig te merken._
 
 > [ontwerpvraag] "Hoe laat je de experience van de KLM-service in de lucht al op de grond beginnen?"
 
 ### Ontwerpproces
 
-Zoals besproken heb ik in deze module in teamverband gewerkt volgens de Service Design Thinking-principes en -methode en de Double Diamond-methode, zoals te lezen is op de [methode](/blog/2021-07-service-design-thinking-met-de-double-diamond/)-pagina.
-
-Ik heb de uitgevoerde activiteiten geplaatst in de ruiten van de Double Diamond. Deze activiteiten zijn genummerd en hebben zelf hebben ook een ruitvorm, omdat elke activiteit een onderzoek op zich is, waarbij gedivergeerd wordt tijdens het onderzoeken, en waar geconvergeerd wordt wanneer er conclusies aan deze onderzoeken worden gekoppeld.Deze activiteiten worden besproken tijdens het hoofdstuk Procesverloop.
+Ik heb het project aangepakt de Double Diamond-methode, waarbij ik activiteiten heb gekozen en geplaatst in de ruiten van de Double Diamond. Door het kiezen van de juiste methode probeer ik in de eerste ruit (onderzoek) zoveel mogelijk inzichten te verzamelen, die ik in de tweede ruit (ontwerp) kan gebruiken om tot een passend, innovatief concept en product te komen.
 
 ![Design Squiggle: het verloop van het ontwerpproces tijdens het ontwerppracticum van deze module](/images/design-squiggle.png)
 
-Het divergeren en convergeren doorheen de Double Diamond heb ik uitgebeeld middels een lijn die aan de linker zijde van de ruiten flink kronkelt en naarmate ze aan de rechter zijde van de ruit komt, rechter loopt. Dit visualiseert de [Design Squiggle](https://thedesignsquiggle.com/), een visuele representatie van ieder ontwerpproces, waarbij in het begin onberekenbaar alle kanten op wordt geredeneerd, om met steeds meer antwoorden een duidelijker beeld te vormen van de uitkomst van het proces. Dit vindt plaats in zowel de onderzoeksruit (ruit 1) als de ontwerpruit (ruit 2).
+Het divergeren en convergeren doorheen de Double Diamond heb ik uitgebeeld middels een lijn die aan de linker zijde van de ruiten flink kronkelt en naarmate ze aan de rechter zijde van de ruit komt, rechter loopt. Dit visualiseert de [Design Squiggle](https://thedesignsquiggle.com/), een visuele representatie van ieder ontwerpproces, waarbij in het begin onberekenbaar alle kanten op wordt geredeneerd, om met steeds meer antwoorden een duidelijker beeld te vormen van de uitkomst van het proces.
 
 ## Procesverloop
 
 ### 1. Rip the brief
 
-Om meer inzicht in de casus en de scope van de opdracht scherper te definiëren hebben we degamenlijk de opdracht besproken en bepaald op welk deel van de dienstverlening we wilde focussen. Hierbij kwamen we op het alitererende 'van boeken tot boarden'.
+Om meer inzicht in de casus en de scope van de opdracht scherper te definiëren hebben we degamenlijk de opdracht besproken en bepaald op welk deel van de dienstverlening we wilde focussen. We zagen een kans in de voorbereiding- en reisdag-fase van de klantreis, omdat hier veel stress en onduidelijkheden bij reizigers ontstonden. Daarmee focussen we op 'van boeken tot boarden'.
 
 ![Onze focus van de opdracht binnen de dienstverlening en daarmee de scope van het onderzoek](/images/brief-scope.png)
 
 ### 2. Recruiting Criteria
 
-Het doel van het bepalen van deze recruiting criteria is om gericht op zoek te gaan naar participanten voor antwoorden op de deelvragen. We bepaalden hierin dat dit voor de reizigers enkel was dat ze ervaring moeten hebben met vliegen met KLM. Voor frontstage en backstage medewerkers van KLM bespraken we welke lagen we dachten te kunnen bereiken. Ik heb hierin reizigers, een cabinepersoneelslid en teamlead reparatie- en onderhoud gevonden.
+Het doel van het bepalen van deze recruiting criteria is om gericht op zoek te gaan naar participanten voor antwoorden op de deelvragen. Voor een hollistische Service Design-blik wilde heb ik reizigers, front- en backstage medewerkers van KLM gezocht die me als terugkerende participanten kunnen helpen in mijn onderzoek.
 
 ### 3. Mapping van het ontwerpproces
 
-Het bepalen van het onderzoek was gericht op primair en secundair onderzoek. Hierdoor haalden we reeds bestaande kennissen uit openbare bronnen en experts. Daarnaast halen we zelf kennis op door dromen en wensen van de gebruikers te ontdekken.
+Omdat de opdracht op zoek was naar nieuwe kansen, heb ik gekozen voor een breed onderzoek met meerdere onderzoeksmethoden. Een primair onderzoek van hoe de dienstverlening nu is gevormd, en een secundair onderzoek van hoe de reizigers dit ervaren, of zelfs (onbewust) zouden willen ervaren. Hierdoor haal ik reeds bestaande kennis uit openbare bronnen en (gebruiks-)experts.
 
 ### 4. Service Blueprint
 
 Door allemaal gedeelten van de dienstverlening van KLM te spreken en deze onderdelen vast te leggen, konden we een uitgebreid overzicht krijgen van de stappen van de dienstverlening en op welke lagen hier communicatie en interactie is. Dit leidde tot het Service Blueprint.
 
+![Gedeelte van de Service Blueprint van de KLM-dienstverlening, met klantacties, frontstage en backstage processen en ondersteunende systemen](/images/service-blueprint.png)
+
 ### 5. Cultural probes
 
-Met de theorie van the path of expression hebben alle teamleden een cultural probe gemaakt, die samen als probe kit bij 15 participanten kon worden uitgezet. Door dit via de path of expression te doen, haalden we eerst via doe-opdrachten kennis op van huidige reizen. Door eerst naar het verleden van hun reizen te vragen en langzaam de opdrachten steeds expressiever te maken, daagden we de participanten op een laagdrempelige manier uit om hun droomreis te tekenen. Hiermee achterhaalden we de dromen en wensen van de gebruikers voor het vliegen met KLM.
+Om inzichten op te halen heb ik cultural probes gemaakt, die als probe kit bij 15 participanten is uitgezet. Door de opdrachten hierin via de path of expression te doen, haalde ik eerst via doe-opdrachten kennis op van huidige reizen. Door eerst naar het verleden van hun reizen te vragen en langzaam de opdrachten steeds expressiever te maken, werden de participanten op een laagdrempelige manier uitgedaagd om hun droomreis te visualiseren. Dit achterhaalt dromen en wensen van de gebruikers voor het vliegen (met KLM).
 
 ![Ingevulde Cultural Probe en de complete probe kit](/images/cultural-probes.png)
 
 ### 6. Debrief interview
 
-Door de participanten na de probe kits te interviewen konden we dieper ingaan op hun antwoorden en hierdoor de keuzes van hen beter begrijpen en valideren.
+Een debrief interview van de participanten na het uitvoeren van de probe kits gaf de mogelijkheid dieper in te gaan op hun antwoorden en hierdoor de keuzes van hen beter begrijpen en valideren.
 
 ### 7. Experience Map
 
-Alle teamleden hebben in een Co-creatie-sessie met een aantal KLM-reizigers achterhaalt wat deze doen, denken en voelen tijdens de verschillende acties van de klantreis. Door hier een lijn in ontwaren, stelden we een weergave op van welke acties reizigers uitvoeren, hoe zij zich op dat moment voelen en wat zij denken. Dit leidde tot de gezamenlijke <a href="/images/Groep1_ExperienceMap_V1.0.pdf" target="_blank">Experience Map</a>.
+In een Co-creatie-sessie met een aantal KLM-reizigers stelde ik op wat zij doen, denken en voelen tijdens de verschillende acties van de klantreis, zoals deze met de Service Blueprint was opgezet. Door hier een lijn in ontwaren, stelde ik een weergave op van welke acties reizigers uitvoeren, hoe zij zich op dat moment voelen en wat zij denken. Dit leidde tot een Experience Map.
 
 ### 8. Affinity Analysis
 
-Het op post-its schrijven en op het raam plaatsen van alle opmerkingen en inzichten uit bovenstaande onderzoeken, zorgde ervoor dat we dit konden synthetiseren en er thema's uit konden ontwaren. Door thema's tegen elkaar te houden en een overlap te zoeken, kwamen we tot een nieuwe nieuwe inzichten en een aangepaste scope en focus voor ons onderzoek. We merkten dat veel gebruikers met hoofdtelefoon oplopen. We konden wel raden waarom dat was, maar interessanter was om bij de gebruikers te zoeken wat de achterliggende reden kon zijn voor dit gedrag. Hierdoor was onze scope "De persoonlijke bubbel" van de gebruiker, met als focus de "hoofdtelefoon".
+Door alle opmerkingen en inzichten uit de onderzoeken op het raam te plakken, zorgden we dat we de informatie konden synthetiseren en er thema's uit konden ontwaren. Door thema's tegen elkaar te houden en een overlap te zoeken, kwamen we tot een nieuwe nieuwe inzichten en een aangepaste scope en focus voor ons onderzoek. We merkten dat veel gebruikers met hoofdtelefoon oplopen. We konden wel raden waarom dat was, maar interessanter was om bij de gebruikers te zoeken wat de achterliggende reden kon zijn voor dit gedrag. Hierdoor was onze scope "De persoonlijke bubbel" van de gebruiker, met als focus de "hoofdtelefoon".
 
 ![Affinity analysis: affinity wall en thema's](/images/Affinity-analysis.png)
 
 ### 9. Co-creatie Design Game
 
-In een co-creatie-sessie hebben alle teamleden twee participanten uit het cultural probe-onderzoek tegen elkaar laten spelen. Eerst hebben we ze via hun eigen ingevulde probe laten denken aan wat zij belangrijk vonden bij hun laatste reis. Hierna hebben we ze in spelvorm gevraagd waar zij aan denken als hun persoonlijke bubbel in verschillende situaties, zoals thuis, in de auto of op het vliegveld. Daarna moesten ze deze van elkaar raden, waardoor een gesprek ontstond over deze onderwerpen, wat mij als onderzoeker inzichten gaf. Als afsluiting kregen zij een afbeelding van een hoofdtelefoon en konden zij deze aanpassen naar wat zij wensten van een hoofdtelefoon.
+In een co-creatie-sessie hebben daarna met de andere teamleden twee participanten uit het cultural probe-onderzoek tegen elkaar laten spelen. Eerst hebben we ze via hun eigen ingevulde probe laten denken aan wat zij belangrijk vonden bij hun laatste reis. Hierna hebben we ze in spelvorm gevraagd waar zij aan denken als hun persoonlijke bubbel in verschillende situaties, zoals thuis, in de auto of op het vliegveld. Daarna moesten ze deze van elkaar raden, waardoor een gesprek ontstond over deze onderwerpen, wat mij als onderzoeker inzichten gaf. Als afsluiting kregen zij een afbeelding van een hoofdtelefoon en konden zij deze aanpassen naar wat zij wensten van een hoofdtelefoon.
 
 ![Co-creatie: Design Game Ideation](/images/design-game-ideation.png)
 
 ### 10. Insights and opportunities
 
 De inzichten van al deze onderzoeken zijn individueel samengevoegd tot kerninzichten in kansen voor de dienstverlening van KLM. Door deze als teams samen te voegen werden deze kerninzichten nog sterker gevalideerd. Hieruit haalden we 5 kerninzichten, die we met KLM zouden gaan bespreken:
+
 1. De reiziger van KLM wil meer informatie in de KLM-app over verloop en wachttijd van de klantacties in de preparation fase, omdat ze stress hebben door het gebrek hieraan.
 2. Priority reizigers van KLM willen meer inzicht in waar zij voor in aanmerking komen, omdat zij hier veel waarde aan hechten maar het vaak onduidelijk is.
 3. Reizigers van KLM willen met meer zekerheid op reis gaan, omdat ze ondanks de checklists in de app, nog steeds vaak het gevoel hebben dat ze iets vergeten of dat er iets niet klopt als ze thuis vertrekken.
@@ -95,29 +96,27 @@ De inzichten van al deze onderzoeken zijn individueel samengevoegd tot kerninzic
 
 ![Vergaderzaal KLM-hoofdkantoor](/images/hoofdkantoor-klm.jpg)
 
-In een presentatie voor medewerkers van de digitale ontwerpafdeling presenteerden wij onze deliverables (de Service Blueprint en de Experience Map) en onze kerninzichten. In overleg met hen bleek dat zij geïnteresseerd waren in de reizigers zekerder op reis laten gaan. Het gevoel van ontspannen reizigers en onze focus van de hoofdtelefoon sprak ze erg aan, wat ons sterkte in het idee dat hier een mooi concept en product van te maken was.
+In een presentatie voor medewerkers van de digitale ontwerpafdeling presenteerden wij de deliverables, zoals de Experience Map en onze kerninzichten. In overleg met hen bleek dat zij geïnteresseerd waren in de reizigers zekerder op reis laten gaan. Het gevoel van ontspannen reizigers en onze focus van de hoofdtelefoon sprak ze erg aan, wat ons sterkte in het idee dat hier een mooi concept en product van te maken was.
 
 ### 12. Eerste concepten
 
-Middels de consuer trend canvas kwamen we ook gezamenlijk uit op de Interaction Wanderlust: hoe kunnen wij gebruikers bereiken zonder dat ze op het scherm van hun telefoon moeten kijken. Welke context-afhankelijke onderdelen kunnen we gebruiken om de gebruiker aan te spreken en aan te sporen?
+Middels de consumer trend canvas kwamen we ook gezamenlijk uit op de Interaction Wanderlust: hoe kunnen wij gebruikers bereiken zonder dat ze op het scherm van hun telefoon moeten kijken. Welke context-afhankelijke onderdelen kunnen we gebruiken om de gebruiker aan te spreken en aan te sporen?
 
 ### 13. Concept 1: Yes, Relax
 
-Het eerste concept focuste op context-afhankelijke invloeden: je horloge dat aangeeft dat je rust kunt nemen als deze merkt dat je gestresst bent, belangrijke objecten kunnen worden gelocaliseerd, de app kan je melden dat je nog op tijd komt als je vertraging hebt bij het reizen.
+Het eerste concept focuste op context-afhankelijke invloeden: je horloge dat aangeeft dat je rust kunt nemen als deze merkt dat je gestresst bent, belangrijke objecten kunnen worden gelocaliseerd, de app kan je melden dat je nog op tijd komt als je vertraging hebt bij het reizen, etc.
 
 ### 14. Concept 2: KLM Captain
 
-Het tweede concept was een app waarmee een medewerker van KLM je aanspreekt via je hoofdtelefoon. Deze gebruiker kan je dan vertellen waar de incheckbalie is, wat je bij moet hebben bij de boarding pass-controle, etc. Doordat deze gebruiker vanuit KLM spreekt
+Het tweede concept was een app waarmee een medewerker van KLM je aanspreekt via je hoofdtelefoon. Deze gebruiker kan je dan vertellen waar de incheckbalie is, wat je bij moet hebben bij de boarding pass-controle, etc. Doordat deze gebruiker vanuit KLM spreekt en je begeleidt, voelt dit als een persoonlijke service en wordt de ervaring van KLM al op de grond ervaren.
 
 ### 15. Evaluatie van concepten
 
-Om te bepalen welke concepten interessant zijn, bespreken we deze tussentijds met Jordan Wattimena, Senior Product Owner Mobile apps bij de opdrachtgever KLM. Hierbij kwamen we tot de conclusie dat het toevoegen van gesproken meldingen op de juiste tijden een bruikbare toevoeging kon zijn aan hun dienstverlening.
+Deze concepten kwamen bij Jordan Wattimena, Senior Product Owner Mobile apps bij de opdrachtgever KLM. Zijn conclusie was dat het toevoegen van gesproken meldingen op de juiste tijden een bruikbare toevoeging kon zijn aan de dienstverlening van hun mobiele touchpoint.
 
 ### 16. Business Case
 
-Om het nieuwe concept te implementeren in de dienstverlening van KLM hebben we samen met de Business Media Design-specialist een Business Plan geschreven voor ons concept. Hiermee zijn de waarde, haalbaarheid  en kosten/baten van het concept onderzocht.
-
-![Roadmap van het ontwerp en de implementatie van concept naar product](/images/roadmap.png)
+Voor de compleetheidhebben is onderzocht wat de kosten, waarde en haalbaarheid van implementeren van het nieuwe concept zijn.
 
 ### 17. Van Concept naar prototype
 
@@ -127,7 +126,7 @@ Om het concept te plaatsen in de tijd en de functionaliteit te bepalen heb ik de
 
 ### 18. Prototype Iteratie 1
 
-Vanuit het bovenstaande prototype bepaalden we de belangrijke punten waar we de reiziger konden helpen. Omdat we vanuit KLM wilden spreken wilden we de KLM Captain aanpassen naar een medewerker van het cabinepersoneel. Deze persoon kan vanuit authoriteit en dienstverlenend spreken op elk punt van de klantreis. Het cabinepersoneel kan zo helpen van het thuis vertrekken tot het vliegtuig in lopen, en hoe leuk is het dan om het gezicht van deze medewerker te zien en haar de stem in het echt te horen? Door belangrijke documenten bij de hand te houden en altijd een zicht te kunnen hebben op de tijd tot vertrek hadden we alle informatie voor de reiziger beschikbaar.
+Vanuit het bovenstaande prototype bepaalden we de belangrijke punten waar we de reiziger konden helpen. Omdat we vanuit KLM wilden spreken wilden we de KLM Captain aanpassen naar een medewerker van het cabinepersoneel. Deze persoon kan vanuit authoriteit en dienstverlening spreken op elk punt van de klantreis. Het cabinepersoneel kan zo helpen van het thuis vertrekken tot het vliegtuig in lopen, en hoe leuk is het dan om het gezicht van deze medewerker te zien en haar de stem in het echt te horen? Door belangrijke documenten naast het scherm te plaatsen en te houden en altijd een zicht te kunnen hebben op de tijd tot vertrek, werd de belangrijke informatie voor de reiziger altijd beschikbaar.
 
 ![Van een ruwe schets van de interface naar een eerste interactieve prototype](/images/schets-naar-proto.png)
 
@@ -135,7 +134,7 @@ Door dit prototype te laten testen middels Peer review kwamen we erachter dat de
 
 ### 19. Prototype Iteratie 2
 
-De feedback van de peer reviews hebben we verwerkt door de documenten onderin te plaatsen en de reistijd bovenin te plaatsen. Hierdoor hebben gebruikers altijd zicht hierop; recognition over recall, zoals dit in de theorie van de [10 Usability Heuristics for User Interface Design](https://www.nngroup.com/articles/ten-usability-heuristics/) wordt genoemd. Door passen te laten animeren wanneer ze nodig zijn (het openen van de boarding pass wanneer deze getoond moet worden of het springen van een coffee coupon als gebruikers bij de KLM Lounge zijn bijvoorbeeld) en door de balk bovenin oranje te laten kleuren als de tijd dringt, kunnen we gebruikers op de juiste momenten helpen.
+De feedback van de peer reviews hebben we verwerkt door de documenten onderin te plaatsen en de reistijd bovenin te plaatsen. Hierdoor hebben gebruikers altijd zicht hierop; recognition over recall, zoals dit in de theorie van de [10 Usability Heuristics for User Interface Design](https://www.nngroup.com/articles/ten-usability-heuristics/) wordt genoemd. Door passen te laten animeren wanneer ze nodig zijn (het openen van de boarding pass wanneer deze getoond moet worden of het springen van een coffee coupon als gebruikers bij de KLM Lounge zijn bijvoorbeeld) en door de balk bovenin oranje te laten kleuren als de tijd dringt, kunnen we gebruikers op de juiste momenten helpen, terwijl het ontwerp blijft aansluiten bij de brand identity van KLM.
 
 ![Schermen van iteratie 2 van het concept: Gesproken begeleiding starten, overzicht van stappen bij de gesproken begeleiding, melding en tekst van de gesproken begeleiding](/images/proto-2.png)
 
@@ -161,10 +160,10 @@ Uiteindelijk gaven we een demo van het product, zoals ook hieronder te zien en t
 	<figcaption>Het aan KLM gepresenteerde product</figcaption>
 </figure>
 
-Hierbij waren zij te spreken over de mogelijkheid om al eerder en directer contact te hebben met de reizigers. Met deze laatste stap en laatste feedback van de opdrachtgever en peers sluiten we de Double Diamond.
+Hierbij waren zij te spreken over de mogelijkheid om al eerder en directer contact te hebben met de reizigers. Met deze laatste stap en laatste feedback van de opdrachtgever sluitte de Double Diamond.
 
 ### Afsluitend
 
-Vanuit de onderzoeksvraag zijn we via ons onderzoek bij een ontwerpvraag aangekomen. Dit heeft geleid tot een concept en een product. Dit product is een overzicht dat in de KLM-app getoond wordt op de dag dat je gaat reizen. Hierin is het voor de reiziger zichtbaar en hoorbaar wat er op dat moment van ze wordt verwacht en hoe de rest van hun dag verloopt. KLM heeft hier ook baat bij, omdat zij zo meer invloed hebben op waar en wanneer haar reizigers ergens zouden moeten zijn om een vloeiende dienstverlening te kunnen aanbieden. En zo zijn we uitgekomen bij het beantwoorden van de klantvraag:
+Vanuit de onderzoeksvraag zijn we via ons onderzoek bij een ontwerpvraag aangekomen. Dit heeft geleid tot (gebruikers-)onderzoeken, inzichten, kansen, een concept en een product. Dit product is een overzicht dat in de KLM-app getoond wordt op de dag dat je gaat reizen. Hierin is het voor de reiziger zichtbaar en hoorbaar wat er op dat moment van ze wordt verwacht en hoe de rest van hun dag verloopt. KLM heeft hier ook baat bij, omdat zij zo meer invloed hebben op waar en wanneer haar reizigers ergens zouden moeten zijn om een vloeiende dienstverlening te kunnen aanbieden. En zo zijn we uitgekomen bij het beantwoorden van de klantvraag:
 
->"Door de gebruiker op de reisdag met hoorbare en zichtbare meldingen op een klantvriendelijke en gezellige wijze te helpen, kun je de experience van de KLM-service in de lucht al op de grond laten beginnen."
+> "Door de gebruiker op de reisdag met hoorbare en zichtbare meldingen op een klantvriendelijke en ondersteunende wijze te helpen, kun je de experience van de KLM-service in de lucht al op de grond laten beginnen."
